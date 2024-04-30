@@ -1,0 +1,31 @@
+{
+    "navigationFallback": {
+      "rewrite": "/index.html",
+      "exclude": [ "*.js", "*.css", "*.jpg", "*.jpeg", "*.gif", "*.png", "*.svg", "*.json", "*.wasm", "*.gz" ]
+    },
+    "routes": [
+      {
+        "route": "/*.gz",
+        "headers": {
+          "Content-Encoding": "gzip",
+          "Cache-Control": "max-age=31536000"
+        }
+      },
+      {
+        "route": "/",
+        "serve": "/index.html"
+      }
+    ],
+    "mimeTypes": {
+      ".wasm": "application/wasm",
+      ".gz": "application/gzip"
+    },
+    "responseOverrides": {
+      "404": {
+        "rewrite": "/404.html"
+      }
+    },
+    "globalHeaders": {
+      "cache-control": "no-cache, no-store, must-revalidate"
+    }
+  }  
