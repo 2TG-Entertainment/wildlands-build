@@ -27,14 +27,19 @@ fi
 
 # Check for macOS and adjust sed command accordingly
 if [[ "$OSTYPE" == "darwin"* ]]; then
-    SED_CMD="sed "
+    SED_CMD="sed -i''"
 else
     SED_CMD="sed -i"
 fi
 
 # Add a link to the custom.css file in the index.html just before the </head> tag
-$SED_CMD "/<\/head>/i \\
-<link rel=\"stylesheet\" href=\"custom.css\">" "$INDEX_PATH"
+if ! grep -q '<link rel="stylesheet" href="custom.css">' "$INDEX_PATH"; then
+    echo "Adding custom.css link to index.html"
+    $SED_CMD "/<\/head>/i \\
+    <link rel=\"stylesheet\" href=\"custom.css\">" "$INDEX_PATH"
+else
+    echo "Link to custom.css already exists in index.html"
+fi
 
 # Add custom background image style to custom.css
 echo "body {" > "$CUSTOM_CSS_PATH"
