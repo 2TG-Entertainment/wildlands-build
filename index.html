@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | MetaMask Test Ground</title>
+    <title>Unity WebGL Player | To The Grave: The Wildlands of Faenora</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
     <script src="TemplateData/socket.io.js"></script>
@@ -11,7 +11,7 @@
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=960 height=600></canvas>
+      <canvas id="unity-canvas" width=640 height=360></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -22,7 +22,7 @@
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">MetaMask Test Ground</div>
+        <div id="unity-build-title">To The Grave: The Wildlands of Faenora</div>
       </div>
     </div>
     <script>
@@ -58,15 +58,15 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/BBTestMay1.loader.js";
+      var loaderUrl = buildUrl + "/Widllands_MMTest.loader.js";
       var config = {
-        dataUrl: "https://media.githubusercontent.com/media/2TG-Entertainment/wildlands-build/dev/Build/BBTestMay1.data",  //buildUrl + "/BBTestMay1.data",
-        frameworkUrl: buildUrl + "/BBTestMay1.framework.js",
-        codeUrl: buildUrl + "/BBTestMay1.wasm",
+        dataUrl: "https://media.githubusercontent.com/media/2TG-Entertainment/wildlands-build/dev/Build/Widllands_MMTest.data", // buildUrl + "/Widllands_MMTest.data",
+        frameworkUrl: buildUrl + "/Widllands_MMTest.framework.js",
+        codeUrl: buildUrl + "/Widllands_MMTest.wasm",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "DefaultCompany",
-        productName: "MetaMask Test Ground",
-        productVersion: "1.0",
+        companyName: "2TG",
+        productName: "To The Grave: The Wildlands of Faenora",
+        productVersion: "0.0.9",
         showBanner: unityShowBanner,
       };
 
@@ -95,8 +95,8 @@
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
-        canvas.style.width = "960px";
-        canvas.style.height = "600px";
+        canvas.style.width = "640px";
+        canvas.style.height = "360px";
       }
 
       loadingBar.style.display = "block";
