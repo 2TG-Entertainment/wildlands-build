@@ -7,26 +7,6 @@
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
     <script src="TemplateData/socket.io.js"></script>
-    <script>
-      // Code to prompt for Discord username
-      window.addEventListener('load', function () {
-        setTimeout(function() { // Timeout to ensure it loads after the game
-          var discordUsername = prompt("Enter your Discord username (optional):");
-          if (discordUsername !== null && discordUsername.trim() !== "") {
-            // Send the username to the Azure function
-            fetch("https://store-discord-username.azurewebsites.net/api/MyHttpFunction", {
-              method: 'POST',
-              headers: {
-                'Content-Type': 'application/json',
-              },
-              body: JSON.stringify({ username: discordUsername.trim() })
-            }).then(response => response.json())
-              .then(data => console.log('Success:', data))
-              .catch((error) => console.error('Error:', error));
-          }
-        }, 5000); // Adjust time as needed
-      });
-    </script>    
     <script src="https://c0f4f41c-2f55-4863-921b-sdk-docs.github.io/cdn/metamask-sdk-unity.js"></script>
   </head>
   <body>
