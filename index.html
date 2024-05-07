@@ -1,6 +1,26 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
+    <script>
+      // Code to prompt for Discord username
+      window.addEventListener('load', function () {
+        setTimeout(function() { // Timeout to ensure it loads after the game
+          var discordUsername = prompt("Enter your Discord username (optional):");
+          if (discordUsername !== null && discordUsername.trim() !== "") {
+            // Send the username to the Azure function
+            fetch("https://store-discord-username.azurewebsites.net/api/MyHttpFunction", {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+              },
+              body: JSON.stringify({ username: discordUsername.trim() })
+            }).then(response => response.json())
+              .then(data => console.log('Success:', data))
+              .catch((error) => console.error('Error:', error));
+          }
+        }, 5000); // Adjust time as needed
+      });
+    </script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-K0ZNNZC6GQ"></script>
     <script>
