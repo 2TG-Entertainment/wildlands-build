@@ -8,13 +8,8 @@
     <link rel="stylesheet" href="TemplateData/style.css">
     <link rel="stylesheet" href="custom.css">  </head>
   </head>
-  <bods>
+  <body>
     <div id="unity-container" class="unity-desktop">
-      <group style="display: flex; justify-content: center;">
-        <a href="https://app.ledge.io" target="_blank">
-          <img style="display: block; padding: 20px;" src="ledgecompetition.png" alt="Ledge Competition">
-        </a>
-      </group>
       <canvas id="unity-canvas" tabindex="-1"></canvas>
       <div id="unity-loading-bar">
         <div id="unity-progress-bar-empty">
@@ -35,15 +30,15 @@
       var warningBanner = document.querySelector("#unity-warning");
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/Wildlands_0.4.0_WebGL.loader.js";
+      var loaderUrl = buildUrl + "/Wildlands_0.4.1_WebGL.loader.js";
       var config = {
-        dataUrl: "https://media.githubusercontent.com/media/2TG-Entertainment/wildlands-build/dev/Build/Wildlands_0.4.0_WebGL.data", //buildUrl + "/Wildlands_0.4.0_WebGL.data",
-        frameworkUrl: buildUrl + "/Wildlands_0.4.0_WebGL.framework.js",
-        codeUrl: buildUrl + "/Wildlands_0.4.0_WebGL.wasm",
+        dataUrl: "https://media.githubusercontent.com/media/2TG-Entertainment/wildlands-build/dev/Build/Wildlands_0.4.1_WebGL.data",  //buildUrl + "/Wildlands_0.4.1_WebGL.data",
+        frameworkUrl: buildUrl + "/Wildlands_0.4.1_WebGL.framework.js",
+        codeUrl: buildUrl + "/Wildlands_0.4.1_WebGL.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "2TG",
         productName: "To The Grave: The Wildlands of Faenora",
-        productVersion: "0.4.0",
+        productVersion: "0.4.1",
         showBanner: false,
       };
 
