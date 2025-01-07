@@ -9,16 +9,24 @@
     <link rel="stylesheet" href="custom.css">  </head>
   </head>
   <body>
-    <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" tabindex="-1"></canvas>
-      <div id="unity-loading-bar">
-        <div id="unity-progress-bar-empty">
-          <div id="unity-progress-bar-full"></div>
-        </div>
+      <div id="unity-container" class="unity-desktop">
+          <group style="display: flex; justify-content: center; align-items: center; background: transparent; position: relative; height: 190px; overflow: hidden;">
+              <div style="position: absolute; top: 0; left: 0; width: 90%; height: 90%;"></div>
+              <a href="https://app.hel.io/pay/67636a83dc6d3929fe489311" target="_blank" style="z-index: 10;">
+                  <img src="Mobile Leaderboard Ad - Helio Pre-Sale.png"
+                       alt="Faenora Verse Game Character Pre Sale"
+                       style="display: block; margin: auto; max-width: 80%; height: auto; border-radius: 5px; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);" />
+              </a>
+          </group>
+          <canvas id="unity-canvas" tabindex="-1"></canvas>
+          <div id="unity-loading-bar">
+              <div id="unity-progress-bar-empty">
+                  <div id="unity-progress-bar-full"></div>
+              </div>
+          </div>
+          <div id="unity-warning"> </div>
+          <!-- <div id="unity-fullscreen-button"></div> -->
       </div>
-      <div id="unity-warning"> </div>
-        <!-- <div id="unity-fullscreen-button"></div> -->
-            </div>
     </div>
     <script>
 
