@@ -240,6 +240,7 @@
     <type fullname="UnityEngine.GameObject" preserve="all" />
     <type fullname="UnityEngine.LightmapSettings" preserve="all" />
     <type fullname="UnityEngine.Material" preserve="all" />
+    <type fullname="UnityEngine.MonoBehaviour" preserve="all" />
     <type fullname="UnityEngine.Object" preserve="all" />
     <type fullname="UnityEngine.RectTransform" preserve="all" />
     <type fullname="UnityEngine.Rendering.SortingGroup" preserve="all" />
@@ -318,7 +319,6 @@
   <assembly fullname="WOF.Unity.Hunters.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="AccountSettingsSection" preserve="all" />
     <type fullname="BarracksMenu" preserve="all" />
-    <type fullname="BattleTeamPlacementGrid" preserve="all" />
     <type fullname="DragAndDropIconElement" preserve="all" />
     <type fullname="FinancierMenu" preserve="all" />
     <type fullname="HuntersRecruitInformationWindow" preserve="all" />
@@ -332,17 +332,17 @@
     <type fullname="InnMenu" preserve="all" />
     <type fullname="RedeemSettingsSection" preserve="all" />
     <type fullname="TailorMenu" preserve="all" />
-    <type fullname="TeamPlacementGridSlot" preserve="all" />
     <type fullname="TTG.CloudLoginUI" preserve="all" />
     <type fullname="TTG.TermsAndPrivacyLinks" preserve="all" />
     <type fullname="WalletSettingsSection" preserve="all" />
     <type fullname="Wof.ConnectionAndErrorHandler" preserve="all" />
-    <type fullname="DonegalSubMenu" preserve="nothing" serialized="true" />
-    <type fullname="HuntModeDonegalButtonElement" preserve="nothing" serialized="true" />
-  </assembly>
-  <assembly fullname="WOF.Unity.Hunters.Runtime.Web3, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="Wof.WebWallet.WalletConnectionPopup" preserve="all" />
     <type fullname="Wof.WebWallet.WebWalletSingleton" preserve="all" />
+    <type fullname="WofWalletCatalogWindow" preserve="all" />
+    <type fullname="WofWalletCombatantCardDisplay" preserve="all" />
+    <type fullname="WofWalletRevealInformationWindow" preserve="all" />
+    <type fullname="DonegalSubMenu" preserve="nothing" serialized="true" />
+    <type fullname="HuntModeDonegalButtonElement" preserve="nothing" serialized="true" />
   </assembly>
   <assembly fullname="WOF.Unity.Shared.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="AudioSettingsSection" preserve="all" />
@@ -431,6 +431,8 @@
     <type fullname="WofBattleSkillsMenu" preserve="all" />
     <type fullname="WofBattleTargetInfoMenu" preserve="all" />
     <type fullname="WofBattleTargetSimpleConfirmMenu" preserve="all" />
+    <type fullname="WofCharacterRevealCard" preserve="all" />
+    <type fullname="WofCharacterRevealScreen" preserve="all" />
     <type fullname="WofClassProgressionMainWindow" preserve="all" />
     <type fullname="WofCombatantEntity" preserve="all" />
     <type fullname="WofCore.WofBattleEnemyGridManagerUI" preserve="all" />
@@ -447,6 +449,7 @@
     <type fullname="WofIsometricGridSlot" preserve="all" />
     <type fullname="WofItemBattleButton" preserve="all" />
     <type fullname="WofItemThumbnailGridSlot" preserve="all" />
+    <type fullname="WofMoochkinCommentScreen" preserve="all" />
     <type fullname="WofMoochkinPodMainWindow" preserve="all" />
     <type fullname="WofRarityDisplay" preserve="all" />
     <type fullname="WofRecruitInformationWindow" preserve="all" />
@@ -454,6 +457,7 @@
     <type fullname="WofRecruitSkillsOverviewWindow" preserve="all" />
     <type fullname="WofRecruitStatsWindow" preserve="all" />
     <type fullname="WofRowsActionsDisplay" preserve="all" />
+    <type fullname="WofScrollViewContainer" preserve="all" />
     <type fullname="WorldParticleManager" preserve="all" />
     <type fullname="Battle.BattleEffects.ShakeSettingsData" preserve="nothing" serialized="true" />
     <type fullname="CharacterCustomizationClassEntry" preserve="nothing" serialized="true" />
@@ -491,6 +495,7 @@
     <type fullname="Wof.StatusDevelopments" preserve="nothing" serialized="true" />
     <type fullname="Wof.WeaponWeightsBySection" preserve="nothing" serialized="true" />
     <type fullname="RecruitFrontAppearanceParts" preserve="nothing" serialized="true" />
+    <type fullname="RevealCardRaritySettings" preserve="nothing" serialized="true" />
     <type fullname="SettingsSectionProperties" preserve="nothing" serialized="true" />
     <type fullname="Wof.ButtonAppearanceSettings" preserve="nothing" serialized="true" />
     <type fullname="Wof.HeroIntroQuestionsData/AnswersData" preserve="nothing" serialized="true" />
