@@ -289,7 +289,6 @@
     <type fullname="UnityEngine.UI.RectMask2D" preserve="all" />
     <type fullname="UnityEngine.UI.Scrollbar" preserve="all" />
     <type fullname="UnityEngine.UI.ScrollRect" preserve="all" />
-    <type fullname="UnityEngine.UI.Shadow" preserve="all" />
     <type fullname="UnityEngine.UI.Text" preserve="all" />
     <type fullname="UnityEngine.UI.Toggle" preserve="all" />
     <type fullname="UnityEngine.UI.ToggleGroup" preserve="all" />
@@ -324,7 +323,6 @@
     <type fullname="HuntersRecruitSelectionGrid" preserve="all" />
     <type fullname="HuntersRecruitSelectionSlot" preserve="all" />
     <type fullname="HuntersWalletBox" preserve="all" />
-    <type fullname="HuntModeCurrencyBox" preserve="all" />
     <type fullname="HuntModeHubWindow" preserve="all" />
     <type fullname="HuntSettingsWindow" preserve="all" />
     <type fullname="HuntTitleMenuScreen" preserve="all" />
@@ -337,6 +335,7 @@
     <type fullname="Wof.ConnectionAndErrorHandler" preserve="all" />
     <type fullname="Wof.WebWallet.WalletConnectionPopup" preserve="all" />
     <type fullname="Wof.WebWallet.WebWalletSingleton" preserve="all" />
+    <type fullname="WofHuntersSettingsButton" preserve="all" />
     <type fullname="WofWalletCatalogWindow" preserve="all" />
     <type fullname="WofWalletCombatantCardDisplay" preserve="all" />
     <type fullname="WofWalletRevealInformationWindow" preserve="all" />
