@@ -319,7 +319,6 @@
   <assembly fullname="WOF.Unity.Hunters.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="AccountSettingsSection" preserve="all" />
     <type fullname="BarracksMenu" preserve="all" />
-    <type fullname="DragAndDropIconElement" preserve="all" />
     <type fullname="FinancierMenu" preserve="all" />
     <type fullname="HuntersRecruitInformationWindow" preserve="all" />
     <type fullname="HuntersRecruitSelectionGrid" preserve="all" />
@@ -351,6 +350,7 @@
     <type fullname="BasicStatLabel" preserve="all" />
     <type fullname="Battle.CombatantEntity" preserve="all" />
     <type fullname="BattleModeSettingsSection" preserve="all" />
+    <type fullname="BattleTeamPlacementGrid" preserve="all" />
     <type fullname="CharacterCustomizationFrameExceptionScriptableObject" preserve="all" />
     <type fullname="CharacterCustomizationFrameReferenceTable" preserve="all" />
     <type fullname="CharacterCustomizationGeneralLibrary" preserve="all" />
@@ -367,12 +367,14 @@
     <type fullname="PooledEffect" preserve="all" />
     <type fullname="PooledObject" preserve="all" />
     <type fullname="RecruitPortrait" preserve="all" />
+    <type fullname="RecruitPortraitFloorBackground" preserve="all" />
     <type fullname="SkillDataScriptableObject" preserve="all" />
     <type fullname="SkillLibraryScriptableObject" preserve="all" />
     <type fullname="SplashScreen" preserve="all" />
     <type fullname="SquadFormationScreen" preserve="all" />
     <type fullname="TargetDisplayGridSubMenu" preserve="all" />
     <type fullname="TargetFormationTypeScriptableObject" preserve="all" />
+    <type fullname="TeamPlacementGridSlot" preserve="all" />
     <type fullname="TermsSettingsSection" preserve="all" />
     <type fullname="TimedParticleEffect" preserve="all" />
     <type fullname="UIElementIconLibrary" preserve="all" />
