@@ -336,6 +336,7 @@
     <type fullname="Wof.WebWallet.WalletConnectionPopup" preserve="all" />
     <type fullname="Wof.WebWallet.WebWalletSingleton" preserve="all" />
     <type fullname="WofHuntersSettingsButton" preserve="all" />
+    <type fullname="WofRerollRevealInformationWindow" preserve="all" />
     <type fullname="WofWalletCatalogWindow" preserve="all" />
     <type fullname="WofWalletCombatantCardDisplay" preserve="all" />
     <type fullname="WofWalletRevealInformationWindow" preserve="all" />
@@ -436,6 +437,7 @@
     <type fullname="WofCharacterRevealScreen" preserve="all" />
     <type fullname="WofClassProgressionMainWindow" preserve="all" />
     <type fullname="WofCombatantEntity" preserve="all" />
+    <type fullname="WofCombatantEventNotifier" preserve="all" />
     <type fullname="WofCore.WofBattleEnemyGridManagerUI" preserve="all" />
     <type fullname="WofCore.WofPlayerBattleGridManagerUI" preserve="all" />
     <type fullname="WofDropdownList" preserve="all" />
@@ -443,6 +445,8 @@
     <type fullname="WofEquipmentDataWindow" preserve="all" />
     <type fullname="WofEquipmentDisplayElement" preserve="all" />
     <type fullname="WofEquipmentDisplayWindow" preserve="all" />
+    <type fullname="WofFlyingText" preserve="all" />
+    <type fullname="WofFlyingTextIndividualMember" preserve="all" />
     <type fullname="WofGridHandler" preserve="all" />
     <type fullname="WofInventoryMainWindow" preserve="all" />
     <type fullname="WofIsometricBattleManager" preserve="all" />
