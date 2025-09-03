@@ -390,6 +390,9 @@
     <type fullname="WofConfirmPerkWindow" preserve="all" />
     <type fullname="WofDebugPathSelection" preserve="all" />
     <type fullname="WofEmbarkHuntMessageWindow" preserve="all" />
+    <type fullname="WofFoodItemCatalog" preserve="all" />
+    <type fullname="WofFoodItemCatalogEntry" preserve="all" />
+    <type fullname="WofFoodItemWindow" preserve="all" />
     <type fullname="WofHuntersClassProgressionScreen" preserve="all" />
     <type fullname="WofHuntersCongratulationsWindow" preserve="all" />
     <type fullname="WofHuntersMoochkinPodScreen" preserve="all" />
