@@ -561,6 +561,7 @@
     <type fullname="Wof.WofBattleBagElement" preserve="all" />
     <type fullname="Wof.WofBattleResultsCombatantElement" preserve="all" />
     <type fullname="Wof.WofBattleResultsWindow" preserve="all" />
+    <type fullname="Wof.WofBattleStatusCellIndicator" preserve="all" />
     <type fullname="Wof.WofCharacterRevealScreen" preserve="all" />
     <type fullname="Wof.WofCombatantActionSkillsSummaryPanel" preserve="all" />
     <type fullname="Wof.WofCombatantAnimationSettingsScriptableObject" preserve="all" />
@@ -601,7 +602,6 @@
     <type fullname="WofBattleEndBanner" preserve="all" />
     <type fullname="WofBattleIntroBanner" preserve="all" />
     <type fullname="WofBattleSkillBanner" preserve="all" />
-    <type fullname="WofBattleStatusCellIndicator" preserve="all" />
     <type fullname="WofBattleTargetInfoStatLabel" preserve="all" />
     <type fullname="WofCatalogThumbnailItemDisplay" preserve="all" />
     <type fullname="WofChangeClassPrompt" preserve="all" />
