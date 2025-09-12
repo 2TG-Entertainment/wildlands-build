@@ -699,6 +699,7 @@
     <type fullname="WofTreasureAnimatedElement" preserve="all" />
     <type fullname="WofTreasureScreen" preserve="all" />
     <type fullname="WofTreeClassElement" preserve="all" />
+    <type fullname="WofTurnOrderPortrait" preserve="all" />
     <type fullname="WorldParticleManager" preserve="all" />
     <type fullname="AnimationStateEffectProperties" preserve="nothing" serialized="true" />
     <type fullname="BattleStatIconEntry" preserve="nothing" serialized="true" />
