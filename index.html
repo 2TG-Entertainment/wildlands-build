@@ -243,7 +243,7 @@
                 alert(message);
             });
         };
-        window.onbeforeunload = function (e) {
+        /*window.onbeforeunload = function (e) {
             console.log("Calling OnClose from Browser!");
             if (window.unityInstance) {
                 window.unityInstance.SendMessage("SingletonMonobehaviours", "SaveGameImmediately");
@@ -255,7 +255,7 @@
             var dialogText = "Are you sure to leave this page?";
             e.returnValue = dialogText;
             return dialogText;
-        };
+        };*/
 
         document.body.appendChild(script);
     </script>

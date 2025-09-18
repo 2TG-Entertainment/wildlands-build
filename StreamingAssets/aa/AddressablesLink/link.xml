@@ -53,7 +53,6 @@
     <type fullname="Febucci.UI.TextAnimator_TMP" preserve="all" />
   </assembly>
   <assembly fullname="FMODUnity, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-    <type fullname="FMODUnity.StudioEventEmitter" preserve="all" />
     <type fullname="FMODUnity.StudioListener" preserve="all" />
     <type fullname="FMOD.GUID" preserve="nothing" serialized="true" />
     <type fullname="FMODUnity.EventReference" preserve="nothing" serialized="true" />
@@ -76,8 +75,8 @@
     <type fullname="GamingIsLove.Makinom.MusicClipAsset" preserve="all" />
     <type fullname="GamingIsLove.Makinom.PortraitTypeAsset" preserve="all" />
     <type fullname="GamingIsLove.Makinom.AssetLookUp" preserve="nothing" serialized="true" />
-    <type fullname="GamingIsLove.Makinom.ComponentDataFile" preserve="nothing" serialized="true" />
     <type fullname="GamingIsLove.Makinom.DataFile" preserve="nothing" serialized="true" />
+    <type fullname="GamingIsLove.Makinom.ComponentDataFile" preserve="nothing" serialized="true" />
   </assembly>
   <assembly fullname="Makinom2.UnityUI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="GamingIsLove.Makinom.Components.UIColorChanger" preserve="all" />
@@ -382,6 +381,10 @@
     <type fullname="Wof.WofHuntersBattleResultsWindow" preserve="all" />
     <type fullname="Wof.WofHuntersHealingSpringMenu" preserve="all" />
     <type fullname="Wof.WofHuntersSettingsButton" preserve="all" />
+    <type fullname="Wof.WofTailorWardrobeCatalogClothesWindow" preserve="all" />
+    <type fullname="Wof.WofTailorWardrobeCatalogExtrasWindow" preserve="all" />
+    <type fullname="Wof.WofTailorWardrobeCatalogFaceWindow" preserve="all" />
+    <type fullname="Wof.WofTailorWardrobeCatalogHairWindow" preserve="all" />
     <type fullname="WofAuctionHouseMainWindow" preserve="all" />
     <type fullname="WofBarracksEmptyHealthWarning" preserve="all" />
     <type fullname="WofBarracksHireAndReleaseWindow" preserve="all" />
@@ -421,20 +424,11 @@
     <type fullname="WofRecruitSelectionWindow" preserve="all" />
     <type fullname="WofSelectableCardDisplay" preserve="all" />
     <type fullname="WofTailorActionsWindow" preserve="all" />
-    <type fullname="WofTailorClothesSpriteItem" preserve="all" />
     <type fullname="WofTailorColorBrowser" preserve="all" />
-    <type fullname="WofTailorColorItem" preserve="all" />
     <type fullname="WofTailorConfirmLookWindow" preserve="all" />
     <type fullname="WofTailorConfirmNameWindow" preserve="all" />
-    <type fullname="WofTailorEmotionSpriteItem" preserve="all" />
-    <type fullname="WofTailorExtrasSpriteItem" preserve="all" />
-    <type fullname="WofTailorHairSpriteItem" preserve="all" />
     <type fullname="WofTailorIntroWindow" preserve="all" />
     <type fullname="WofTailorItemBrowser" preserve="all" />
-    <type fullname="WofTailorWardrobeCatalogClothesWindow" preserve="all" />
-    <type fullname="WofTailorWardrobeCatalogExtrasWindow" preserve="all" />
-    <type fullname="WofTailorWardrobeCatalogFaceWindow" preserve="all" />
-    <type fullname="WofTailorWardrobeCatalogHairWindow" preserve="all" />
     <type fullname="WofTailorWardrobeWindow" preserve="all" />
     <type fullname="WofWalletWarningWindow" preserve="all" />
     <type fullname="MapPlaythroughData" preserve="nothing" serialized="true" />
@@ -450,8 +444,6 @@
     <type fullname="BiomesLibraryScriptableObject" preserve="all" />
     <type fullname="CharacterCustomizationFrameExceptionScriptableObject" preserve="all" />
     <type fullname="CharacterCustomizationFrameReferenceTable" preserve="all" />
-    <type fullname="CharacterCustomizationGeneralLibrary" preserve="all" />
-    <type fullname="CharacterCustomizationSkinObject" preserve="all" />
     <type fullname="CombatantClassPrefabsScriptableObject" preserve="all" />
     <type fullname="CombatantPortraitFloorBackground" preserve="all" />
     <type fullname="CurrencyBoxUI" preserve="all" />
@@ -506,6 +498,8 @@
     <type fullname="Wof.BattleModeSettingsSection" preserve="all" />
     <type fullname="Wof.BattleTeamPlacementGrid" preserve="all" />
     <type fullname="Wof.ButtonSounds" preserve="all" />
+    <type fullname="Wof.CharacterCustomizationGeneralLibrary" preserve="all" />
+    <type fullname="Wof.CharacterCustomizationSkinObject" preserve="all" />
     <type fullname="Wof.ClassData" preserve="all" />
     <type fullname="Wof.ClassIconDisplay" preserve="all" />
     <type fullname="Wof.ClassMilestonesData" preserve="all" />
@@ -619,6 +613,7 @@
     <type fullname="Wof.WofSimplifiedItemDisplay" preserve="all" />
     <type fullname="Wof.WofSquadFormationScreen" preserve="all" />
     <type fullname="Wof.WofStatDetailsLabel" preserve="all" />
+    <type fullname="Wof.WofTailorHairSpriteItem" preserve="all" />
     <type fullname="Wof.WofTreeCenterClassElement" preserve="all" />
     <type fullname="Wof.WofUnlockedClassOverviewInformationWindow" preserve="all" />
     <type fullname="Wof.WofUnlockedUnitOverviewInformationWindow" preserve="all" />
@@ -716,15 +711,15 @@
     <type fullname="Battle.BattleEffects.ShakeSettingsData" preserve="nothing" serialized="true" />
     <type fullname="BiomeTableEntry" preserve="nothing" serialized="true" />
     <type fullname="BiomeTableNonBattleEntry" preserve="nothing" serialized="true" />
-    <type fullname="CharacterCustomizationClassEntry" preserve="nothing" serialized="true" />
     <type fullname="CharacterCustomizationFrameReference" preserve="nothing" serialized="true" />
-    <type fullname="CharacterCustomizationItemStatus" preserve="nothing" serialized="true" />
-    <type fullname="ClassExtraLayerObject" preserve="nothing" serialized="true" />
     <type fullname="ClassUnlockRequirementEntry" preserve="nothing" serialized="true" />
     <type fullname="CombatantClassPrefabEntry" preserve="nothing" serialized="true" />
     <type fullname="WeaponCombatAnimationSettings" preserve="nothing" serialized="true" />
     <type fullname="Wof.AccessoryWeightsBySection" preserve="nothing" serialized="true" />
     <type fullname="Wof.CellStrikePreset" preserve="nothing" serialized="true" />
+    <type fullname="Wof.CharacterCustomizationClassEntry" preserve="nothing" serialized="true" />
+    <type fullname="Wof.CharacterCustomizationItemStatus" preserve="nothing" serialized="true" />
+    <type fullname="Wof.ClassExtraLayerObject" preserve="nothing" serialized="true" />
     <type fullname="Wof.ClassProgressionData/TierData" preserve="nothing" serialized="true" />
     <type fullname="Wof.ColorProperties" preserve="nothing" serialized="true" />
     <type fullname="Wof.CustomizableSpriteMember" preserve="nothing" serialized="true" />
