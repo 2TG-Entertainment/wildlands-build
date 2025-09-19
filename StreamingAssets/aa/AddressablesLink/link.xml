@@ -655,6 +655,7 @@
     <type fullname="WofGlobalVolumeFader" preserve="all" />
     <type fullname="WofHangingBoardSettings" preserve="all" />
     <type fullname="WofHideIntroBannerStateSettings" preserve="all" />
+    <type fullname="WofInsufficientFundsWindow" preserve="all" />
     <type fullname="WofInvalidBattleActionBanner" preserve="all" />
     <type fullname="WofInventoryConsumableDataWindow" preserve="all" />
     <type fullname="WofInventoryEquipmentDataWindow" preserve="all" />
