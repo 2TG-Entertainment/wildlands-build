@@ -255,7 +255,6 @@
     <type fullname="UnityEngine.GameObject" preserve="all" />
     <type fullname="UnityEngine.LightmapSettings" preserve="all" />
     <type fullname="UnityEngine.Material" preserve="all" />
-    <type fullname="UnityEngine.MonoBehaviour" preserve="all" />
     <type fullname="UnityEngine.Object" preserve="all" />
     <type fullname="UnityEngine.RectTransform" preserve="all" />
     <type fullname="UnityEngine.Rendering.SortingGroup" preserve="all" />
@@ -333,6 +332,27 @@
   </assembly>
   <assembly fullname="WOF.Unity.Hunters.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="AddCurrencyBoxesToMenu" preserve="all" />
+    <type fullname="AuctionHouse.AuctionDetailsPanel" preserve="all" />
+    <type fullname="AuctionHouse.AuctionHouseUIConfig" preserve="all" />
+    <type fullname="AuctionHouse.AuctionItem" preserve="all" />
+    <type fullname="AuctionHouse.AuctionsPanel" preserve="all" />
+    <type fullname="AuctionHouse.ConfirmListingOrBidPopup" preserve="all" />
+    <type fullname="AuctionHouse.DurationToggle" preserve="all" />
+    <type fullname="AuctionHouse.FilterItem" preserve="all" />
+    <type fullname="AuctionHouse.Filters" preserve="all" />
+    <type fullname="AuctionHouse.HistoryDetailsPanel" preserve="all" />
+    <type fullname="AuctionHouse.HistoryFilterItem" preserve="all" />
+    <type fullname="AuctionHouse.HistoryFilters" preserve="all" />
+    <type fullname="AuctionHouse.InventoryDetailsPanel" preserve="all" />
+    <type fullname="AuctionHouse.InventoryItem" preserve="all" />
+    <type fullname="AuctionHouse.InventoryPanel" preserve="all" />
+    <type fullname="AuctionHouse.ItemHeader" preserve="all" />
+    <type fullname="AuctionHouse.ListViewItemPool" preserve="all" />
+    <type fullname="AuctionHouse.MyBidItem" preserve="all" />
+    <type fullname="AuctionHouse.MyBidsPanel" preserve="all" />
+    <type fullname="AuctionHouse.PooledListView" preserve="all" />
+    <type fullname="AuctionHouse.SortItem" preserve="all" />
+    <type fullname="AuctionHouse.Sorts" preserve="all" />
     <type fullname="HuntersSingleton" preserve="all" />
     <type fullname="HuntersWalletBox" preserve="all" />
     <type fullname="HuntModeInnAnimationRemoteNotify" preserve="all" />
@@ -409,6 +429,7 @@
     <type fullname="WofFoodItemCatalog" preserve="all" />
     <type fullname="WofFoodItemCatalogEntry" preserve="all" />
     <type fullname="WofFoodItemWindow" preserve="all" />
+    <type fullname="WofHuntersBarracksRerollConfirmWindow" preserve="all" />
     <type fullname="WofHuntersClassProgressionScreen" preserve="all" />
     <type fullname="WofHuntersCongratulationsWindow" preserve="all" />
     <type fullname="WofHuntersMoochkinPodScreen" preserve="all" />
@@ -589,6 +610,7 @@
     <type fullname="Wof.WofCombatantInformationWindow" preserve="all" />
     <type fullname="Wof.WofCombatantSkillDetailWindow" preserve="all" />
     <type fullname="Wof.WofCombatantSkillsOverviewWindow" preserve="all" />
+    <type fullname="Wof.WofCombatantSoundsProfileSettingsScriptableObject" preserve="all" />
     <type fullname="Wof.WofCombatantStatsPanel" preserve="all" />
     <type fullname="Wof.WofCombatantStatsWindow" preserve="all" />
     <type fullname="Wof.WofDamageHitAnimationSettingsScriptableObject" preserve="all" />
@@ -613,6 +635,10 @@
     <type fullname="Wof.WofSimplifiedItemDisplay" preserve="all" />
     <type fullname="Wof.WofSquadFormationScreen" preserve="all" />
     <type fullname="Wof.WofStatDetailsLabel" preserve="all" />
+    <type fullname="Wof.WofTailorClothesSpriteItem" preserve="all" />
+    <type fullname="Wof.WofTailorColorItem" preserve="all" />
+    <type fullname="Wof.WofTailorEmotionSpriteItem" preserve="all" />
+    <type fullname="Wof.WofTailorExtrasSpriteItem" preserve="all" />
     <type fullname="Wof.WofTailorHairSpriteItem" preserve="all" />
     <type fullname="Wof.WofTreeCenterClassElement" preserve="all" />
     <type fullname="Wof.WofUnlockedClassOverviewInformationWindow" preserve="all" />
@@ -637,6 +663,7 @@
     <type fullname="WofCore.WofActiveModelsSingleton" preserve="all" />
     <type fullname="WofCore.WofPathSelectElement" preserve="all" />
     <type fullname="WofCore.WofPathSelectMenu" preserve="all" />
+    <type fullname="WofCrystalRevealAnimation" preserve="all" />
     <type fullname="WofDebugItemWindow" preserve="all" />
     <type fullname="WofDevBattleSetup" preserve="all" />
     <type fullname="WofDevBattleSetupButton" preserve="all" />
