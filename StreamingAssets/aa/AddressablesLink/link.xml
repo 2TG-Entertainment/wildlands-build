@@ -469,6 +469,7 @@
     <type fullname="CharacterCustomizationFrameReferenceTable" preserve="all" />
     <type fullname="CombatantClassPrefabsScriptableObject" preserve="all" />
     <type fullname="CombatantPortraitFloorBackground" preserve="all" />
+    <type fullname="CreditsWindow" preserve="all" />
     <type fullname="CurrencyBoxUI" preserve="all" />
     <type fullname="DojoTeamPlacementGridSlot" preserve="all" />
     <type fullname="EmberEntity" preserve="all" />
@@ -665,6 +666,7 @@
     <type fullname="WofCore.WofActiveModelsSingleton" preserve="all" />
     <type fullname="WofCore.WofPathSelectElement" preserve="all" />
     <type fullname="WofCore.WofPathSelectMenu" preserve="all" />
+    <type fullname="WofCreditsWindow" preserve="all" />
     <type fullname="WofCrystalRevealAnimation" preserve="all" />
     <type fullname="WofDebugItemWindow" preserve="all" />
     <type fullname="WofDevBattleSetup" preserve="all" />
