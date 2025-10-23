@@ -54,7 +54,7 @@ function createUnityInstance(canvas, config, onProgress) {
       preserveDrawingBuffer: false,
       powerPreference: 1,
     },
-    wasmFileSize: 105382663,
+    wasmFileSize: 108232820,
     cacheControl: function (url) {
       return (url == Module.dataUrl || url.match(/\.bundle/)) ? "must-revalidate" : "no-store";
     },
@@ -313,6 +313,8 @@ function createUnityInstance(canvas, config, onProgress) {
         gpu = (gl.getExtension("WEBGL_debug_renderer_info") && gl.getParameter(0x9246 /*debugRendererInfo.UNMASKED_RENDERER_WEBGL*/)) || gl.getParameter(0x1F01 /*gl.RENDERER*/);
       }
 
+      // Does the browser support WebGPU?
+      webgpuVersion = navigator.gpu ? 1 : 0;
     }
 
     // Returns true on success, and a string on failure that denotes which sub-feature was missing.
@@ -1338,10 +1340,16 @@ Module.UnityCache = function () {
   // WebGPU is only available if both navigator.gpu exists,
   // and if requestAdapter returns a non-null adapter.
   function checkForWebGPU() {
-    // WebGPU support was disabled in the build settings.
-    // Skip initialization of WebGPU context.
-    Module.SystemInfo.hasWebGPU = false;
-    return Promise.resolve(false);
+    return new Promise(function (resolve, reject) {
+      if (!navigator.gpu) {
+        resolve(false);
+        return;
+      }
+      navigator.gpu.requestAdapter().then(function (adapter) {
+        Module.SystemInfo.hasWebGPU = !!adapter;
+        resolve(Module.SystemInfo.hasWebGPU);
+      });
+    });
   }
 
   function loadBuild() {

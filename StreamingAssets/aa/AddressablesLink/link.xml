@@ -89,6 +89,7 @@
     <type fullname="TheraBytes.BetterUi.FloatSizeModifier" preserve="nothing" serialized="true" />
   </assembly>
   <assembly fullname="TTG.Unity.Scripts, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="BaseUIMenu" preserve="all" />
     <type fullname="CameraStacker" preserve="all" />
     <type fullname="SingletonCameraManager" preserve="all" />
     <type fullname="SingletonUICameraManager" preserve="all" />
@@ -148,8 +149,8 @@
     <type fullname="UnityEngine.Rendering.Universal.FilmGrainLookupParameter" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.Rendering.Universal.HDRACESPresetParameter" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.Rendering.Universal.NeutralRangeReductionModeParameter" preserve="nothing" serialized="true" />
-    <type fullname="UnityEngine.Rendering.Universal.TonemappingModeParameter" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.Rendering.Universal.TemporalAA/Settings" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Rendering.Universal.TonemappingModeParameter" preserve="nothing" serialized="true" />
   </assembly>
   <assembly fullname="Unity.ResourceManager, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" preserve="all">
     <type fullname="UnityEngine.ResourceManagement.ResourceProviders.AssetBundleProvider" preserve="all" />
@@ -167,20 +168,20 @@
     <type fullname="TMPro.TMP_Dropdown" preserve="all" />
     <type fullname="TMPro.TMP_FontAsset" preserve="all" />
     <type fullname="TMPro.TMP_InputField" preserve="all" />
+    <type fullname="TMPro.FaceInfo_Legacy" preserve="nothing" serialized="true" />
+    <type fullname="TMPro.FontAssetCreationSettings" preserve="nothing" serialized="true" />
+    <type fullname="TMPro.KerningTable" preserve="nothing" serialized="true" />
+    <type fullname="TMPro.TMP_Character" preserve="nothing" serialized="true" />
     <type fullname="TMPro.TMP_Dropdown/DropdownEvent" preserve="nothing" serialized="true" />
     <type fullname="TMPro.TMP_Dropdown/OptionDataList" preserve="nothing" serialized="true" />
+    <type fullname="TMPro.TMP_FontFeatureTable" preserve="nothing" serialized="true" />
+    <type fullname="TMPro.TMP_FontWeightPair" preserve="nothing" serialized="true" />
     <type fullname="TMPro.TMP_InputField/OnChangeEvent" preserve="nothing" serialized="true" />
     <type fullname="TMPro.TMP_InputField/SelectionEvent" preserve="nothing" serialized="true" />
     <type fullname="TMPro.TMP_InputField/SubmitEvent" preserve="nothing" serialized="true" />
     <type fullname="TMPro.TMP_InputField/TextSelectionEvent" preserve="nothing" serialized="true" />
     <type fullname="TMPro.TMP_InputField/TouchScreenKeyboardEvent" preserve="nothing" serialized="true" />
     <type fullname="TMPro.VertexGradient" preserve="nothing" serialized="true" />
-    <type fullname="TMPro.FaceInfo_Legacy" preserve="nothing" serialized="true" />
-    <type fullname="TMPro.FontAssetCreationSettings" preserve="nothing" serialized="true" />
-    <type fullname="TMPro.KerningTable" preserve="nothing" serialized="true" />
-    <type fullname="TMPro.TMP_Character" preserve="nothing" serialized="true" />
-    <type fullname="TMPro.TMP_FontFeatureTable" preserve="nothing" serialized="true" />
-    <type fullname="TMPro.TMP_FontWeightPair" preserve="nothing" serialized="true" />
     <type fullname="TMPro.TMP_Dropdown/OptionData" preserve="nothing" serialized="true" />
   </assembly>
   <assembly fullname="UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
@@ -276,8 +277,7 @@
     <type fullname="UnityEngine.CanvasGroup" preserve="all" />
     <type fullname="UnityEngine.CanvasRenderer" preserve="all" />
   </assembly>
-  <assembly fullname="WOF.Unity.Hunters.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-    <type fullname="AddCurrencyBoxesToMenu" preserve="all" />
+  <assembly fullname="WOF.Unity.Hunters.Auction, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="AuctionHouse.AuctionDetailsPanel" preserve="all" />
     <type fullname="AuctionHouse.AuctionHouseUIConfig" preserve="all" />
     <type fullname="AuctionHouse.AuctionItem" preserve="all" />
@@ -296,9 +296,14 @@
     <type fullname="AuctionHouse.ListViewItemPool" preserve="all" />
     <type fullname="AuctionHouse.MyBidItem" preserve="all" />
     <type fullname="AuctionHouse.MyBidsPanel" preserve="all" />
+    <type fullname="AuctionHouse.NotificationPopup" preserve="all" />
     <type fullname="AuctionHouse.PooledListView" preserve="all" />
     <type fullname="AuctionHouse.SortItem" preserve="all" />
     <type fullname="AuctionHouse.Sorts" preserve="all" />
+    <type fullname="AuctionHouse.WofAuctionHouseMainWindow" preserve="all" />
+  </assembly>
+  <assembly fullname="WOF.Unity.Hunters.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="AddCurrencyBoxesToMenu" preserve="all" />
     <type fullname="HuntersSingleton" preserve="all" />
     <type fullname="HuntersWalletBox" preserve="all" />
     <type fullname="HuntModeInnAnimationRemoteNotify" preserve="all" />
@@ -352,7 +357,6 @@
     <type fullname="Wof.WofTailorWardrobeCatalogExtrasWindow" preserve="all" />
     <type fullname="Wof.WofTailorWardrobeCatalogFaceWindow" preserve="all" />
     <type fullname="Wof.WofTailorWardrobeCatalogHairWindow" preserve="all" />
-    <type fullname="WofAuctionHouseMainWindow" preserve="all" />
     <type fullname="WofBackToDonegalWarningWindow" preserve="all" />
     <type fullname="WofBarracksEmptyHealthWarning" preserve="all" />
     <type fullname="WofBarracksHireAndReleaseWindow" preserve="all" />
@@ -418,6 +422,7 @@
     <type fullname="CharacterCustomizationFrameReferenceTable" preserve="all" />
     <type fullname="CombatantClassPrefabsScriptableObject" preserve="all" />
     <type fullname="CombatantPortraitFloorBackground" preserve="all" />
+    <type fullname="CreditsWindow" preserve="all" />
     <type fullname="CurrencyBoxUI" preserve="all" />
     <type fullname="DojoTeamPlacementGridSlot" preserve="all" />
     <type fullname="EmberEntity" preserve="all" />
@@ -509,11 +514,14 @@
     <type fullname="Wof.EffectLibraryEntryScriptableObject" preserve="all" />
     <type fullname="Wof.EffectLibraryManager" preserve="all" />
     <type fullname="Wof.EffectSpawnerManager" preserve="all" />
+    <type fullname="Wof.EquipmentRanksData" preserve="all" />
     <type fullname="Wof.FixGridZPos" preserve="all" />
     <type fullname="Wof.HeroMilestones" preserve="all" />
     <type fullname="Wof.HowToPlaySettingsSection" preserve="all" />
     <type fullname="Wof.InputPopup" preserve="all" />
     <type fullname="Wof.IntroLanguageSelectionScreen" preserve="all" />
+    <type fullname="Wof.ItemAndEquipmentRanksByType" preserve="all" />
+    <type fullname="Wof.ItemRanksData" preserve="all" />
     <type fullname="Wof.ItemsAndEquipmentRewardConfigurationData" preserve="all" />
     <type fullname="Wof.LevelLightSettingsScriptableObject" preserve="all" />
     <type fullname="Wof.LightManager" preserve="all" />
@@ -605,6 +613,7 @@
     <type fullname="WofCore.WofActiveModelsSingleton" preserve="all" />
     <type fullname="WofCore.WofPathSelectElement" preserve="all" />
     <type fullname="WofCore.WofPathSelectMenu" preserve="all" />
+    <type fullname="WofCreditsWindow" preserve="all" />
     <type fullname="WofCrystalRevealAnimation" preserve="all" />
     <type fullname="WofDebugItemWindow" preserve="all" />
     <type fullname="WofDevBattleSetup" preserve="all" />
@@ -672,53 +681,54 @@
     <type fullname="SettingsSectionProperties" preserve="nothing" serialized="true" />
     <type fullname="Wof.RecruitFrontAppearanceParts" preserve="nothing" serialized="true" />
     <type fullname="AnimationStateEffectProperties" preserve="nothing" serialized="true" />
+    <type fullname="Battle.BattleEffects.ColorFilterSettingsData" preserve="nothing" serialized="true" />
     <type fullname="Battle.BattleEffects.ShakeSettingsData" preserve="nothing" serialized="true" />
     <type fullname="BattleStatIconEntry" preserve="nothing" serialized="true" />
+    <type fullname="BiomeTableEntry" preserve="nothing" serialized="true" />
+    <type fullname="BiomeTableNonBattleEntry" preserve="nothing" serialized="true" />
     <type fullname="ButtonColorTintSettings" preserve="nothing" serialized="true" />
     <type fullname="CharacterCustomizationFrameReference" preserve="nothing" serialized="true" />
+    <type fullname="ClassUnlockRequirementEntry" preserve="nothing" serialized="true" />
+    <type fullname="CombatantClassPrefabEntry" preserve="nothing" serialized="true" />
+    <type fullname="IndependentHitCellEffectData" preserve="nothing" serialized="true" />
     <type fullname="PerkIconConfig" preserve="nothing" serialized="true" />
     <type fullname="UIElementIconEntry" preserve="nothing" serialized="true" />
     <type fullname="UIFoodIconEntry" preserve="nothing" serialized="true" />
     <type fullname="UIRomanNumberEntry" preserve="nothing" serialized="true" />
     <type fullname="WeaponCombatAnimationSettings" preserve="nothing" serialized="true" />
     <type fullname="WeaponElementIconEntry" preserve="nothing" serialized="true" />
+    <type fullname="Wof.AccessoryWeightsBySection" preserve="nothing" serialized="true" />
     <type fullname="Wof.Battle.BattleAnimationStateProperties" preserve="nothing" serialized="true" />
     <type fullname="Wof.CharacterCustomizationClassEntry" preserve="nothing" serialized="true" />
     <type fullname="Wof.CharacterCustomizationItemStatus" preserve="nothing" serialized="true" />
     <type fullname="Wof.ClassExtraLayerObject" preserve="nothing" serialized="true" />
     <type fullname="Wof.ColorProperties" preserve="nothing" serialized="true" />
+    <type fullname="Wof.CustomizableSpriteMember" preserve="nothing" serialized="true" />
     <type fullname="Wof.EffectData" preserve="nothing" serialized="true" />
     <type fullname="Wof.HitAnimationEntry" preserve="nothing" serialized="true" />
-    <type fullname="Wof.PathDisplay" preserve="nothing" serialized="true" />
-    <type fullname="Wof.PathSelectionData/BossTiers" preserve="nothing" serialized="true" />
-    <type fullname="Wof.PathSelectionData/ChoiceData" preserve="nothing" serialized="true" />
-    <type fullname="Wof.PathSelectionData/WeightedChoices" preserve="nothing" serialized="true" />
-    <type fullname="Wof.RowPreferenceByClass" preserve="nothing" serialized="true" />
-    <type fullname="Wof.RowPreferenceDisplay" preserve="nothing" serialized="true" />
-    <type fullname="Battle.BattleEffects.ColorFilterSettingsData" preserve="nothing" serialized="true" />
-    <type fullname="BiomeTableEntry" preserve="nothing" serialized="true" />
-    <type fullname="BiomeTableNonBattleEntry" preserve="nothing" serialized="true" />
-    <type fullname="ClassUnlockRequirementEntry" preserve="nothing" serialized="true" />
-    <type fullname="CombatantClassPrefabEntry" preserve="nothing" serialized="true" />
-    <type fullname="Wof.AccessoryWeightsBySection" preserve="nothing" serialized="true" />
-    <type fullname="Wof.CustomizableSpriteMember" preserve="nothing" serialized="true" />
     <type fullname="Wof.ItemCategoryByPathType" preserve="nothing" serialized="true" />
     <type fullname="Wof.ItemCountsByPathType" preserve="nothing" serialized="true" />
     <type fullname="Wof.ItemTypeChance" preserve="nothing" serialized="true" />
     <type fullname="Wof.ItemsRankRangeForCategory" preserve="nothing" serialized="true" />
     <type fullname="Wof.ItemsRankRangeForSection" preserve="nothing" serialized="true" />
-    <type fullname="Wof.MenuStep" preserve="nothing" serialized="true" />
     <type fullname="Wof.MilestonesData" preserve="nothing" serialized="true" />
     <type fullname="Wof.PathAndBackground" preserve="nothing" serialized="true" />
+    <type fullname="Wof.PathDisplay" preserve="nothing" serialized="true" />
     <type fullname="Wof.PathDisplayConfig" preserve="nothing" serialized="true" />
+    <type fullname="Wof.PathSelectionData/BossTiers" preserve="nothing" serialized="true" />
+    <type fullname="Wof.PathSelectionData/ChoiceData" preserve="nothing" serialized="true" />
+    <type fullname="Wof.PathSelectionData/WeightedChoices" preserve="nothing" serialized="true" />
     <type fullname="Wof.PotionChance" preserve="nothing" serialized="true" />
     <type fullname="Wof.PotionWeightsBySection" preserve="nothing" serialized="true" />
     <type fullname="Wof.RankIncreaseChance" preserve="nothing" serialized="true" />
     <type fullname="Wof.RarityBreakdownWeights" preserve="nothing" serialized="true" />
     <type fullname="Wof.RarityRange" preserve="nothing" serialized="true" />
     <type fullname="Wof.RoundIndexToFightSectionMap" preserve="nothing" serialized="true" />
+    <type fullname="Wof.RowPreferenceByClass" preserve="nothing" serialized="true" />
+    <type fullname="Wof.RowPreferenceDisplay" preserve="nothing" serialized="true" />
     <type fullname="Wof.StatusEffectAnimationBehavior" preserve="nothing" serialized="true" />
     <type fullname="Wof.WeaponWeightsBySection" preserve="nothing" serialized="true" />
+    <type fullname="Wof.MenuStep" preserve="nothing" serialized="true" />
     <type fullname="DevBattlePreset" preserve="nothing" serialized="true" />
     <type fullname="DevBattleSetupCell" preserve="nothing" serialized="true" />
     <type fullname="Wof.Battle.IsometricGridCell" preserve="nothing" serialized="true" />
