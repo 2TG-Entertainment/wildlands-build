@@ -200,7 +200,6 @@
     <type fullname="UnityEngine.LightmapSettings" preserve="all" />
     <type fullname="UnityEngine.Material" preserve="all" />
     <type fullname="UnityEngine.Mesh" preserve="all" />
-    <type fullname="UnityEngine.MonoBehaviour" preserve="all" />
     <type fullname="UnityEngine.Object" preserve="all" />
     <type fullname="UnityEngine.RectTransform" preserve="all" />
     <type fullname="UnityEngine.Rendering.SortingGroup" preserve="all" />
@@ -411,6 +410,7 @@
     <type fullname="Wof.Hunters.RarityBackground" preserve="nothing" serialized="true" />
   </assembly>
   <assembly fullname="WOF.Unity.Shared.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="AddressableLoadTest" preserve="all" />
     <type fullname="BaseSettingsWindow" preserve="all" />
     <type fullname="Battle.BattleEffects.AttackObjectSpawnerManager" preserve="all" />
     <type fullname="Battle.BattleEffects.CameraShakeManager" preserve="all" />
