@@ -200,7 +200,6 @@
     <type fullname="UnityEngine.LightmapSettings" preserve="all" />
     <type fullname="UnityEngine.Material" preserve="all" />
     <type fullname="UnityEngine.Mesh" preserve="all" />
-    <type fullname="UnityEngine.MonoBehaviour" preserve="all" />
     <type fullname="UnityEngine.Object" preserve="all" />
     <type fullname="UnityEngine.RectTransform" preserve="all" />
     <type fullname="UnityEngine.Rendering.SortingGroup" preserve="all" />
@@ -358,6 +357,7 @@
     <type fullname="Wof.WofTailorWardrobeCatalogFaceWindow" preserve="all" />
     <type fullname="Wof.WofTailorWardrobeCatalogHairWindow" preserve="all" />
     <type fullname="WofBackToDonegalWarningWindow" preserve="all" />
+    <type fullname="WofBarracksCrystalWalletWindow" preserve="all" />
     <type fullname="WofBarracksEmptyHealthWarning" preserve="all" />
     <type fullname="WofBarracksHireAndReleaseWindow" preserve="all" />
     <type fullname="WofBarracksHireConfirmWindow" preserve="all" />
@@ -402,6 +402,7 @@
     <type fullname="WofTailorConfirmLookWindow" preserve="all" />
     <type fullname="WofTailorConfirmNameWindow" preserve="all" />
     <type fullname="WofTailorIntroWindow" preserve="all" />
+    <type fullname="WofTailorInvalidWarning" preserve="all" />
     <type fullname="WofTailorItemBrowser" preserve="all" />
     <type fullname="WofTailorWardrobeWindow" preserve="all" />
     <type fullname="WofWalletWarningWindow" preserve="all" />
