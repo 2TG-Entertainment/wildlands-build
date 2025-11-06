@@ -99,6 +99,7 @@
   <assembly fullname="Unity.Addressables, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" preserve="all">
     <type fullname="UnityEngine.AddressableAssets.Addressables" preserve="all" />
     <type fullname="UnityEngine.AddressableAssets.AssetReference" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.AddressableAssets.AssetReferenceT`1" preserve="nothing" serialized="true" />
   </assembly>
   <assembly fullname="Unity.InputSystem, Version=1.14.2.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.InputSystem.InputActionAsset" preserve="all" />
@@ -184,6 +185,9 @@
     <type fullname="TMPro.VertexGradient" preserve="nothing" serialized="true" />
     <type fullname="TMPro.TMP_Dropdown/OptionData" preserve="nothing" serialized="true" />
   </assembly>
+  <assembly fullname="UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEditor.Audio.AudioMixerSnapshotController" preserve="all" />
+  </assembly>
   <assembly fullname="UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.AnimationClip" preserve="all" />
     <type fullname="UnityEngine.Animator" preserve="all" />
@@ -191,7 +195,11 @@
     <type fullname="UnityEngine.RuntimeAnimatorController" preserve="all" />
   </assembly>
   <assembly fullname="UnityEngine.AudioModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.Audio.AudioMixer" preserve="all" />
+    <type fullname="UnityEngine.Audio.AudioMixerGroup" preserve="all" />
     <type fullname="UnityEngine.AudioClip" preserve="all" />
+    <type fullname="UnityEngine.AudioListener" preserve="all" />
+    <type fullname="UnityEngine.AudioSource" preserve="all" />
   </assembly>
   <assembly fullname="UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.Camera" preserve="all" />
@@ -200,6 +208,7 @@
     <type fullname="UnityEngine.LightmapSettings" preserve="all" />
     <type fullname="UnityEngine.Material" preserve="all" />
     <type fullname="UnityEngine.Mesh" preserve="all" />
+    <type fullname="UnityEngine.MonoBehaviour" preserve="all" />
     <type fullname="UnityEngine.Object" preserve="all" />
     <type fullname="UnityEngine.RectTransform" preserve="all" />
     <type fullname="UnityEngine.Rendering.SortingGroup" preserve="all" />
@@ -423,7 +432,6 @@
     <type fullname="CharacterCustomizationFrameReferenceTable" preserve="all" />
     <type fullname="CombatantClassPrefabsScriptableObject" preserve="all" />
     <type fullname="CombatantPortraitFloorBackground" preserve="all" />
-    <type fullname="CreditsWindow" preserve="all" />
     <type fullname="CurrencyBoxUI" preserve="all" />
     <type fullname="DojoTeamPlacementGridSlot" preserve="all" />
     <type fullname="EmberEntity" preserve="all" />
@@ -474,7 +482,6 @@
     <type fullname="Wof.BattleEffectManager" preserve="all" />
     <type fullname="Wof.BattleModeSettingsSection" preserve="all" />
     <type fullname="Wof.BattleTeamPlacementGrid" preserve="all" />
-    <type fullname="Wof.ButtonSounds" preserve="all" />
     <type fullname="Wof.CharacterCustomizationGeneralLibrary" preserve="all" />
     <type fullname="Wof.CharacterCustomizationSkinObject" preserve="all" />
     <type fullname="Wof.CharacterSoundsLibraryScriptableObject" preserve="all" />
@@ -539,9 +546,6 @@
     <type fullname="Wof.TargetDisplayGridSubMenu" preserve="all" />
     <type fullname="Wof.TermsSettingsSection" preserve="all" />
     <type fullname="Wof.TitleScreenMenu" preserve="all" />
-    <type fullname="WOF.Unity.Shared.Runtime.FMOD.MusicEvent" preserve="all" />
-    <type fullname="WOF.Unity.Shared.Runtime.FMOD.WofFMODAudioManager" preserve="all" />
-    <type fullname="WOF.Unity.Shared.Runtime.FMOD.WofFMODMusicManager" preserve="all" />
     <type fullname="Wof.WildlandsDataHelper" preserve="all" />
     <type fullname="Wof.WildlandsTurnOrderItem" preserve="all" />
     <type fullname="Wof.WildlandsTurnOrderUI" preserve="all" />
@@ -611,10 +615,21 @@
     <type fullname="WofClassWeaponIcon" preserve="all" />
     <type fullname="WofCompareEquipmentsWindow" preserve="all" />
     <type fullname="WofConsumableItemWindow" preserve="all" />
+    <type fullname="WofCore.Audio.AudioBootstrap" preserve="all" />
+    <type fullname="WofCore.Audio.AudioMixerGroupRouter" preserve="all" />
+    <type fullname="WofCore.Audio.ButtonSounds" preserve="all" />
+    <type fullname="WofCore.Audio.FMOD.WofFMODAudioManager" preserve="all" />
+    <type fullname="WofCore.Audio.FMOD.WofFmodAudioService" preserve="all" />
+    <type fullname="WofCore.Audio.FMOD.WofFMODMusicManager" preserve="all" />
+    <type fullname="WofCore.Audio.MusicEvent" preserve="all" />
+    <type fullname="WofCore.Audio.WofAudioClipConfig" preserve="all" />
+    <type fullname="WofCore.Audio.WofAudioSettingsBinder" preserve="all" />
+    <type fullname="WofCore.Audio.WofMusicConfig" preserve="all" />
+    <type fullname="WofCore.Audio.WofMusicController" preserve="all" />
+    <type fullname="WofCore.Audio.WofUnityAudioService" preserve="all" />
     <type fullname="WofCore.WofActiveModelsSingleton" preserve="all" />
     <type fullname="WofCore.WofPathSelectElement" preserve="all" />
     <type fullname="WofCore.WofPathSelectMenu" preserve="all" />
-    <type fullname="WofCreditsWindow" preserve="all" />
     <type fullname="WofCrystalRevealAnimation" preserve="all" />
     <type fullname="WofDebugItemWindow" preserve="all" />
     <type fullname="WofDevBattleSetup" preserve="all" />
@@ -669,6 +684,7 @@
     <type fullname="WofSimpleAttackStateSettings" preserve="all" />
     <type fullname="WofSimpleCastSpellStateSettings" preserve="all" />
     <type fullname="WofSimpleProjectileShootStateSettings" preserve="all" />
+    <type fullname="WofSkillLockedWarning" preserve="all" />
     <type fullname="WofSquadFormationGridPanel" preserve="all" />
     <type fullname="WofSquadFormationSelectionGridPanel" preserve="all" />
     <type fullname="WofTestDebugItemDisplay" preserve="all" />
@@ -729,6 +745,9 @@
     <type fullname="Wof.RowPreferenceDisplay" preserve="nothing" serialized="true" />
     <type fullname="Wof.StatusEffectAnimationBehavior" preserve="nothing" serialized="true" />
     <type fullname="Wof.WeaponWeightsBySection" preserve="nothing" serialized="true" />
+    <type fullname="WofCore.Audio.AudioMixerGroupRouter/Route" preserve="nothing" serialized="true" />
+    <type fullname="WofCore.Audio.WofAudioClipConfig/Entry" preserve="nothing" serialized="true" />
+    <type fullname="WofCore.Audio.WofMusicConfig/ThemeEntry" preserve="nothing" serialized="true" />
     <type fullname="Wof.MenuStep" preserve="nothing" serialized="true" />
     <type fullname="DevBattlePreset" preserve="nothing" serialized="true" />
     <type fullname="DevBattleSetupCell" preserve="nothing" serialized="true" />
