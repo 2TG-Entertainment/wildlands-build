@@ -52,9 +52,9 @@ function createUnityInstance(canvas, config, onProgress) {
     canvas: canvas,
     webglContextAttributes: {
       preserveDrawingBuffer: false,
-      powerPreference: 2,
+      powerPreference: 1,
     },
-    wasmFileSize: 181335343,
+    wasmFileSize: 108256341,
     cacheControl: function (url) {
       return (url == Module.dataUrl || url.match(/\.bundle/)) ? "must-revalidate" : "no-store";
     },
