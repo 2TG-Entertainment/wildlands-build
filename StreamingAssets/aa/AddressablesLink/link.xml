@@ -669,6 +669,7 @@
     <type fullname="WofSimpleAttackStateSettings" preserve="all" />
     <type fullname="WofSimpleCastSpellStateSettings" preserve="all" />
     <type fullname="WofSimpleProjectileShootStateSettings" preserve="all" />
+    <type fullname="WofSkillLockedWarning" preserve="all" />
     <type fullname="WofSquadFormationGridPanel" preserve="all" />
     <type fullname="WofSquadFormationSelectionGridPanel" preserve="all" />
     <type fullname="WofTestDebugItemDisplay" preserve="all" />
