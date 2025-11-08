@@ -208,7 +208,6 @@
     <type fullname="UnityEngine.LightmapSettings" preserve="all" />
     <type fullname="UnityEngine.Material" preserve="all" />
     <type fullname="UnityEngine.Mesh" preserve="all" />
-    <type fullname="UnityEngine.MonoBehaviour" preserve="all" />
     <type fullname="UnityEngine.Object" preserve="all" />
     <type fullname="UnityEngine.RectTransform" preserve="all" />
     <type fullname="UnityEngine.Rendering.SortingGroup" preserve="all" />
@@ -618,9 +617,7 @@
     <type fullname="WofCore.Audio.AudioBootstrap" preserve="all" />
     <type fullname="WofCore.Audio.AudioMixerGroupRouter" preserve="all" />
     <type fullname="WofCore.Audio.ButtonSounds" preserve="all" />
-    <type fullname="WofCore.Audio.FMOD.WofFMODAudioManager" preserve="all" />
     <type fullname="WofCore.Audio.FMOD.WofFmodAudioService" preserve="all" />
-    <type fullname="WofCore.Audio.FMOD.WofFMODMusicManager" preserve="all" />
     <type fullname="WofCore.Audio.MusicEvent" preserve="all" />
     <type fullname="WofCore.Audio.WofAudioClipConfig" preserve="all" />
     <type fullname="WofCore.Audio.WofAudioSettingsBinder" preserve="all" />
