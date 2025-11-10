@@ -208,7 +208,6 @@
     <type fullname="UnityEngine.LightmapSettings" preserve="all" />
     <type fullname="UnityEngine.Material" preserve="all" />
     <type fullname="UnityEngine.Mesh" preserve="all" />
-    <type fullname="UnityEngine.MonoBehaviour" preserve="all" />
     <type fullname="UnityEngine.Object" preserve="all" />
     <type fullname="UnityEngine.RectTransform" preserve="all" />
     <type fullname="UnityEngine.Rendering.SortingGroup" preserve="all" />
@@ -432,6 +431,7 @@
     <type fullname="CharacterCustomizationFrameReferenceTable" preserve="all" />
     <type fullname="CombatantClassPrefabsScriptableObject" preserve="all" />
     <type fullname="CombatantPortraitFloorBackground" preserve="all" />
+    <type fullname="CreditsWindow" preserve="all" />
     <type fullname="CurrencyBoxUI" preserve="all" />
     <type fullname="DojoTeamPlacementGridSlot" preserve="all" />
     <type fullname="EmberEntity" preserve="all" />
@@ -618,9 +618,7 @@
     <type fullname="WofCore.Audio.AudioBootstrap" preserve="all" />
     <type fullname="WofCore.Audio.AudioMixerGroupRouter" preserve="all" />
     <type fullname="WofCore.Audio.ButtonSounds" preserve="all" />
-    <type fullname="WofCore.Audio.FMOD.WofFMODAudioManager" preserve="all" />
     <type fullname="WofCore.Audio.FMOD.WofFmodAudioService" preserve="all" />
-    <type fullname="WofCore.Audio.FMOD.WofFMODMusicManager" preserve="all" />
     <type fullname="WofCore.Audio.MusicEvent" preserve="all" />
     <type fullname="WofCore.Audio.WofAudioClipConfig" preserve="all" />
     <type fullname="WofCore.Audio.WofAudioSettingsBinder" preserve="all" />
@@ -630,6 +628,7 @@
     <type fullname="WofCore.WofActiveModelsSingleton" preserve="all" />
     <type fullname="WofCore.WofPathSelectElement" preserve="all" />
     <type fullname="WofCore.WofPathSelectMenu" preserve="all" />
+    <type fullname="WofCreditsWindow" preserve="all" />
     <type fullname="WofCrystalRevealAnimation" preserve="all" />
     <type fullname="WofDebugItemWindow" preserve="all" />
     <type fullname="WofDevBattleSetup" preserve="all" />
