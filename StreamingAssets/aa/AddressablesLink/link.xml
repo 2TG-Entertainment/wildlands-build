@@ -379,6 +379,9 @@
     <type fullname="WofEmbarkHuntWithoutHuntersWindow" preserve="all" />
     <type fullname="WofFinancierCharacterDetailsWindow" preserve="all" />
     <type fullname="WofFinancierCharacterSelectionMenu" preserve="all" />
+    <type fullname="WofFinancierMchySponsorshipConfirmWindow" preserve="all" />
+    <type fullname="WofFinancierMchySponsorshipMainWindow" preserve="all" />
+    <type fullname="WofFinancierMchySponsorshipSetupWindow" preserve="all" />
     <type fullname="WofFinancierRewardsBoardCurrentPlacementWindow" preserve="all" />
     <type fullname="WofFinancierRewardsBoardMenu" preserve="all" />
     <type fullname="WofFinancierRewardsBoardReport" preserve="all" />
