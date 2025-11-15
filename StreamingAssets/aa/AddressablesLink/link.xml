@@ -212,7 +212,6 @@
     <type fullname="UnityEngine.RectTransform" preserve="all" />
     <type fullname="UnityEngine.Rendering.SortingGroup" preserve="all" />
     <type fullname="UnityEngine.RenderSettings" preserve="all" />
-    <type fullname="UnityEngine.RenderTexture" preserve="all" />
     <type fullname="UnityEngine.Shader" preserve="all" />
     <type fullname="UnityEngine.Sprite" preserve="all" />
     <type fullname="UnityEngine.SpriteRenderer" preserve="all" />
@@ -402,7 +401,6 @@
     <type fullname="WofInnConfirmPrompt" preserve="all" />
     <type fullname="WofListCounterDisplay" preserve="all" />
     <type fullname="WofListCounterDisplayElement" preserve="all" />
-    <type fullname="WofMessagePrompt" preserve="all" />
     <type fullname="WofPerkElement" preserve="all" />
     <type fullname="WofRecruitClassOverviewWindow" preserve="all" />
     <type fullname="WofRecruitSelectionWindow" preserve="all" />
@@ -668,6 +666,7 @@
     <type fullname="WofMerchantCatalogWindow" preserve="all" />
     <type fullname="WofMerchantIntroWindow" preserve="all" />
     <type fullname="WofMerchantMenu" preserve="all" />
+    <type fullname="WofMessagePrompt" preserve="all" />
     <type fullname="WofMoochkinCommentScreen" preserve="all" />
     <type fullname="WofMoveToCenterStateSettings" preserve="all" />
     <type fullname="WofMoveToEnemyStateSettings" preserve="all" />
