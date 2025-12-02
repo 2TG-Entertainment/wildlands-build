@@ -415,6 +415,9 @@
     <type fullname="WofTailorItemBrowser" preserve="all" />
     <type fullname="WofTailorWardrobeWindow" preserve="all" />
     <type fullname="WofWalletWarningWindow" preserve="all" />
+    <type fullname="WofWelcomeChestScreen" preserve="all" />
+    <type fullname="WofWelcomeChestWidget" preserve="all" />
+    <type fullname="WofWelcomeChestWindow" preserve="all" />
     <type fullname="MapPlaythroughData" preserve="nothing" serialized="true" />
     <type fullname="Wof.Hunters.DonegalSubMenu" preserve="nothing" serialized="true" />
     <type fullname="Wof.Hunters.HuntModeDonegalButtonElement" preserve="nothing" serialized="true" />
@@ -436,6 +439,7 @@
     <type fullname="CurrencyBoxUI" preserve="all" />
     <type fullname="DojoTeamPlacementGridSlot" preserve="all" />
     <type fullname="EmberEntity" preserve="all" />
+    <type fullname="FlyingTextCaseSettings" preserve="all" />
     <type fullname="MainCamera" preserve="all" />
     <type fullname="PooledEffect" preserve="all" />
     <type fullname="SplashScreen" preserve="all" />
@@ -689,7 +693,6 @@
     <type fullname="WofSquadFormationGridPanel" preserve="all" />
     <type fullname="WofSquadFormationSelectionGridPanel" preserve="all" />
     <type fullname="WofTestDebugItemDisplay" preserve="all" />
-    <type fullname="WofTreasureAnimatedElement" preserve="all" />
     <type fullname="WofTreasureScreen" preserve="all" />
     <type fullname="WofTreeClassElement" preserve="all" />
     <type fullname="WofTurnOrderPortrait" preserve="all" />
@@ -698,6 +701,7 @@
     <type fullname="RevealCardRaritySettings" preserve="nothing" serialized="true" />
     <type fullname="SettingsSectionProperties" preserve="nothing" serialized="true" />
     <type fullname="Wof.RecruitFrontAppearanceParts" preserve="nothing" serialized="true" />
+    <type fullname="WofLootboxAnimationSequenceManager/RevealSfxItem" preserve="nothing" serialized="true" />
     <type fullname="AnimationStateEffectProperties" preserve="nothing" serialized="true" />
     <type fullname="Battle.BattleEffects.ColorFilterSettingsData" preserve="nothing" serialized="true" />
     <type fullname="Battle.BattleEffects.ShakeSettingsData" preserve="nothing" serialized="true" />
@@ -786,6 +790,7 @@
     <type fullname="FVLib.SharedModels.SharedDefinitions.Configuration.ItemMetaConfig" preserve="nothing" serialized="true" />
     <type fullname="FVLib.SharedModels.SharedDefinitions.Configuration.ItemsConfiguration" preserve="nothing" serialized="true" />
     <type fullname="FVLib.SharedModels.SharedDefinitions.Configuration.ItemsStatChange" preserve="nothing" serialized="true" />
+    <type fullname="FVLib.SharedModels.SharedDefinitions.Configuration.LootBoxItem" preserve="nothing" serialized="true" />
     <type fullname="FVLib.SharedModels.SharedDefinitions.Configuration.NewCombatantCreationConfiguration" preserve="nothing" serialized="true" />
     <type fullname="FVLib.SharedModels.SharedDefinitions.Configuration.NftConfig" preserve="nothing" serialized="true" />
     <type fullname="FVLib.SharedModels.SharedDefinitions.Configuration.NftConfiguration" preserve="nothing" serialized="true" />
