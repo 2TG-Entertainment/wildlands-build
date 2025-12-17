@@ -377,6 +377,7 @@
     <type fullname="WofBarracksSwapConfirmWindow" preserve="all" />
     <type fullname="WofBarracksSwapWarningWindow" preserve="all" />
     <type fullname="WofCategoriesLayout" preserve="all" />
+    <type fullname="WofChestStyleData" preserve="all" />
     <type fullname="WofClassOverviewSkillLabel" preserve="all" />
     <type fullname="WofConfirmPerkWindow" preserve="all" />
     <type fullname="WofCostWithArrowsWidget" preserve="all" />
@@ -386,6 +387,8 @@
     <type fullname="WofEventChestDealInfoMenu" preserve="all" />
     <type fullname="WofEventChestDealListItem" preserve="all" />
     <type fullname="WofEventChestHorizontalItemsWidget" preserve="all" />
+    <type fullname="WofFeaturedIChesttemDisplay" preserve="all" />
+    <type fullname="WofFeaturedItemData" preserve="all" />
     <type fullname="WofFinancierCharacterDetailsWindow" preserve="all" />
     <type fullname="WofFinancierCharacterSelectionMenu" preserve="all" />
     <type fullname="WofFinancierMchySponsorshipConfirmWindow" preserve="all" />
@@ -798,6 +801,7 @@
     <type fullname="FVLib.SharedModels.SharedDefinitions.Configuration.AICondition" preserve="nothing" serialized="true" />
     <type fullname="FVLib.SharedModels.SharedDefinitions.Configuration.BaseClassStats" preserve="nothing" serialized="true" />
     <type fullname="FVLib.SharedModels.SharedDefinitions.Configuration.BattleAIConfiguration" preserve="nothing" serialized="true" />
+    <type fullname="FVLib.SharedModels.SharedDefinitions.Configuration.ChestStore" preserve="nothing" serialized="true" />
     <type fullname="FVLib.SharedModels.SharedDefinitions.Configuration.ClassDevelopment" preserve="nothing" serialized="true" />
     <type fullname="FVLib.SharedModels.SharedDefinitions.Configuration.ClassDevelopmentProgressionSetting" preserve="nothing" serialized="true" />
     <type fullname="FVLib.SharedModels.SharedDefinitions.Configuration.ClassPromotionCost" preserve="nothing" serialized="true" />
