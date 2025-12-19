@@ -169,20 +169,20 @@
     <type fullname="TMPro.TMP_Dropdown" preserve="all" />
     <type fullname="TMPro.TMP_FontAsset" preserve="all" />
     <type fullname="TMPro.TMP_InputField" preserve="all" />
-    <type fullname="TMPro.FaceInfo_Legacy" preserve="nothing" serialized="true" />
-    <type fullname="TMPro.FontAssetCreationSettings" preserve="nothing" serialized="true" />
-    <type fullname="TMPro.KerningTable" preserve="nothing" serialized="true" />
-    <type fullname="TMPro.TMP_Character" preserve="nothing" serialized="true" />
     <type fullname="TMPro.TMP_Dropdown/DropdownEvent" preserve="nothing" serialized="true" />
     <type fullname="TMPro.TMP_Dropdown/OptionDataList" preserve="nothing" serialized="true" />
-    <type fullname="TMPro.TMP_FontFeatureTable" preserve="nothing" serialized="true" />
-    <type fullname="TMPro.TMP_FontWeightPair" preserve="nothing" serialized="true" />
     <type fullname="TMPro.TMP_InputField/OnChangeEvent" preserve="nothing" serialized="true" />
     <type fullname="TMPro.TMP_InputField/SelectionEvent" preserve="nothing" serialized="true" />
     <type fullname="TMPro.TMP_InputField/SubmitEvent" preserve="nothing" serialized="true" />
     <type fullname="TMPro.TMP_InputField/TextSelectionEvent" preserve="nothing" serialized="true" />
     <type fullname="TMPro.TMP_InputField/TouchScreenKeyboardEvent" preserve="nothing" serialized="true" />
     <type fullname="TMPro.VertexGradient" preserve="nothing" serialized="true" />
+    <type fullname="TMPro.FaceInfo_Legacy" preserve="nothing" serialized="true" />
+    <type fullname="TMPro.FontAssetCreationSettings" preserve="nothing" serialized="true" />
+    <type fullname="TMPro.KerningTable" preserve="nothing" serialized="true" />
+    <type fullname="TMPro.TMP_Character" preserve="nothing" serialized="true" />
+    <type fullname="TMPro.TMP_FontFeatureTable" preserve="nothing" serialized="true" />
+    <type fullname="TMPro.TMP_FontWeightPair" preserve="nothing" serialized="true" />
     <type fullname="TMPro.TMP_Dropdown/OptionData" preserve="nothing" serialized="true" />
   </assembly>
   <assembly fullname="UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
@@ -310,6 +310,7 @@
   </assembly>
   <assembly fullname="WOF.Unity.Hunters.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="AddCurrencyBoxesToMenu" preserve="all" />
+    <type fullname="HuntersNobilitySelectionSlot" preserve="all" />
     <type fullname="HuntersSingleton" preserve="all" />
     <type fullname="HuntersWalletBox" preserve="all" />
     <type fullname="HuntModeInnAnimationRemoteNotify" preserve="all" />
@@ -346,14 +347,20 @@
     <type fullname="Wof.Hunters.WebWallet.WebWalletSingleton" preserve="all" />
     <type fullname="Wof.Hunters.WebWallet.WofSponsorshipCombatantCardDisplay" preserve="all" />
     <type fullname="Wof.Hunters.WebWallet.WofWalletCombatantCardDisplay" preserve="all" />
+    <type fullname="Wof.Hunters.WofClothingShopMenu" preserve="all" />
     <type fullname="Wof.Hunters.WofEmbarkHuntMessageWindow" preserve="all" />
     <type fullname="Wof.Hunters.WofEmbarkHuntWindow" preserve="all" />
+    <type fullname="Wof.Hunters.WofEventChestMenu" preserve="all" />
     <type fullname="Wof.Hunters.WofHuntersPathSelectionMenu" preserve="all" />
     <type fullname="Wof.Hunters.WofHuntersPerkSelectionWindow" preserve="all" />
     <type fullname="Wof.Hunters.WofHuntersPlaythroughResultsWindow" preserve="all" />
     <type fullname="Wof.Hunters.WofHuntersRerollRevealInformationWindow" preserve="all" />
+    <type fullname="Wof.Hunters.WofMarketDealerMenu" preserve="all" />
+    <type fullname="Wof.Hunters.WofNobilityTitlesMenu" preserve="all" />
     <type fullname="Wof.Hunters.WofWalletCatalogWindow" preserve="all" />
     <type fullname="Wof.Hunters.WofWalletRevealInformationWindow" preserve="all" />
+    <type fullname="Wof.Hunters.WofWallMarketHubMenu" preserve="all" />
+    <type fullname="Wof.WofEventChestHorizontalItemsWidget" preserve="all" />
     <type fullname="Wof.WofHuntersBattleResultsWindow" preserve="all" />
     <type fullname="Wof.WofHuntersHealingSpringMenu" preserve="all" />
     <type fullname="Wof.WofHuntersSettingsButton" preserve="all" />
@@ -363,6 +370,7 @@
     <type fullname="Wof.WofTailorWardrobeCatalogExtrasWindow" preserve="all" />
     <type fullname="Wof.WofTailorWardrobeCatalogFaceWindow" preserve="all" />
     <type fullname="Wof.WofTailorWardrobeCatalogHairWindow" preserve="all" />
+    <type fullname="Wof.WofWelcomeChestScreen" preserve="all" />
     <type fullname="WofBackToDonegalWarningWindow" preserve="all" />
     <type fullname="WofBarracksCrystalWalletWindow" preserve="all" />
     <type fullname="WofBarracksEmptyHealthWarning" preserve="all" />
@@ -371,11 +379,17 @@
     <type fullname="WofBarracksSwapConfirmWindow" preserve="all" />
     <type fullname="WofBarracksSwapWarningWindow" preserve="all" />
     <type fullname="WofCategoriesLayout" preserve="all" />
+    <type fullname="WofChestStyleData" preserve="all" />
     <type fullname="WofClassOverviewSkillLabel" preserve="all" />
     <type fullname="WofConfirmPerkWindow" preserve="all" />
     <type fullname="WofCostWithArrowsWidget" preserve="all" />
     <type fullname="WofDebugPathSelection" preserve="all" />
     <type fullname="WofEmbarkHuntWithoutHuntersWindow" preserve="all" />
+    <type fullname="WofEventChestDealConfirmMenu" preserve="all" />
+    <type fullname="WofEventChestDealInfoMenu" preserve="all" />
+    <type fullname="WofEventChestDealListItem" preserve="all" />
+    <type fullname="WofFeaturedIChesttemDisplay" preserve="all" />
+    <type fullname="WofFeaturedItemData" preserve="all" />
     <type fullname="WofFinancierCharacterDetailsWindow" preserve="all" />
     <type fullname="WofFinancierCharacterSelectionMenu" preserve="all" />
     <type fullname="WofFinancierMchySponsorshipConfirmWindow" preserve="all" />
@@ -401,6 +415,12 @@
     <type fullname="WofInnConfirmPrompt" preserve="all" />
     <type fullname="WofListCounterDisplay" preserve="all" />
     <type fullname="WofListCounterDisplayElement" preserve="all" />
+    <type fullname="WofNobilityGrantedMenu" preserve="all" />
+    <type fullname="WofNobilityInfoEntry" preserve="all" />
+    <type fullname="WofNobilityInfoMenu" preserve="all" />
+    <type fullname="WofNobilityPromoteConfirmMenu" preserve="all" />
+    <type fullname="WofNobilityPromoteEntryDisplay" preserve="all" />
+    <type fullname="WofNobilityRomanNumberDisplay" preserve="all" />
     <type fullname="WofPerkElement" preserve="all" />
     <type fullname="WofRecruitClassOverviewWindow" preserve="all" />
     <type fullname="WofRecruitSelectionWindow" preserve="all" />
@@ -414,11 +434,13 @@
     <type fullname="WofTailorInvalidWarning" preserve="all" />
     <type fullname="WofTailorItemBrowser" preserve="all" />
     <type fullname="WofTailorWardrobeWindow" preserve="all" />
+    <type fullname="WofWagonTransition" preserve="all" />
     <type fullname="WofWalletWarningWindow" preserve="all" />
-    <type fullname="WofWelcomeChestScreen" preserve="all" />
+    <type fullname="WofWallMarketHubElement" preserve="all" />
     <type fullname="WofWelcomeChestWidget" preserve="all" />
     <type fullname="WofWelcomeChestWindow" preserve="all" />
     <type fullname="MapPlaythroughData" preserve="nothing" serialized="true" />
+    <type fullname="NobilityInfoEntry" preserve="nothing" serialized="true" />
     <type fullname="Wof.Hunters.DonegalSubMenu" preserve="nothing" serialized="true" />
     <type fullname="Wof.Hunters.HuntModeDonegalButtonElement" preserve="nothing" serialized="true" />
     <type fullname="Wof.Hunters.RarityBackground" preserve="nothing" serialized="true" />
@@ -562,6 +584,7 @@
     <type fullname="Wof.WofBattleResultsCombatantElement" preserve="all" />
     <type fullname="Wof.WofBattleResultsWindow" preserve="all" />
     <type fullname="Wof.WofBattleStatusCellIndicator" preserve="all" />
+    <type fullname="Wof.WofCatalogThumbnailItemDisplay" preserve="all" />
     <type fullname="Wof.WofCharacterRevealScreen" preserve="all" />
     <type fullname="Wof.WofCombatantActionSkillsSummaryPanel" preserve="all" />
     <type fullname="Wof.WofCombatantAnimationSettingsScriptableObject" preserve="all" />
@@ -581,14 +604,20 @@
     <type fullname="Wof.WofDojoTreeCenterClassElement" preserve="all" />
     <type fullname="Wof.WofDojoTreeClassElement" preserve="all" />
     <type fullname="Wof.WofDojoTreeWindow" preserve="all" />
+    <type fullname="Wof.WofEquipmentCatalogGrid" preserve="all" />
     <type fullname="Wof.WofEquipmentDataWindow" preserve="all" />
     <type fullname="Wof.WofEquipmentDisplayElement" preserve="all" />
     <type fullname="Wof.WofHealingSpringMenu" preserve="all" />
     <type fullname="Wof.WofInventoryItemsPanel" preserve="all" />
     <type fullname="Wof.WofInventoryScreen" preserve="all" />
     <type fullname="Wof.WofItemListCatalog" preserve="all" />
+    <type fullname="Wof.WofListItemDisplay" preserve="all" />
+    <type fullname="Wof.WofListItemDisplayUniversal" preserve="all" />
+    <type fullname="Wof.WofListItemDisplayWithPercentageChance" preserve="all" />
+    <type fullname="Wof.WofListWithPriceItemDisplay" preserve="all" />
     <type fullname="Wof.WofLockedClassOverviewInformationWindow" preserve="all" />
     <type fullname="Wof.WofLocManager" preserve="all" />
+    <type fullname="Wof.WofLootboxAnimationSequenceManager" preserve="all" />
     <type fullname="Wof.WofMoochkinPodScreen" preserve="all" />
     <type fullname="Wof.WofMoochkinPriceItemDisplay" preserve="all" />
     <type fullname="Wof.WofRarityDisplay" preserve="all" />
@@ -601,6 +630,7 @@
     <type fullname="Wof.WofTailorExtrasSpriteItem" preserve="all" />
     <type fullname="Wof.WofTailorHairSpriteItem" preserve="all" />
     <type fullname="Wof.WofTreeCenterClassElement" preserve="all" />
+    <type fullname="Wof.WofUniversalItemDisplay" preserve="all" />
     <type fullname="Wof.WofUnlockedClassOverviewInformationWindow" preserve="all" />
     <type fullname="Wof.WofUnlockedUnitOverviewInformationWindow" preserve="all" />
     <type fullname="WofBattleActionBanner" preserve="all" />
@@ -609,7 +639,6 @@
     <type fullname="WofBattleIntroBanner" preserve="all" />
     <type fullname="WofBattleSkillBanner" preserve="all" />
     <type fullname="WofBattleTargetInfoStatLabel" preserve="all" />
-    <type fullname="WofCatalogThumbnailItemDisplay" preserve="all" />
     <type fullname="WofChangeClassPrompt" preserve="all" />
     <type fullname="WofCharacterRevealCard" preserve="all" />
     <type fullname="WofClassComparisonSidePanel" preserve="all" />
@@ -645,7 +674,6 @@
     <type fullname="WofDojoConfirmPromotionClassElement" preserve="all" />
     <type fullname="WofDojoCostsWindow" preserve="all" />
     <type fullname="WofDropdownList" preserve="all" />
-    <type fullname="WofEquipmentCatalogGrid" preserve="all" />
     <type fullname="WofEquipmentDisplayWindow" preserve="all" />
     <type fullname="WofEquipmentStatsDisplay" preserve="all" />
     <type fullname="WofFlyingText" preserve="all" />
@@ -662,10 +690,7 @@
     <type fullname="WofItemGrantedResultWindow" preserve="all" />
     <type fullname="WofItemRevealAnimationNotifier" preserve="all" />
     <type fullname="WofItemStatsDisplay" preserve="all" />
-    <type fullname="WofListItemDisplay" preserve="all" />
-    <type fullname="WofListWithPriceItemDisplay" preserve="all" />
     <type fullname="WofLoadingScreen" preserve="all" />
-    <type fullname="WofLootboxAnimationSequenceManager" preserve="all" />
     <type fullname="WofMerchantBuyWindow" preserve="all" />
     <type fullname="WofMerchantCatalogWindow" preserve="all" />
     <type fullname="WofMerchantIntroWindow" preserve="all" />
@@ -674,6 +699,7 @@
     <type fullname="WofMoochkinCommentScreen" preserve="all" />
     <type fullname="WofMoveToCenterStateSettings" preserve="all" />
     <type fullname="WofMoveToEnemyStateSettings" preserve="all" />
+    <type fullname="WofMoveToFormationCenterStateSettings" preserve="all" />
     <type fullname="WofPerkIconLibrary" preserve="all" />
     <type fullname="WofPlaythroughResultsCharactersList" preserve="all" />
     <type fullname="WofPlaythroughResultsClassProgressionTree" preserve="all" />
@@ -701,7 +727,7 @@
     <type fullname="RevealCardRaritySettings" preserve="nothing" serialized="true" />
     <type fullname="SettingsSectionProperties" preserve="nothing" serialized="true" />
     <type fullname="Wof.RecruitFrontAppearanceParts" preserve="nothing" serialized="true" />
-    <type fullname="WofLootboxAnimationSequenceManager/RevealSfxItem" preserve="nothing" serialized="true" />
+    <type fullname="Wof.WofLootboxAnimationSequenceManager/RevealSfxItem" preserve="nothing" serialized="true" />
     <type fullname="AnimationStateEffectProperties" preserve="nothing" serialized="true" />
     <type fullname="Battle.BattleEffects.ColorFilterSettingsData" preserve="nothing" serialized="true" />
     <type fullname="Battle.BattleEffects.ShakeSettingsData" preserve="nothing" serialized="true" />
@@ -767,6 +793,7 @@
     <type fullname="FVLib.SharedModels.SharedDefinitions.Combatants.CombatantData" preserve="nothing" serialized="true" />
     <type fullname="FVLib.SharedModels.SharedDefinitions.Combatants.EarnableStatusValue" preserve="nothing" serialized="true" />
     <type fullname="FVLib.SharedModels.SharedDefinitions.Combatants.LifeTimeStatsTracker" preserve="nothing" serialized="true" />
+    <type fullname="FVLib.SharedModels.SharedDefinitions.Combatants.NobilityRankStatus" preserve="nothing" serialized="true" />
     <type fullname="FVLib.SharedModels.SharedDefinitions.Combatants.StaminaStatusValue" preserve="nothing" serialized="true" />
     <type fullname="FVLib.SharedModels.SharedDefinitions.Combatants.StatusValue" preserve="nothing" serialized="true" />
     <type fullname="FVLib.SharedModels.SharedDefinitions.Configuration.ActionBehaviour" preserve="nothing" serialized="true" />
@@ -775,6 +802,7 @@
     <type fullname="FVLib.SharedModels.SharedDefinitions.Configuration.AICondition" preserve="nothing" serialized="true" />
     <type fullname="FVLib.SharedModels.SharedDefinitions.Configuration.BaseClassStats" preserve="nothing" serialized="true" />
     <type fullname="FVLib.SharedModels.SharedDefinitions.Configuration.BattleAIConfiguration" preserve="nothing" serialized="true" />
+    <type fullname="FVLib.SharedModels.SharedDefinitions.Configuration.ChestStore" preserve="nothing" serialized="true" />
     <type fullname="FVLib.SharedModels.SharedDefinitions.Configuration.ClassDevelopment" preserve="nothing" serialized="true" />
     <type fullname="FVLib.SharedModels.SharedDefinitions.Configuration.ClassDevelopmentProgressionSetting" preserve="nothing" serialized="true" />
     <type fullname="FVLib.SharedModels.SharedDefinitions.Configuration.ClassPromotionCost" preserve="nothing" serialized="true" />
@@ -794,6 +822,7 @@
     <type fullname="FVLib.SharedModels.SharedDefinitions.Configuration.NewCombatantCreationConfiguration" preserve="nothing" serialized="true" />
     <type fullname="FVLib.SharedModels.SharedDefinitions.Configuration.NftConfig" preserve="nothing" serialized="true" />
     <type fullname="FVLib.SharedModels.SharedDefinitions.Configuration.NftConfiguration" preserve="nothing" serialized="true" />
+    <type fullname="FVLib.SharedModels.SharedDefinitions.Configuration.NobilityConfig" preserve="nothing" serialized="true" />
     <type fullname="FVLib.SharedModels.SharedDefinitions.Configuration.PassiveSkill" preserve="nothing" serialized="true" />
     <type fullname="FVLib.SharedModels.SharedDefinitions.Configuration.PathOptionConfiguration" preserve="nothing" serialized="true" />
     <type fullname="FVLib.SharedModels.SharedDefinitions.Configuration.PerkRewardMap`2" preserve="nothing" serialized="true" />
