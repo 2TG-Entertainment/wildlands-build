@@ -399,7 +399,6 @@
     <type fullname="Wof.WofFoodItemWindow" preserve="all" />
     <type fullname="Wof.WofHuntersBarracksRerollConfirmWindow" preserve="all" />
     <type fullname="Wof.WofHuntersBattleResultsWindow" preserve="all" />
-    <type fullname="Wof.WofHuntersClassProgressionScreen" preserve="all" />
     <type fullname="Wof.WofHuntersCongratulationsWindow" preserve="all" />
     <type fullname="Wof.WofHuntersHealingSpringMenu" preserve="all" />
     <type fullname="Wof.WofHuntersMoochkinPodScreen" preserve="all" />
@@ -442,6 +441,7 @@
     <type fullname="Wof.WofWelcomeChestWindow" preserve="all" />
     <type fullname="WofBarracksSwapConfirmWindow" preserve="all" />
     <type fullname="WofFinancierCharacterSelectionMenu" preserve="all" />
+    <type fullname="WofHuntersClassProgressionScreen" preserve="all" />
     <type fullname="WofInnConfirmPrompt" preserve="all" />
     <type fullname="Wof.Hunters.DonegalSubMenu" preserve="nothing" serialized="true" />
     <type fullname="Wof.Hunters.HuntModeDonegalButtonElement" preserve="nothing" serialized="true" />
@@ -693,7 +693,6 @@
     <type fullname="Wof.WofPerkIconLibrary" preserve="all" />
     <type fullname="Wof.WofPlaythroughResultsCharactersList" preserve="all" />
     <type fullname="Wof.WofPlaythroughResultsClassProgressionTree" preserve="all" />
-    <type fullname="Wof.WofPlaythroughResultsWindow" preserve="all" />
     <type fullname="Wof.WofPrepChargeStateSettings" preserve="all" />
     <type fullname="Wof.WofPromotionAnimatedScreen" preserve="all" />
     <type fullname="Wof.WofRarityDisplay" preserve="all" />
@@ -727,6 +726,8 @@
     <type fullname="Wof.WorldParticleManager" preserve="all" />
     <type fullname="WofMoveToEnemyStateSettings" preserve="all" />
     <type fullname="WofMoveToFormationCenterStateSettings" preserve="all" />
+    <type fullname="WofPlaythroughResultsProgressionPopUp" preserve="all" />
+    <type fullname="WofPlaythroughResultsWindow" preserve="all" />
     <type fullname="WofReturnToCellStateSettings" preserve="all" />
     <type fullname="Wof.ButtonAppearanceSettings" preserve="nothing" serialized="true" />
     <type fullname="Wof.RecruitFrontAppearanceParts" preserve="nothing" serialized="true" />
