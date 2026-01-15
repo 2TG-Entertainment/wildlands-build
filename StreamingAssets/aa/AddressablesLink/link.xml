@@ -235,6 +235,9 @@
     <type fullname="UnityEngine.PolygonCollider2D" preserve="all" />
     <type fullname="UnityEngine.Rigidbody2D" preserve="all" />
   </assembly>
+  <assembly fullname="UnityEngine.SpriteMaskModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.SpriteMask" preserve="all" />
+  </assembly>
   <assembly fullname="UnityEngine.TextRenderingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.Font" preserve="all" />
   </assembly>
@@ -386,6 +389,7 @@
     <type fullname="Wof.WofFinancierRewardsBoardCurrentPlacementWindow" preserve="all" />
     <type fullname="Wof.WofFinancierRewardsBoardMenu" preserve="all" />
     <type fullname="Wof.WofFinancierRewardsBoardReport" preserve="all" />
+    <type fullname="Wof.WofFinancierRewardsPoolWindow" preserve="all" />
     <type fullname="Wof.WofFinancierRewardsTreasureWindow" preserve="all" />
     <type fullname="Wof.WofFinancierSponsorshipConfirmWindow" preserve="all" />
     <type fullname="Wof.WofFinancierSponsorshipReport" preserve="all" />
@@ -450,6 +454,7 @@
     <type fullname="Battle.BattleEffects.CameraShakeManager" preserve="all" />
     <type fullname="Battle.BattleEffects.ColorFilterEffectManager" preserve="all" />
     <type fullname="Battle.BattleEffects.ColorFilterPresetScriptableObject" preserve="all" />
+    <type fullname="CursorManager" preserve="all" />
     <type fullname="Wof.AccessorySelection" preserve="all" />
     <type fullname="Wof.AnimationNotificationSender" preserve="all" />
     <type fullname="Wof.AudioSettingsSection" preserve="all" />
@@ -685,8 +690,6 @@
     <type fullname="Wof.WofMoochkinPodScreen" preserve="all" />
     <type fullname="Wof.WofMoochkinPriceItemDisplay" preserve="all" />
     <type fullname="Wof.WofMoveToCenterStateSettings" preserve="all" />
-    <type fullname="Wof.WofMoveToEnemyStateSettings" preserve="all" />
-    <type fullname="Wof.WofMoveToFormationCenterStateSettings" preserve="all" />
     <type fullname="Wof.WofPerkIconLibrary" preserve="all" />
     <type fullname="Wof.WofPlaythroughResultsCharactersList" preserve="all" />
     <type fullname="Wof.WofPlaythroughResultsClassProgressionTree" preserve="all" />
@@ -696,7 +699,6 @@
     <type fullname="Wof.WofRarityDisplay" preserve="all" />
     <type fullname="Wof.WofRegularTreasureAnimationSequenceManager" preserve="all" />
     <type fullname="Wof.WofRetractkinConfirmWindow" preserve="all" />
-    <type fullname="Wof.WofReturnToCellStateSettings" preserve="all" />
     <type fullname="Wof.WofRowsActionsDisplay" preserve="all" />
     <type fullname="Wof.WofScrollViewContainer" preserve="all" />
     <type fullname="Wof.WofShowIntroBannerStateSettings" preserve="all" />
@@ -723,6 +725,9 @@
     <type fullname="Wof.WofUnlockedClassOverviewInformationWindow" preserve="all" />
     <type fullname="Wof.WofUnlockedUnitOverviewInformationWindow" preserve="all" />
     <type fullname="Wof.WorldParticleManager" preserve="all" />
+    <type fullname="WofMoveToEnemyStateSettings" preserve="all" />
+    <type fullname="WofMoveToFormationCenterStateSettings" preserve="all" />
+    <type fullname="WofReturnToCellStateSettings" preserve="all" />
     <type fullname="Wof.ButtonAppearanceSettings" preserve="nothing" serialized="true" />
     <type fullname="Wof.RecruitFrontAppearanceParts" preserve="nothing" serialized="true" />
     <type fullname="Wof.RevealCardRaritySettings" preserve="nothing" serialized="true" />
