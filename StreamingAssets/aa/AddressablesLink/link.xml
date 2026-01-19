@@ -89,11 +89,11 @@
     <type fullname="TheraBytes.BetterUi.FloatSizeModifier" preserve="nothing" serialized="true" />
   </assembly>
   <assembly fullname="TTG.Unity.Scripts, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-    <type fullname="BaseUIMenu" preserve="all" />
-    <type fullname="CameraStacker" preserve="all" />
-    <type fullname="SingletonCameraManager" preserve="all" />
-    <type fullname="SingletonUICameraManager" preserve="all" />
     <type fullname="Wof.AssetLoader" preserve="all" />
+    <type fullname="Wof.BaseUIMenu" preserve="all" />
+    <type fullname="Wof.CameraStacker" preserve="all" />
+    <type fullname="Wof.SingletonCameraManager" preserve="all" />
+    <type fullname="Wof.SingletonUICameraManager" preserve="all" />
     <type fullname="Wof.UIManager" preserve="all" />
   </assembly>
   <assembly fullname="Unity.Addressables, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" preserve="all">
@@ -235,6 +235,9 @@
     <type fullname="UnityEngine.PolygonCollider2D" preserve="all" />
     <type fullname="UnityEngine.Rigidbody2D" preserve="all" />
   </assembly>
+  <assembly fullname="UnityEngine.SpriteMaskModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.SpriteMask" preserve="all" />
+  </assembly>
   <assembly fullname="UnityEngine.TextRenderingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.Font" preserve="all" />
   </assembly>
@@ -309,19 +312,9 @@
     <type fullname="AuctionHouse.WofAuctionHouseMainWindow" preserve="all" />
   </assembly>
   <assembly fullname="WOF.Unity.Hunters.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-    <type fullname="AddCurrencyBoxesToMenu" preserve="all" />
-    <type fullname="HuntersNobilitySelectionSlot" preserve="all" />
-    <type fullname="HuntersSingleton" preserve="all" />
-    <type fullname="HuntersWalletBox" preserve="all" />
-    <type fullname="HuntModeInnAnimationRemoteNotify" preserve="all" />
-    <type fullname="HuntModeMapSegment" preserve="all" />
-    <type fullname="HuntModeMapSettingsScriptableObject" preserve="all" />
-    <type fullname="HuntModePathMap" preserve="all" />
-    <type fullname="HuntModePathMapNode" preserve="all" />
-    <type fullname="HuntModeRerollDiamondNotify" preserve="all" />
-    <type fullname="HuntSettingsWindow" preserve="all" />
     <type fullname="Mopsicus.InfiniteScroll.InfiniteScroll" preserve="all" />
     <type fullname="TTG.LeaderboardScroll" preserve="all" />
+    <type fullname="Wof.AddCurrencyBoxesToMenu" preserve="all" />
     <type fullname="Wof.Hunters.AccountSettingsSection" preserve="all" />
     <type fullname="Wof.Hunters.BarracksMenu" preserve="all" />
     <type fullname="Wof.Hunters.CloudLoginUI" preserve="all" />
@@ -360,124 +353,112 @@
     <type fullname="Wof.Hunters.WofWalletCatalogWindow" preserve="all" />
     <type fullname="Wof.Hunters.WofWalletRevealInformationWindow" preserve="all" />
     <type fullname="Wof.Hunters.WofWallMarketHubMenu" preserve="all" />
+    <type fullname="Wof.HuntersNobilitySelectionSlot" preserve="all" />
+    <type fullname="Wof.HuntersSingleton" preserve="all" />
+    <type fullname="Wof.HuntersWalletBox" preserve="all" />
+    <type fullname="Wof.HuntModeInnAnimationRemoteNotify" preserve="all" />
+    <type fullname="Wof.HuntModeMapSegment" preserve="all" />
+    <type fullname="Wof.HuntModeMapSettingsScriptableObject" preserve="all" />
+    <type fullname="Wof.HuntModePathMap" preserve="all" />
+    <type fullname="Wof.HuntModePathMapNode" preserve="all" />
+    <type fullname="Wof.HuntModeRerollDiamondNotify" preserve="all" />
+    <type fullname="Wof.HuntSettingsWindow" preserve="all" />
+    <type fullname="Wof.WofBackToDonegalWarningWindow" preserve="all" />
+    <type fullname="Wof.WofBarracksCrystalWalletWindow" preserve="all" />
+    <type fullname="Wof.WofBarracksEmptyHealthWarning" preserve="all" />
+    <type fullname="Wof.WofBarracksHireAndReleaseWindow" preserve="all" />
+    <type fullname="Wof.WofBarracksHireConfirmWindow" preserve="all" />
+    <type fullname="Wof.WofBarracksSwapWarningWindow" preserve="all" />
+    <type fullname="Wof.WofCategoriesLayout" preserve="all" />
+    <type fullname="Wof.WofChestStyleData" preserve="all" />
+    <type fullname="Wof.WofClassOverviewSkillLabel" preserve="all" />
+    <type fullname="Wof.WofConfirmPerkWindow" preserve="all" />
+    <type fullname="Wof.WofCostWithArrowsWidget" preserve="all" />
+    <type fullname="Wof.WofDebugPathSelection" preserve="all" />
+    <type fullname="Wof.WofEmbarkHuntWithoutHuntersWindow" preserve="all" />
+    <type fullname="Wof.WofEventChestDealConfirmMenu" preserve="all" />
+    <type fullname="Wof.WofEventChestDealInfoMenu" preserve="all" />
+    <type fullname="Wof.WofEventChestDealListItem" preserve="all" />
     <type fullname="Wof.WofEventChestHorizontalItemsWidget" preserve="all" />
+    <type fullname="Wof.WofFeaturedIChesttemDisplay" preserve="all" />
+    <type fullname="Wof.WofFeaturedItemData" preserve="all" />
+    <type fullname="Wof.WofFinancierCharacterDetailsWindow" preserve="all" />
+    <type fullname="Wof.WofFinancierMchySponsorshipConfirmWindow" preserve="all" />
+    <type fullname="Wof.WofFinancierMchySponsorshipMainWindow" preserve="all" />
+    <type fullname="Wof.WofFinancierMchySponsorshipSetupWindow" preserve="all" />
+    <type fullname="Wof.WofFinancierRewardsBoardCurrentPlacementWindow" preserve="all" />
+    <type fullname="Wof.WofFinancierRewardsBoardMenu" preserve="all" />
+    <type fullname="Wof.WofFinancierRewardsBoardReport" preserve="all" />
+    <type fullname="Wof.WofFinancierRewardsPoolWindow" preserve="all" />
+    <type fullname="Wof.WofFinancierRewardsTreasureWindow" preserve="all" />
+    <type fullname="Wof.WofFinancierSponsorshipConfirmWindow" preserve="all" />
+    <type fullname="Wof.WofFinancierSponsorshipReport" preserve="all" />
+    <type fullname="Wof.WofFinancierSponsorshipRewardsWindow" preserve="all" />
+    <type fullname="Wof.WofFoodItemCatalog" preserve="all" />
+    <type fullname="Wof.WofFoodItemCatalogEntry" preserve="all" />
+    <type fullname="Wof.WofFoodItemWindow" preserve="all" />
+    <type fullname="Wof.WofHuntersBarracksRerollConfirmWindow" preserve="all" />
     <type fullname="Wof.WofHuntersBattleResultsWindow" preserve="all" />
+    <type fullname="Wof.WofHuntersCongratulationsWindow" preserve="all" />
     <type fullname="Wof.WofHuntersHealingSpringMenu" preserve="all" />
+    <type fullname="Wof.WofHuntersMoochkinPodScreen" preserve="all" />
+    <type fullname="Wof.WofHuntersPlaythroughClassShowcase" preserve="all" />
     <type fullname="Wof.WofHuntersSettingsButton" preserve="all" />
+    <type fullname="Wof.WofHuntersSquadFormationScreen" preserve="all" />
     <type fullname="Wof.WofHuntersTalonsLeaderboardUI" preserve="all" />
     <type fullname="Wof.WofHuntersTalonsLeaderboardUIEntry" preserve="all" />
+    <type fullname="Wof.WofInnAnimationResult" preserve="all" />
+    <type fullname="Wof.WofListCounterDisplay" preserve="all" />
+    <type fullname="Wof.WofListCounterDisplayElement" preserve="all" />
+    <type fullname="Wof.WofNobilityGrantedMenu" preserve="all" />
+    <type fullname="Wof.WofNobilityInfoEntry" preserve="all" />
+    <type fullname="Wof.WofNobilityInfoMenu" preserve="all" />
+    <type fullname="Wof.WofNobilityPromoteConfirmMenu" preserve="all" />
+    <type fullname="Wof.WofNobilityPromoteEntryDisplay" preserve="all" />
+    <type fullname="Wof.WofNobilityRomanNumberDisplay" preserve="all" />
+    <type fullname="Wof.WofPerkElement" preserve="all" />
+    <type fullname="Wof.WofRecruitClassOverviewWindow" preserve="all" />
+    <type fullname="Wof.WofRecruitSelectionWindow" preserve="all" />
+    <type fullname="Wof.WofSelectableCardDisplay" preserve="all" />
+    <type fullname="Wof.WofStaminaFullWarning" preserve="all" />
+    <type fullname="Wof.WofTailorActionsWindow" preserve="all" />
+    <type fullname="Wof.WofTailorColorBrowser" preserve="all" />
+    <type fullname="Wof.WofTailorConfirmLookWindow" preserve="all" />
+    <type fullname="Wof.WofTailorConfirmNameWindow" preserve="all" />
+    <type fullname="Wof.WofTailorIntroWindow" preserve="all" />
+    <type fullname="Wof.WofTailorInvalidWarning" preserve="all" />
+    <type fullname="Wof.WofTailorItemBrowser" preserve="all" />
     <type fullname="Wof.WofTailorWardrobeCatalogClothesWindow" preserve="all" />
     <type fullname="Wof.WofTailorWardrobeCatalogExtrasWindow" preserve="all" />
     <type fullname="Wof.WofTailorWardrobeCatalogFaceWindow" preserve="all" />
     <type fullname="Wof.WofTailorWardrobeCatalogHairWindow" preserve="all" />
+    <type fullname="Wof.WofTailorWardrobeWindow" preserve="all" />
+    <type fullname="Wof.WofWagonTransition" preserve="all" />
+    <type fullname="Wof.WofWalletWarningWindow" preserve="all" />
+    <type fullname="Wof.WofWallMarketHubElement" preserve="all" />
     <type fullname="Wof.WofWelcomeChestScreen" preserve="all" />
-    <type fullname="WofBackToDonegalWarningWindow" preserve="all" />
-    <type fullname="WofBarracksCrystalWalletWindow" preserve="all" />
-    <type fullname="WofBarracksEmptyHealthWarning" preserve="all" />
-    <type fullname="WofBarracksHireAndReleaseWindow" preserve="all" />
-    <type fullname="WofBarracksHireConfirmWindow" preserve="all" />
+    <type fullname="Wof.WofWelcomeChestWidget" preserve="all" />
+    <type fullname="Wof.WofWelcomeChestWindow" preserve="all" />
     <type fullname="WofBarracksSwapConfirmWindow" preserve="all" />
-    <type fullname="WofBarracksSwapWarningWindow" preserve="all" />
-    <type fullname="WofCategoriesLayout" preserve="all" />
-    <type fullname="WofChestStyleData" preserve="all" />
-    <type fullname="WofClassOverviewSkillLabel" preserve="all" />
-    <type fullname="WofConfirmPerkWindow" preserve="all" />
-    <type fullname="WofCostWithArrowsWidget" preserve="all" />
-    <type fullname="WofDebugPathSelection" preserve="all" />
-    <type fullname="WofEmbarkHuntWithoutHuntersWindow" preserve="all" />
-    <type fullname="WofEventChestDealConfirmMenu" preserve="all" />
-    <type fullname="WofEventChestDealInfoMenu" preserve="all" />
-    <type fullname="WofEventChestDealListItem" preserve="all" />
-    <type fullname="WofFeaturedIChesttemDisplay" preserve="all" />
-    <type fullname="WofFeaturedItemData" preserve="all" />
-    <type fullname="WofFinancierCharacterDetailsWindow" preserve="all" />
     <type fullname="WofFinancierCharacterSelectionMenu" preserve="all" />
-    <type fullname="WofFinancierMchySponsorshipConfirmWindow" preserve="all" />
-    <type fullname="WofFinancierMchySponsorshipMainWindow" preserve="all" />
-    <type fullname="WofFinancierMchySponsorshipSetupWindow" preserve="all" />
-    <type fullname="WofFinancierRewardsBoardCurrentPlacementWindow" preserve="all" />
-    <type fullname="WofFinancierRewardsBoardMenu" preserve="all" />
-    <type fullname="WofFinancierRewardsBoardReport" preserve="all" />
-    <type fullname="WofFinancierRewardsTreasureWindow" preserve="all" />
-    <type fullname="WofFinancierSponsorshipConfirmWindow" preserve="all" />
-    <type fullname="WofFinancierSponsorshipReport" preserve="all" />
-    <type fullname="WofFinancierSponsorshipRewardsWindow" preserve="all" />
-    <type fullname="WofFoodItemCatalog" preserve="all" />
-    <type fullname="WofFoodItemCatalogEntry" preserve="all" />
-    <type fullname="WofFoodItemWindow" preserve="all" />
-    <type fullname="WofHuntersBarracksRerollConfirmWindow" preserve="all" />
     <type fullname="WofHuntersClassProgressionScreen" preserve="all" />
-    <type fullname="WofHuntersCongratulationsWindow" preserve="all" />
-    <type fullname="WofHuntersMoochkinPodScreen" preserve="all" />
-    <type fullname="WofHuntersPlaythroughClassShowcase" preserve="all" />
-    <type fullname="WofHuntersSquadFormationScreen" preserve="all" />
-    <type fullname="WofInnAnimationResult" preserve="all" />
     <type fullname="WofInnConfirmPrompt" preserve="all" />
-    <type fullname="WofListCounterDisplay" preserve="all" />
-    <type fullname="WofListCounterDisplayElement" preserve="all" />
-    <type fullname="WofNobilityGrantedMenu" preserve="all" />
-    <type fullname="WofNobilityInfoEntry" preserve="all" />
-    <type fullname="WofNobilityInfoMenu" preserve="all" />
-    <type fullname="WofNobilityPromoteConfirmMenu" preserve="all" />
-    <type fullname="WofNobilityPromoteEntryDisplay" preserve="all" />
-    <type fullname="WofNobilityRomanNumberDisplay" preserve="all" />
-    <type fullname="WofPerkElement" preserve="all" />
-    <type fullname="WofRecruitClassOverviewWindow" preserve="all" />
-    <type fullname="WofRecruitSelectionWindow" preserve="all" />
-    <type fullname="WofSelectableCardDisplay" preserve="all" />
-    <type fullname="WofStaminaFullWarning" preserve="all" />
-    <type fullname="WofTailorActionsWindow" preserve="all" />
-    <type fullname="WofTailorColorBrowser" preserve="all" />
-    <type fullname="WofTailorConfirmLookWindow" preserve="all" />
-    <type fullname="WofTailorConfirmNameWindow" preserve="all" />
-    <type fullname="WofTailorIntroWindow" preserve="all" />
-    <type fullname="WofTailorInvalidWarning" preserve="all" />
-    <type fullname="WofTailorItemBrowser" preserve="all" />
-    <type fullname="WofTailorWardrobeWindow" preserve="all" />
-    <type fullname="WofWagonTransition" preserve="all" />
-    <type fullname="WofWalletWarningWindow" preserve="all" />
-    <type fullname="WofWallMarketHubElement" preserve="all" />
-    <type fullname="WofWelcomeChestWidget" preserve="all" />
-    <type fullname="WofWelcomeChestWindow" preserve="all" />
-    <type fullname="MapPlaythroughData" preserve="nothing" serialized="true" />
-    <type fullname="NobilityInfoEntry" preserve="nothing" serialized="true" />
     <type fullname="Wof.Hunters.DonegalSubMenu" preserve="nothing" serialized="true" />
     <type fullname="Wof.Hunters.HuntModeDonegalButtonElement" preserve="nothing" serialized="true" />
     <type fullname="Wof.Hunters.RarityBackground" preserve="nothing" serialized="true" />
+    <type fullname="Wof.MapPlaythroughData" preserve="nothing" serialized="true" />
+    <type fullname="Wof.NobilityInfoEntry" preserve="nothing" serialized="true" />
   </assembly>
   <assembly fullname="WOF.Unity.Shared.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-    <type fullname="BaseSettingsWindow" preserve="all" />
     <type fullname="Battle.BattleEffects.AttackObjectSpawnerManager" preserve="all" />
     <type fullname="Battle.BattleEffects.CameraShakeManager" preserve="all" />
     <type fullname="Battle.BattleEffects.ColorFilterEffectManager" preserve="all" />
     <type fullname="Battle.BattleEffects.ColorFilterPresetScriptableObject" preserve="all" />
-    <type fullname="BiomesConfigurationScriptableObject" preserve="all" />
-    <type fullname="BiomesLibraryScriptableObject" preserve="all" />
-    <type fullname="CharacterCustomizationFrameExceptionScriptableObject" preserve="all" />
-    <type fullname="CharacterCustomizationFrameReferenceTable" preserve="all" />
-    <type fullname="CombatantClassPrefabsScriptableObject" preserve="all" />
-    <type fullname="CombatantPortraitFloorBackground" preserve="all" />
-    <type fullname="CreditsWindow" preserve="all" />
-    <type fullname="CurrencyBoxUI" preserve="all" />
-    <type fullname="DojoTeamPlacementGridSlot" preserve="all" />
-    <type fullname="EmberEntity" preserve="all" />
-    <type fullname="FlyingTextCaseSettings" preserve="all" />
-    <type fullname="MainCamera" preserve="all" />
-    <type fullname="PooledEffect" preserve="all" />
-    <type fullname="SplashScreen" preserve="all" />
-    <type fullname="TeamPlacementGridSlot" preserve="all" />
-    <type fullname="TeamPlacementGridSlotWithDeathCounter" preserve="all" />
-    <type fullname="TeamPlacementGridSlotWithStamina" preserve="all" />
-    <type fullname="TimedParticleEffect" preserve="all" />
-    <type fullname="TutorialManager" preserve="all" />
-    <type fullname="UIBasicButtonAppearances" preserve="all" />
-    <type fullname="UIElementIconLibrary" preserve="all" />
-    <type fullname="VFXAnimator" preserve="all" />
-    <type fullname="WeaponRelatedCombatAnimationSettings" preserve="all" />
-    <type fullname="WildlandsCoroutineHelper" preserve="all" />
+    <type fullname="CursorManager" preserve="all" />
     <type fullname="Wof.AccessorySelection" preserve="all" />
     <type fullname="Wof.AnimationNotificationSender" preserve="all" />
     <type fullname="Wof.AudioSettingsSection" preserve="all" />
+    <type fullname="Wof.BaseSettingsWindow" preserve="all" />
     <type fullname="Wof.BasicButton" preserve="all" />
     <type fullname="Wof.BasicCategoriesFilterTab" preserve="all" />
     <type fullname="Wof.BasicDojoCostLabel" preserve="all" />
@@ -509,6 +490,10 @@
     <type fullname="Wof.BattleEffectManager" preserve="all" />
     <type fullname="Wof.BattleModeSettingsSection" preserve="all" />
     <type fullname="Wof.BattleTeamPlacementGrid" preserve="all" />
+    <type fullname="Wof.BiomesConfigurationScriptableObject" preserve="all" />
+    <type fullname="Wof.BiomesLibraryScriptableObject" preserve="all" />
+    <type fullname="Wof.CharacterCustomizationFrameExceptionScriptableObject" preserve="all" />
+    <type fullname="Wof.CharacterCustomizationFrameReferenceTable" preserve="all" />
     <type fullname="Wof.CharacterCustomizationGeneralLibrary" preserve="all" />
     <type fullname="Wof.CharacterCustomizationSkinObject" preserve="all" />
     <type fullname="Wof.CharacterSoundsLibraryScriptableObject" preserve="all" />
@@ -522,8 +507,10 @@
     <type fullname="Wof.ClientSkillConfig" preserve="all" />
     <type fullname="Wof.ClientStatsConfig" preserve="all" />
     <type fullname="Wof.ClientStatusEffectConfig" preserve="all" />
+    <type fullname="Wof.CombatantClassPrefabsScriptableObject" preserve="all" />
     <type fullname="Wof.CombatantEffectLibraryScriptableObject" preserve="all" />
     <type fullname="Wof.CombatantPortrait" preserve="all" />
+    <type fullname="Wof.CombatantPortraitFloorBackground" preserve="all" />
     <type fullname="Wof.CombatantViewSettingsScriptableObject" preserve="all" />
     <type fullname="Wof.ConfigurationData.BattleAIConfigurationScriptableObject" preserve="all" />
     <type fullname="Wof.ConfigurationData.DevelopmentConfigurationScriptableObject" preserve="all" />
@@ -537,20 +524,38 @@
     <type fullname="Wof.ConfigurationData.XpConfigurationScriptableObject" preserve="all" />
     <type fullname="Wof.ConfirmationError" preserve="all" />
     <type fullname="Wof.ConfirmationPrompt" preserve="all" />
+    <type fullname="Wof.Core.Audio.AudioBootstrap" preserve="all" />
+    <type fullname="Wof.Core.Audio.AudioMixerGroupRouter" preserve="all" />
+    <type fullname="Wof.Core.Audio.ButtonSounds" preserve="all" />
+    <type fullname="Wof.Core.Audio.FMOD.WofFmodAudioService" preserve="all" />
+    <type fullname="Wof.Core.Audio.MusicEvent" preserve="all" />
+    <type fullname="Wof.Core.Audio.WofAudioClipConfig" preserve="all" />
+    <type fullname="Wof.Core.Audio.WofAudioSettingsBinder" preserve="all" />
+    <type fullname="Wof.Core.Audio.WofMusicConfig" preserve="all" />
+    <type fullname="Wof.Core.Audio.WofMusicController" preserve="all" />
+    <type fullname="Wof.Core.Audio.WofUnityAudioService" preserve="all" />
+    <type fullname="Wof.Core.WofActiveModelsSingleton" preserve="all" />
+    <type fullname="Wof.Core.WofPathSelectElement" preserve="all" />
+    <type fullname="Wof.Core.WofPathSelectMenu" preserve="all" />
     <type fullname="Wof.CreditsSettingsSection" preserve="all" />
+    <type fullname="Wof.CreditsWindow" preserve="all" />
+    <type fullname="Wof.CurrencyBoxUI" preserve="all" />
     <type fullname="Wof.Dev.DevEnemyEntry" preserve="all" />
     <type fullname="Wof.Dev.DevSquadEntry" preserve="all" />
     <type fullname="Wof.Dev.WofDevBattleBagSetup" preserve="all" />
     <type fullname="Wof.Dev.WofDevBattlePathSetup" preserve="all" />
     <type fullname="Wof.Dev.WofDevServerBattleResult" preserve="all" />
     <type fullname="Wof.Dev.WofDevServerBattleSetup" preserve="all" />
+    <type fullname="Wof.DojoTeamPlacementGridSlot" preserve="all" />
     <type fullname="Wof.DragAndDropIconElement" preserve="all" />
     <type fullname="Wof.EarlyAccessScreen" preserve="all" />
     <type fullname="Wof.EffectLibraryEntryScriptableObject" preserve="all" />
     <type fullname="Wof.EffectLibraryManager" preserve="all" />
     <type fullname="Wof.EffectSpawnerManager" preserve="all" />
+    <type fullname="Wof.EmberEntity" preserve="all" />
     <type fullname="Wof.EquipmentRanksData" preserve="all" />
     <type fullname="Wof.FixGridZPos" preserve="all" />
+    <type fullname="Wof.FlyingTextCaseSettings" preserve="all" />
     <type fullname="Wof.HeroMilestones" preserve="all" />
     <type fullname="Wof.HowToPlaySettingsSection" preserve="all" />
     <type fullname="Wof.InputPopup" preserve="all" />
@@ -560,6 +565,7 @@
     <type fullname="Wof.ItemsAndEquipmentRewardConfigurationData" preserve="all" />
     <type fullname="Wof.LevelLightSettingsScriptableObject" preserve="all" />
     <type fullname="Wof.LightManager" preserve="all" />
+    <type fullname="Wof.MainCamera" preserve="all" />
     <type fullname="WoF.MainMenuUILocator" preserve="all" />
     <type fullname="Wof.MenuFlow" preserve="all" />
     <type fullname="Wof.PathAndBackgroundConfig" preserve="all" />
@@ -567,25 +573,51 @@
     <type fullname="Wof.PathData" preserve="all" />
     <type fullname="Wof.PathSelectionData" preserve="all" />
     <type fullname="Wof.PathSelectVisual" preserve="all" />
+    <type fullname="Wof.PooledEffect" preserve="all" />
     <type fullname="Wof.SceneLoadingManager" preserve="all" />
     <type fullname="Wof.ScreenFadeManager" preserve="all" />
     <type fullname="Wof.SpecialSkillBanner" preserve="all" />
+    <type fullname="Wof.SplashScreen" preserve="all" />
     <type fullname="Wof.TargetDisplayGridSubMenu" preserve="all" />
+    <type fullname="Wof.TeamPlacementGridSlot" preserve="all" />
+    <type fullname="Wof.TeamPlacementGridSlotWithDeathCounter" preserve="all" />
+    <type fullname="Wof.TeamPlacementGridSlotWithStamina" preserve="all" />
     <type fullname="Wof.TermsSettingsSection" preserve="all" />
+    <type fullname="Wof.TimedParticleEffect" preserve="all" />
     <type fullname="Wof.TitleScreenMenu" preserve="all" />
+    <type fullname="Wof.TutorialManager" preserve="all" />
+    <type fullname="Wof.UIBasicButtonAppearances" preserve="all" />
+    <type fullname="Wof.UIElementIconLibrary" preserve="all" />
+    <type fullname="Wof.VFXAnimator" preserve="all" />
+    <type fullname="Wof.WeaponRelatedCombatAnimationSettings" preserve="all" />
+    <type fullname="Wof.WildlandsCoroutineHelper" preserve="all" />
     <type fullname="Wof.WildlandsDataHelper" preserve="all" />
     <type fullname="Wof.WildlandsTurnOrderItem" preserve="all" />
     <type fullname="Wof.WildlandsTurnOrderUI" preserve="all" />
     <type fullname="Wof.WofArmoryItemListCatalog" preserve="all" />
     <type fullname="Wof.WofArmoryThumbnailItemDisplay" preserve="all" />
+    <type fullname="Wof.WofBattleActionBanner" preserve="all" />
     <type fullname="Wof.WofBattleActionRowItem" preserve="all" />
+    <type fullname="Wof.WofBattleAnimatedProjectile" preserve="all" />
     <type fullname="Wof.WofBattleBagContainer" preserve="all" />
     <type fullname="Wof.WofBattleBagElement" preserve="all" />
+    <type fullname="Wof.WofBattleEndBanner" preserve="all" />
+    <type fullname="Wof.WofBattleIntroBanner" preserve="all" />
     <type fullname="Wof.WofBattleResultsCombatantElement" preserve="all" />
     <type fullname="Wof.WofBattleResultsWindow" preserve="all" />
+    <type fullname="Wof.WofBattleSkillBanner" preserve="all" />
     <type fullname="Wof.WofBattleStatusCellIndicator" preserve="all" />
+    <type fullname="Wof.WofBattleTargetInfoStatLabel" preserve="all" />
     <type fullname="Wof.WofCatalogThumbnailItemDisplay" preserve="all" />
+    <type fullname="Wof.WofChangeClassPrompt" preserve="all" />
+    <type fullname="Wof.WofCharacterRevealCard" preserve="all" />
     <type fullname="Wof.WofCharacterRevealScreen" preserve="all" />
+    <type fullname="Wof.WofClassComparisonSidePanel" preserve="all" />
+    <type fullname="Wof.WofClassProgressionMainWindow" preserve="all" />
+    <type fullname="Wof.WofClassProgressionScreen" preserve="all" />
+    <type fullname="Wof.WofClassProgressionTree" preserve="all" />
+    <type fullname="Wof.WofClassRequirementLabel" preserve="all" />
+    <type fullname="Wof.WofClassWeaponIcon" preserve="all" />
     <type fullname="Wof.WofCombatantActionSkillsSummaryPanel" preserve="all" />
     <type fullname="Wof.WofCombatantAnimationSettingsScriptableObject" preserve="all" />
     <type fullname="Wof.WofCombatantCardDisplay" preserve="all" />
@@ -596,164 +628,135 @@
     <type fullname="Wof.WofCombatantSoundsProfileSettingsScriptableObject" preserve="all" />
     <type fullname="Wof.WofCombatantStatsPanel" preserve="all" />
     <type fullname="Wof.WofCombatantStatsWindow" preserve="all" />
+    <type fullname="Wof.WofCompareEquipmentsWindow" preserve="all" />
+    <type fullname="Wof.WofConsumableItemWindow" preserve="all" />
+    <type fullname="Wof.WofCreditsWindow" preserve="all" />
+    <type fullname="Wof.WofCrystalRevealAnimation" preserve="all" />
     <type fullname="Wof.WofDamageHitAnimationSettingsScriptableObject" preserve="all" />
     <type fullname="Wof.WofDebug.DebugOpenSquadFormation" preserve="all" />
+    <type fullname="Wof.WofDebugItemWindow" preserve="all" />
     <type fullname="Wof.WofDebugManager" preserve="all" />
+    <type fullname="Wof.WofDevBattleSetup" preserve="all" />
+    <type fullname="Wof.WofDevBattleSetupButton" preserve="all" />
+    <type fullname="Wof.WofDevBattleSetupCombatant" preserve="all" />
+    <type fullname="Wof.WofDojoChangeClassWindow" preserve="all" />
+    <type fullname="Wof.WofDojoConfirmAllPromotionsWindow" preserve="all" />
+    <type fullname="Wof.WofDojoConfirmExitWindow" preserve="all" />
+    <type fullname="Wof.WofDojoConfirmPromotionClassElement" preserve="all" />
+    <type fullname="Wof.WofDojoCostsWindow" preserve="all" />
     <type fullname="Wof.WofDojoMenu" preserve="all" />
     <type fullname="Wof.WofDojoSelectUnitGridWindow" preserve="all" />
     <type fullname="Wof.WofDojoTreeCenterClassElement" preserve="all" />
     <type fullname="Wof.WofDojoTreeClassElement" preserve="all" />
     <type fullname="Wof.WofDojoTreeWindow" preserve="all" />
+    <type fullname="Wof.WofDropdownList" preserve="all" />
     <type fullname="Wof.WofEquipmentCatalogGrid" preserve="all" />
     <type fullname="Wof.WofEquipmentDataWindow" preserve="all" />
     <type fullname="Wof.WofEquipmentDisplayElement" preserve="all" />
+    <type fullname="Wof.WofEquipmentDisplayWindow" preserve="all" />
+    <type fullname="Wof.WofEquipmentStatsDisplay" preserve="all" />
+    <type fullname="Wof.WofFlyingText" preserve="all" />
+    <type fullname="Wof.WofFlyingTextIndividualMember" preserve="all" />
+    <type fullname="Wof.WofGlobalVolumeFader" preserve="all" />
+    <type fullname="Wof.WofHangingBoardSettings" preserve="all" />
     <type fullname="Wof.WofHealingSpringMenu" preserve="all" />
+    <type fullname="Wof.WofHideIntroBannerStateSettings" preserve="all" />
+    <type fullname="Wof.WofInsufficientFundsWindow" preserve="all" />
+    <type fullname="Wof.WofInvalidBattleActionBanner" preserve="all" />
+    <type fullname="Wof.WofInventoryConsumableDataWindow" preserve="all" />
+    <type fullname="Wof.WofInventoryEquipmentDataWindow" preserve="all" />
     <type fullname="Wof.WofInventoryItemsPanel" preserve="all" />
+    <type fullname="Wof.WofInventoryMainWindow" preserve="all" />
     <type fullname="Wof.WofInventoryScreen" preserve="all" />
+    <type fullname="Wof.WofItemCategoriesDisplay" preserve="all" />
+    <type fullname="Wof.WofItemGrantedResultWindow" preserve="all" />
     <type fullname="Wof.WofItemListCatalog" preserve="all" />
+    <type fullname="Wof.WofItemRevealAnimationNotifier" preserve="all" />
+    <type fullname="Wof.WofItemStatsDisplay" preserve="all" />
     <type fullname="Wof.WofListItemDisplay" preserve="all" />
     <type fullname="Wof.WofListItemDisplayUniversal" preserve="all" />
     <type fullname="Wof.WofListItemDisplayWithPercentageChance" preserve="all" />
     <type fullname="Wof.WofListWithPriceItemDisplay" preserve="all" />
+    <type fullname="Wof.WofLoadingScreen" preserve="all" />
     <type fullname="Wof.WofLockedClassOverviewInformationWindow" preserve="all" />
     <type fullname="Wof.WofLocManager" preserve="all" />
     <type fullname="Wof.WofLootboxAnimationSequenceManager" preserve="all" />
+    <type fullname="Wof.WofMerchantBuyWindow" preserve="all" />
+    <type fullname="Wof.WofMerchantCatalogWindow" preserve="all" />
+    <type fullname="Wof.WofMerchantIntroWindow" preserve="all" />
+    <type fullname="Wof.WofMerchantMenu" preserve="all" />
+    <type fullname="Wof.WofMessagePrompt" preserve="all" />
+    <type fullname="Wof.WofMoochkinCommentScreen" preserve="all" />
     <type fullname="Wof.WofMoochkinPodScreen" preserve="all" />
     <type fullname="Wof.WofMoochkinPriceItemDisplay" preserve="all" />
+    <type fullname="Wof.WofMoveToCenterStateSettings" preserve="all" />
+    <type fullname="Wof.WofPerkIconLibrary" preserve="all" />
+    <type fullname="Wof.WofPlaythroughResultsCharactersList" preserve="all" />
+    <type fullname="Wof.WofPlaythroughResultsClassProgressionTree" preserve="all" />
+    <type fullname="Wof.WofPrepChargeStateSettings" preserve="all" />
+    <type fullname="Wof.WofPromotionAnimatedScreen" preserve="all" />
     <type fullname="Wof.WofRarityDisplay" preserve="all" />
+    <type fullname="Wof.WofRegularTreasureAnimationSequenceManager" preserve="all" />
+    <type fullname="Wof.WofRetractkinConfirmWindow" preserve="all" />
+    <type fullname="Wof.WofRowsActionsDisplay" preserve="all" />
+    <type fullname="Wof.WofScrollViewContainer" preserve="all" />
+    <type fullname="Wof.WofShowIntroBannerStateSettings" preserve="all" />
+    <type fullname="Wof.WofSimpleAttackStateSettings" preserve="all" />
+    <type fullname="Wof.WofSimpleCastSpellStateSettings" preserve="all" />
+    <type fullname="Wof.WofSimpleProjectileShootStateSettings" preserve="all" />
     <type fullname="Wof.WofSimplifiedItemDisplay" preserve="all" />
+    <type fullname="Wof.WofSkillLockedWarning" preserve="all" />
+    <type fullname="Wof.WofSquadFormationGridPanel" preserve="all" />
     <type fullname="Wof.WofSquadFormationScreen" preserve="all" />
+    <type fullname="Wof.WofSquadFormationSelectionGridPanel" preserve="all" />
     <type fullname="Wof.WofStatDetailsLabel" preserve="all" />
     <type fullname="Wof.WofTailorClothesSpriteItem" preserve="all" />
     <type fullname="Wof.WofTailorColorItem" preserve="all" />
     <type fullname="Wof.WofTailorEmotionSpriteItem" preserve="all" />
     <type fullname="Wof.WofTailorExtrasSpriteItem" preserve="all" />
     <type fullname="Wof.WofTailorHairSpriteItem" preserve="all" />
+    <type fullname="Wof.WofTestDebugItemDisplay" preserve="all" />
+    <type fullname="Wof.WofTreasureScreen" preserve="all" />
     <type fullname="Wof.WofTreeCenterClassElement" preserve="all" />
+    <type fullname="Wof.WofTreeClassElement" preserve="all" />
+    <type fullname="Wof.WofTurnOrderPortrait" preserve="all" />
     <type fullname="Wof.WofUniversalItemDisplay" preserve="all" />
     <type fullname="Wof.WofUnlockedClassOverviewInformationWindow" preserve="all" />
     <type fullname="Wof.WofUnlockedUnitOverviewInformationWindow" preserve="all" />
-    <type fullname="WofBattleActionBanner" preserve="all" />
-    <type fullname="WofBattleAnimatedProjectile" preserve="all" />
-    <type fullname="WofBattleEndBanner" preserve="all" />
-    <type fullname="WofBattleIntroBanner" preserve="all" />
-    <type fullname="WofBattleSkillBanner" preserve="all" />
-    <type fullname="WofBattleTargetInfoStatLabel" preserve="all" />
-    <type fullname="WofChangeClassPrompt" preserve="all" />
-    <type fullname="WofCharacterRevealCard" preserve="all" />
-    <type fullname="WofClassComparisonSidePanel" preserve="all" />
-    <type fullname="WofClassProgressionMainWindow" preserve="all" />
-    <type fullname="WofClassProgressionScreen" preserve="all" />
-    <type fullname="WofClassProgressionTree" preserve="all" />
-    <type fullname="WofClassRequirementLabel" preserve="all" />
-    <type fullname="WofClassWeaponIcon" preserve="all" />
-    <type fullname="WofCompareEquipmentsWindow" preserve="all" />
-    <type fullname="WofConsumableItemWindow" preserve="all" />
-    <type fullname="WofCore.Audio.AudioBootstrap" preserve="all" />
-    <type fullname="WofCore.Audio.AudioMixerGroupRouter" preserve="all" />
-    <type fullname="WofCore.Audio.ButtonSounds" preserve="all" />
-    <type fullname="WofCore.Audio.FMOD.WofFmodAudioService" preserve="all" />
-    <type fullname="WofCore.Audio.MusicEvent" preserve="all" />
-    <type fullname="WofCore.Audio.WofAudioClipConfig" preserve="all" />
-    <type fullname="WofCore.Audio.WofAudioSettingsBinder" preserve="all" />
-    <type fullname="WofCore.Audio.WofMusicConfig" preserve="all" />
-    <type fullname="WofCore.Audio.WofMusicController" preserve="all" />
-    <type fullname="WofCore.Audio.WofUnityAudioService" preserve="all" />
-    <type fullname="WofCore.WofActiveModelsSingleton" preserve="all" />
-    <type fullname="WofCore.WofPathSelectElement" preserve="all" />
-    <type fullname="WofCore.WofPathSelectMenu" preserve="all" />
-    <type fullname="WofCreditsWindow" preserve="all" />
-    <type fullname="WofCrystalRevealAnimation" preserve="all" />
-    <type fullname="WofDebugItemWindow" preserve="all" />
-    <type fullname="WofDevBattleSetup" preserve="all" />
-    <type fullname="WofDevBattleSetupButton" preserve="all" />
-    <type fullname="WofDevBattleSetupCombatant" preserve="all" />
-    <type fullname="WofDojoChangeClassWindow" preserve="all" />
-    <type fullname="WofDojoConfirmAllPromotionsWindow" preserve="all" />
-    <type fullname="WofDojoConfirmExitWindow" preserve="all" />
-    <type fullname="WofDojoConfirmPromotionClassElement" preserve="all" />
-    <type fullname="WofDojoCostsWindow" preserve="all" />
-    <type fullname="WofDropdownList" preserve="all" />
-    <type fullname="WofEquipmentDisplayWindow" preserve="all" />
-    <type fullname="WofEquipmentStatsDisplay" preserve="all" />
-    <type fullname="WofFlyingText" preserve="all" />
-    <type fullname="WofFlyingTextIndividualMember" preserve="all" />
-    <type fullname="WofGlobalVolumeFader" preserve="all" />
-    <type fullname="WofHangingBoardSettings" preserve="all" />
-    <type fullname="WofHideIntroBannerStateSettings" preserve="all" />
-    <type fullname="WofInsufficientFundsWindow" preserve="all" />
-    <type fullname="WofInvalidBattleActionBanner" preserve="all" />
-    <type fullname="WofInventoryConsumableDataWindow" preserve="all" />
-    <type fullname="WofInventoryEquipmentDataWindow" preserve="all" />
-    <type fullname="WofInventoryMainWindow" preserve="all" />
-    <type fullname="WofItemCategoriesDisplay" preserve="all" />
-    <type fullname="WofItemGrantedResultWindow" preserve="all" />
-    <type fullname="WofItemRevealAnimationNotifier" preserve="all" />
-    <type fullname="WofItemStatsDisplay" preserve="all" />
-    <type fullname="WofLoadingScreen" preserve="all" />
-    <type fullname="WofMerchantBuyWindow" preserve="all" />
-    <type fullname="WofMerchantCatalogWindow" preserve="all" />
-    <type fullname="WofMerchantIntroWindow" preserve="all" />
-    <type fullname="WofMerchantMenu" preserve="all" />
-    <type fullname="WofMessagePrompt" preserve="all" />
-    <type fullname="WofMoochkinCommentScreen" preserve="all" />
-    <type fullname="WofMoveToCenterStateSettings" preserve="all" />
+    <type fullname="Wof.WorldParticleManager" preserve="all" />
     <type fullname="WofMoveToEnemyStateSettings" preserve="all" />
     <type fullname="WofMoveToFormationCenterStateSettings" preserve="all" />
-    <type fullname="WofPerkIconLibrary" preserve="all" />
-    <type fullname="WofPlaythroughResultsCharactersList" preserve="all" />
-    <type fullname="WofPlaythroughResultsClassProgressionTree" preserve="all" />
+    <type fullname="WofPlaythroughResultsProgressionPopUp" preserve="all" />
     <type fullname="WofPlaythroughResultsWindow" preserve="all" />
-    <type fullname="WofPrepChargeStateSettings" preserve="all" />
-    <type fullname="WofPromotionAnimatedScreen" preserve="all" />
-    <type fullname="WofRegularTreasureAnimationSequenceManager" preserve="all" />
-    <type fullname="WofRetractkinConfirmWindow" preserve="all" />
     <type fullname="WofReturnToCellStateSettings" preserve="all" />
-    <type fullname="WofRowsActionsDisplay" preserve="all" />
-    <type fullname="WofScrollViewContainer" preserve="all" />
-    <type fullname="WofShowIntroBannerStateSettings" preserve="all" />
-    <type fullname="WofSimpleAttackStateSettings" preserve="all" />
-    <type fullname="WofSimpleCastSpellStateSettings" preserve="all" />
-    <type fullname="WofSimpleProjectileShootStateSettings" preserve="all" />
-    <type fullname="WofSkillLockedWarning" preserve="all" />
-    <type fullname="WofSquadFormationGridPanel" preserve="all" />
-    <type fullname="WofSquadFormationSelectionGridPanel" preserve="all" />
-    <type fullname="WofTestDebugItemDisplay" preserve="all" />
-    <type fullname="WofTreasureScreen" preserve="all" />
-    <type fullname="WofTreeClassElement" preserve="all" />
-    <type fullname="WofTurnOrderPortrait" preserve="all" />
-    <type fullname="WorldParticleManager" preserve="all" />
-    <type fullname="ButtonAppearanceSettings" preserve="nothing" serialized="true" />
-    <type fullname="RevealCardRaritySettings" preserve="nothing" serialized="true" />
-    <type fullname="SettingsSectionProperties" preserve="nothing" serialized="true" />
+    <type fullname="Wof.ButtonAppearanceSettings" preserve="nothing" serialized="true" />
     <type fullname="Wof.RecruitFrontAppearanceParts" preserve="nothing" serialized="true" />
+    <type fullname="Wof.RevealCardRaritySettings" preserve="nothing" serialized="true" />
+    <type fullname="Wof.SettingsSectionProperties" preserve="nothing" serialized="true" />
     <type fullname="Wof.WofLootboxAnimationSequenceManager/RevealSfxItem" preserve="nothing" serialized="true" />
-    <type fullname="AnimationStateEffectProperties" preserve="nothing" serialized="true" />
     <type fullname="Battle.BattleEffects.ColorFilterSettingsData" preserve="nothing" serialized="true" />
     <type fullname="Battle.BattleEffects.ShakeSettingsData" preserve="nothing" serialized="true" />
-    <type fullname="BattleStatIconEntry" preserve="nothing" serialized="true" />
-    <type fullname="BiomeTableEntry" preserve="nothing" serialized="true" />
-    <type fullname="BiomeTableNonBattleEntry" preserve="nothing" serialized="true" />
-    <type fullname="ButtonColorTintSettings" preserve="nothing" serialized="true" />
-    <type fullname="CharacterCustomizationFrameReference" preserve="nothing" serialized="true" />
-    <type fullname="ClassUnlockRequirementEntry" preserve="nothing" serialized="true" />
-    <type fullname="CombatantClassPrefabEntry" preserve="nothing" serialized="true" />
-    <type fullname="IndependentHitCellEffectData" preserve="nothing" serialized="true" />
-    <type fullname="PerkIconConfig" preserve="nothing" serialized="true" />
-    <type fullname="UIElementIconEntry" preserve="nothing" serialized="true" />
-    <type fullname="UIFoodIconEntry" preserve="nothing" serialized="true" />
-    <type fullname="UIRomanNumberEntry" preserve="nothing" serialized="true" />
-    <type fullname="WeaponCombatAnimationSettings" preserve="nothing" serialized="true" />
-    <type fullname="WeaponElementIconEntry" preserve="nothing" serialized="true" />
     <type fullname="Wof.AccessoryWeightsBySection" preserve="nothing" serialized="true" />
+    <type fullname="Wof.AnimationStateEffectProperties" preserve="nothing" serialized="true" />
     <type fullname="Wof.Battle.BattleAnimationStateProperties" preserve="nothing" serialized="true" />
+    <type fullname="Wof.BattleStatIconEntry" preserve="nothing" serialized="true" />
+    <type fullname="Wof.BiomeTableEntry" preserve="nothing" serialized="true" />
+    <type fullname="Wof.BiomeTableNonBattleEntry" preserve="nothing" serialized="true" />
+    <type fullname="Wof.ButtonColorTintSettings" preserve="nothing" serialized="true" />
     <type fullname="Wof.CharacterCustomizationClassEntry" preserve="nothing" serialized="true" />
+    <type fullname="Wof.CharacterCustomizationFrameReference" preserve="nothing" serialized="true" />
     <type fullname="Wof.CharacterCustomizationItemStatus" preserve="nothing" serialized="true" />
     <type fullname="Wof.ClassExtraLayerObject" preserve="nothing" serialized="true" />
+    <type fullname="Wof.ClassUnlockRequirementEntry" preserve="nothing" serialized="true" />
     <type fullname="Wof.ColorProperties" preserve="nothing" serialized="true" />
+    <type fullname="Wof.CombatantClassPrefabEntry" preserve="nothing" serialized="true" />
+    <type fullname="Wof.Core.Audio.AudioMixerGroupRouter/Route" preserve="nothing" serialized="true" />
+    <type fullname="Wof.Core.Audio.WofAudioClipConfig/Entry" preserve="nothing" serialized="true" />
+    <type fullname="Wof.Core.Audio.WofMusicConfig/ThemeEntry" preserve="nothing" serialized="true" />
     <type fullname="Wof.CustomizableSpriteMember" preserve="nothing" serialized="true" />
     <type fullname="Wof.EffectData" preserve="nothing" serialized="true" />
     <type fullname="Wof.HitAnimationEntry" preserve="nothing" serialized="true" />
+    <type fullname="Wof.IndependentHitCellEffectData" preserve="nothing" serialized="true" />
     <type fullname="Wof.ItemCategoryByPathType" preserve="nothing" serialized="true" />
     <type fullname="Wof.ItemCountsByPathType" preserve="nothing" serialized="true" />
     <type fullname="Wof.ItemTypeChance" preserve="nothing" serialized="true" />
@@ -766,6 +769,7 @@
     <type fullname="Wof.PathSelectionData/BossTiers" preserve="nothing" serialized="true" />
     <type fullname="Wof.PathSelectionData/ChoiceData" preserve="nothing" serialized="true" />
     <type fullname="Wof.PathSelectionData/WeightedChoices" preserve="nothing" serialized="true" />
+    <type fullname="Wof.PerkIconConfig" preserve="nothing" serialized="true" />
     <type fullname="Wof.PotionChance" preserve="nothing" serialized="true" />
     <type fullname="Wof.PotionWeightsBySection" preserve="nothing" serialized="true" />
     <type fullname="Wof.RankIncreaseChance" preserve="nothing" serialized="true" />
@@ -775,14 +779,17 @@
     <type fullname="Wof.RowPreferenceByClass" preserve="nothing" serialized="true" />
     <type fullname="Wof.RowPreferenceDisplay" preserve="nothing" serialized="true" />
     <type fullname="Wof.StatusEffectAnimationBehavior" preserve="nothing" serialized="true" />
+    <type fullname="Wof.UIElementIconEntry" preserve="nothing" serialized="true" />
+    <type fullname="Wof.UIFoodIconEntry" preserve="nothing" serialized="true" />
+    <type fullname="Wof.UIRomanNumberEntry" preserve="nothing" serialized="true" />
+    <type fullname="Wof.WeaponCombatAnimationSettings" preserve="nothing" serialized="true" />
+    <type fullname="Wof.WeaponElementIconEntry" preserve="nothing" serialized="true" />
     <type fullname="Wof.WeaponWeightsBySection" preserve="nothing" serialized="true" />
-    <type fullname="WofCore.Audio.AudioMixerGroupRouter/Route" preserve="nothing" serialized="true" />
-    <type fullname="WofCore.Audio.WofAudioClipConfig/Entry" preserve="nothing" serialized="true" />
-    <type fullname="WofCore.Audio.WofMusicConfig/ThemeEntry" preserve="nothing" serialized="true" />
     <type fullname="Wof.MenuStep" preserve="nothing" serialized="true" />
-    <type fullname="DevBattlePreset" preserve="nothing" serialized="true" />
-    <type fullname="DevBattleSetupCell" preserve="nothing" serialized="true" />
     <type fullname="Wof.Battle.IsometricGridCell" preserve="nothing" serialized="true" />
+    <type fullname="Wof.Battle.WofBattleAnimationState" preserve="nothing" serialized="true" />
+    <type fullname="Wof.DevBattlePreset" preserve="nothing" serialized="true" />
+    <type fullname="Wof.DevBattleSetupCell" preserve="nothing" serialized="true" />
     <type fullname="Wof.CharacterSoundEntry" preserve="nothing" serialized="true" />
     <type fullname="Wof.IndividualLightSettings/Global" preserve="nothing" serialized="true" />
   </assembly>
