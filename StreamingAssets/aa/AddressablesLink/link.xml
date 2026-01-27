@@ -4,6 +4,8 @@
   </assembly>
   <assembly fullname="com.solana.unity_sdk, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="MainThreadDispatcher" preserve="all" />
+    <type fullname="Solana.Unity.SDK.WalletAdapterButton" preserve="all" />
+    <type fullname="Solana.Unity.SDK.WalletAdapterScreen" preserve="all" />
     <type fullname="Solana.Unity.SDK.Web3" preserve="all" />
     <type fullname="Solana.Unity.SDK.PhantomWalletOptions" preserve="nothing" serialized="true" />
     <type fullname="Solana.Unity.SDK.SolanaMobileWalletAdapterOptions" preserve="nothing" serialized="true" />
@@ -363,6 +365,7 @@
     <type fullname="Wof.HuntModePathMapNode" preserve="all" />
     <type fullname="Wof.HuntModeRerollDiamondNotify" preserve="all" />
     <type fullname="Wof.HuntSettingsWindow" preserve="all" />
+    <type fullname="wof.Recruitment.WofHubRecruitmentMenu" preserve="all" />
     <type fullname="Wof.WofBackToDonegalWarningWindow" preserve="all" />
     <type fullname="Wof.WofBarracksCrystalWalletWindow" preserve="all" />
     <type fullname="Wof.WofBarracksEmptyHealthWarning" preserve="all" />
@@ -454,7 +457,6 @@
     <type fullname="Battle.BattleEffects.CameraShakeManager" preserve="all" />
     <type fullname="Battle.BattleEffects.ColorFilterEffectManager" preserve="all" />
     <type fullname="Battle.BattleEffects.ColorFilterPresetScriptableObject" preserve="all" />
-    <type fullname="CursorManager" preserve="all" />
     <type fullname="Wof.AccessorySelection" preserve="all" />
     <type fullname="Wof.AnimationNotificationSender" preserve="all" />
     <type fullname="Wof.AudioSettingsSection" preserve="all" />
@@ -482,8 +484,10 @@
     <type fullname="Wof.Battle.WofGridHandler" preserve="all" />
     <type fullname="Wof.Battle.WofIsometricBattleManager" preserve="all" />
     <type fullname="Wof.Battle.WofIsometricGrid" preserve="all" />
+    <type fullname="Wof.Battle.WofIsometricGridHighlightCell" preserve="all" />
     <type fullname="Wof.Battle.WofIsometricGridSlot" preserve="all" />
     <type fullname="Wof.Battle.WofPlayerBattleGridManagerUI" preserve="all" />
+    <type fullname="Wof.Battle.WofUIGridHighlightCell" preserve="all" />
     <type fullname="Wof.BattleBackgroundManager" preserve="all" />
     <type fullname="Wof.BattleBackgroundScriptableObject" preserve="all" />
     <type fullname="Wof.BattleBackgroundSettingsScriptableObject" preserve="all" />
@@ -724,6 +728,7 @@
     <type fullname="Wof.WofUnlockedClassOverviewInformationWindow" preserve="all" />
     <type fullname="Wof.WofUnlockedUnitOverviewInformationWindow" preserve="all" />
     <type fullname="Wof.WorldParticleManager" preserve="all" />
+    <type fullname="WofEscapePortalConfirmWindow" preserve="all" />
     <type fullname="WofMoveToEnemyStateSettings" preserve="all" />
     <type fullname="WofMoveToFormationCenterStateSettings" preserve="all" />
     <type fullname="WofPlaythroughResultsProgressionPopUp" preserve="all" />
