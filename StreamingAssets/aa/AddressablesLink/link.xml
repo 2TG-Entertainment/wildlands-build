@@ -4,6 +4,8 @@
   </assembly>
   <assembly fullname="com.solana.unity_sdk, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="MainThreadDispatcher" preserve="all" />
+    <type fullname="Solana.Unity.SDK.WalletAdapterButton" preserve="all" />
+    <type fullname="Solana.Unity.SDK.WalletAdapterScreen" preserve="all" />
     <type fullname="Solana.Unity.SDK.Web3" preserve="all" />
     <type fullname="Solana.Unity.SDK.PhantomWalletOptions" preserve="nothing" serialized="true" />
     <type fullname="Solana.Unity.SDK.SolanaMobileWalletAdapterOptions" preserve="nothing" serialized="true" />
@@ -104,12 +106,16 @@
   <assembly fullname="Unity.InputSystem, Version=1.14.2.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.InputSystem.InputActionAsset" preserve="all" />
     <type fullname="UnityEngine.InputSystem.InputActionReference" preserve="all" />
+    <type fullname="UnityEngine.InputSystem.PlayerInput" preserve="all" />
     <type fullname="UnityEngine.InputSystem.UI.InputSystemUIInputModule" preserve="all" />
     <type fullname="UnityEngine.InputSystem.InputAction" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.InputSystem.InputActionMap" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.InputSystem.InputBinding" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.InputSystem.InputControlScheme" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.InputSystem.InputControlScheme/DeviceRequirement" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.InputSystem.PlayerInput/ControlsChangedEvent" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.InputSystem.PlayerInput/DeviceLostEvent" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.InputSystem.PlayerInput/DeviceRegainedEvent" preserve="nothing" serialized="true" />
   </assembly>
   <assembly fullname="Unity.RenderPipelines.Core.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.Rendering.Volume" preserve="all" />
@@ -235,6 +241,9 @@
     <type fullname="UnityEngine.PolygonCollider2D" preserve="all" />
     <type fullname="UnityEngine.Rigidbody2D" preserve="all" />
   </assembly>
+  <assembly fullname="UnityEngine.SpriteMaskModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.SpriteMask" preserve="all" />
+  </assembly>
   <assembly fullname="UnityEngine.TextRenderingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.Font" preserve="all" />
   </assembly>
@@ -289,7 +298,6 @@
     <type fullname="AuctionHouse.AuctionItem" preserve="all" />
     <type fullname="AuctionHouse.AuctionsPanel" preserve="all" />
     <type fullname="AuctionHouse.ConfirmListingOrBidPopup" preserve="all" />
-    <type fullname="AuctionHouse.DetailsSection" preserve="all" />
     <type fullname="AuctionHouse.DurationToggle" preserve="all" />
     <type fullname="AuctionHouse.FilterItem" preserve="all" />
     <type fullname="AuctionHouse.Filters" preserve="all" />
@@ -361,6 +369,7 @@
     <type fullname="Wof.HuntModePathMapNode" preserve="all" />
     <type fullname="Wof.HuntModeRerollDiamondNotify" preserve="all" />
     <type fullname="Wof.HuntSettingsWindow" preserve="all" />
+    <type fullname="wof.Recruitment.WofHubRecruitmentMenu" preserve="all" />
     <type fullname="Wof.WofBackToDonegalWarningWindow" preserve="all" />
     <type fullname="Wof.WofBarracksCrystalWalletWindow" preserve="all" />
     <type fullname="Wof.WofBarracksEmptyHealthWarning" preserve="all" />
@@ -387,6 +396,7 @@
     <type fullname="Wof.WofFinancierRewardsBoardCurrentPlacementWindow" preserve="all" />
     <type fullname="Wof.WofFinancierRewardsBoardMenu" preserve="all" />
     <type fullname="Wof.WofFinancierRewardsBoardReport" preserve="all" />
+    <type fullname="Wof.WofFinancierRewardsPoolWindow" preserve="all" />
     <type fullname="Wof.WofFinancierRewardsTreasureWindow" preserve="all" />
     <type fullname="Wof.WofFinancierSponsorshipConfirmWindow" preserve="all" />
     <type fullname="Wof.WofFinancierSponsorshipReport" preserve="all" />
@@ -396,7 +406,6 @@
     <type fullname="Wof.WofFoodItemWindow" preserve="all" />
     <type fullname="Wof.WofHuntersBarracksRerollConfirmWindow" preserve="all" />
     <type fullname="Wof.WofHuntersBattleResultsWindow" preserve="all" />
-    <type fullname="Wof.WofHuntersClassProgressionScreen" preserve="all" />
     <type fullname="Wof.WofHuntersCongratulationsWindow" preserve="all" />
     <type fullname="Wof.WofHuntersHealingSpringMenu" preserve="all" />
     <type fullname="Wof.WofHuntersMoochkinPodScreen" preserve="all" />
@@ -439,7 +448,9 @@
     <type fullname="Wof.WofWelcomeChestWindow" preserve="all" />
     <type fullname="WofBarracksSwapConfirmWindow" preserve="all" />
     <type fullname="WofFinancierCharacterSelectionMenu" preserve="all" />
+    <type fullname="WofHuntersClassProgressionScreen" preserve="all" />
     <type fullname="WofInnConfirmPrompt" preserve="all" />
+    <type fullname="WofRecruitSelectHorizontalDisplayWidget" preserve="all" />
     <type fullname="Wof.Hunters.DonegalSubMenu" preserve="nothing" serialized="true" />
     <type fullname="Wof.Hunters.HuntModeDonegalButtonElement" preserve="nothing" serialized="true" />
     <type fullname="Wof.Hunters.RarityBackground" preserve="nothing" serialized="true" />
@@ -478,8 +489,10 @@
     <type fullname="Wof.Battle.WofGridHandler" preserve="all" />
     <type fullname="Wof.Battle.WofIsometricBattleManager" preserve="all" />
     <type fullname="Wof.Battle.WofIsometricGrid" preserve="all" />
+    <type fullname="Wof.Battle.WofIsometricGridHighlightCell" preserve="all" />
     <type fullname="Wof.Battle.WofIsometricGridSlot" preserve="all" />
     <type fullname="Wof.Battle.WofPlayerBattleGridManagerUI" preserve="all" />
+    <type fullname="Wof.Battle.WofUIGridHighlightCell" preserve="all" />
     <type fullname="Wof.BattleBackgroundManager" preserve="all" />
     <type fullname="Wof.BattleBackgroundScriptableObject" preserve="all" />
     <type fullname="Wof.BattleBackgroundSettingsScriptableObject" preserve="all" />
@@ -570,6 +583,7 @@
     <type fullname="Wof.PathSelectionData" preserve="all" />
     <type fullname="Wof.PathSelectVisual" preserve="all" />
     <type fullname="Wof.PooledEffect" preserve="all" />
+    <type fullname="Wof.PooledObjectSettingsScriptableObject" preserve="all" />
     <type fullname="Wof.SceneLoadingManager" preserve="all" />
     <type fullname="Wof.ScreenFadeManager" preserve="all" />
     <type fullname="Wof.SpecialSkillBanner" preserve="all" />
@@ -657,6 +671,7 @@
     <type fullname="Wof.WofHangingBoardSettings" preserve="all" />
     <type fullname="Wof.WofHealingSpringMenu" preserve="all" />
     <type fullname="Wof.WofHideIntroBannerStateSettings" preserve="all" />
+    <type fullname="Wof.WofInputManager" preserve="all" />
     <type fullname="Wof.WofInsufficientFundsWindow" preserve="all" />
     <type fullname="Wof.WofInvalidBattleActionBanner" preserve="all" />
     <type fullname="Wof.WofInventoryConsumableDataWindow" preserve="all" />
@@ -686,18 +701,14 @@
     <type fullname="Wof.WofMoochkinPodScreen" preserve="all" />
     <type fullname="Wof.WofMoochkinPriceItemDisplay" preserve="all" />
     <type fullname="Wof.WofMoveToCenterStateSettings" preserve="all" />
-    <type fullname="Wof.WofMoveToEnemyStateSettings" preserve="all" />
-    <type fullname="Wof.WofMoveToFormationCenterStateSettings" preserve="all" />
     <type fullname="Wof.WofPerkIconLibrary" preserve="all" />
     <type fullname="Wof.WofPlaythroughResultsCharactersList" preserve="all" />
     <type fullname="Wof.WofPlaythroughResultsClassProgressionTree" preserve="all" />
-    <type fullname="Wof.WofPlaythroughResultsWindow" preserve="all" />
     <type fullname="Wof.WofPrepChargeStateSettings" preserve="all" />
     <type fullname="Wof.WofPromotionAnimatedScreen" preserve="all" />
     <type fullname="Wof.WofRarityDisplay" preserve="all" />
     <type fullname="Wof.WofRegularTreasureAnimationSequenceManager" preserve="all" />
     <type fullname="Wof.WofRetractkinConfirmWindow" preserve="all" />
-    <type fullname="Wof.WofReturnToCellStateSettings" preserve="all" />
     <type fullname="Wof.WofRowsActionsDisplay" preserve="all" />
     <type fullname="Wof.WofScrollViewContainer" preserve="all" />
     <type fullname="Wof.WofShowIntroBannerStateSettings" preserve="all" />
@@ -724,6 +735,13 @@
     <type fullname="Wof.WofUnlockedClassOverviewInformationWindow" preserve="all" />
     <type fullname="Wof.WofUnlockedUnitOverviewInformationWindow" preserve="all" />
     <type fullname="Wof.WorldParticleManager" preserve="all" />
+    <type fullname="WofEscapePortalConfirmWindow" preserve="all" />
+    <type fullname="WofHealingSpringConfirmWindow" preserve="all" />
+    <type fullname="WofMoveToEnemyStateSettings" preserve="all" />
+    <type fullname="WofMoveToFormationCenterStateSettings" preserve="all" />
+    <type fullname="WofPlaythroughResultsProgressionPopUp" preserve="all" />
+    <type fullname="WofPlaythroughResultsWindow" preserve="all" />
+    <type fullname="WofReturnToCellStateSettings" preserve="all" />
     <type fullname="Wof.ButtonAppearanceSettings" preserve="nothing" serialized="true" />
     <type fullname="Wof.RecruitFrontAppearanceParts" preserve="nothing" serialized="true" />
     <type fullname="Wof.RevealCardRaritySettings" preserve="nothing" serialized="true" />
