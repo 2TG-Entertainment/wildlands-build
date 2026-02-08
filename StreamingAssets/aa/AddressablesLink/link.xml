@@ -377,7 +377,6 @@
     <type fullname="Wof.WofBarracksHireConfirmWindow" preserve="all" />
     <type fullname="Wof.WofBarracksSwapWarningWindow" preserve="all" />
     <type fullname="Wof.WofCategoriesLayout" preserve="all" />
-    <type fullname="Wof.WofChestStyleData" preserve="all" />
     <type fullname="Wof.WofClassOverviewSkillLabel" preserve="all" />
     <type fullname="Wof.WofConfirmPerkWindow" preserve="all" />
     <type fullname="Wof.WofCostWithArrowsWidget" preserve="all" />
@@ -388,7 +387,6 @@
     <type fullname="Wof.WofEventChestDealListItem" preserve="all" />
     <type fullname="Wof.WofEventChestHorizontalItemsWidget" preserve="all" />
     <type fullname="Wof.WofFeaturedIChesttemDisplay" preserve="all" />
-    <type fullname="Wof.WofFeaturedItemData" preserve="all" />
     <type fullname="Wof.WofFinancierCharacterDetailsWindow" preserve="all" />
     <type fullname="Wof.WofFinancierMchySponsorshipConfirmWindow" preserve="all" />
     <type fullname="Wof.WofFinancierMchySponsorshipMainWindow" preserve="all" />
