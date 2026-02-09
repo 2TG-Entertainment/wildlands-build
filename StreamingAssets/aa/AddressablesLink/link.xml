@@ -735,6 +735,7 @@
     <type fullname="Wof.WofUnlockedClassOverviewInformationWindow" preserve="all" />
     <type fullname="Wof.WofUnlockedUnitOverviewInformationWindow" preserve="all" />
     <type fullname="Wof.WorldParticleManager" preserve="all" />
+    <type fullname="WofBattleResultsXpDisplay" preserve="all" />
     <type fullname="WofEscapePortalConfirmWindow" preserve="all" />
     <type fullname="WofHealingSpringConfirmWindow" preserve="all" />
     <type fullname="WofMoveToEnemyStateSettings" preserve="all" />
