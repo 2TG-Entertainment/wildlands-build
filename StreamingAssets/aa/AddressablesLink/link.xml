@@ -298,6 +298,7 @@
     <type fullname="AuctionHouse.AuctionItem" preserve="all" />
     <type fullname="AuctionHouse.AuctionsPanel" preserve="all" />
     <type fullname="AuctionHouse.ConfirmListingOrBidPopup" preserve="all" />
+    <type fullname="AuctionHouse.DetailsSection" preserve="all" />
     <type fullname="AuctionHouse.DurationToggle" preserve="all" />
     <type fullname="AuctionHouse.FilterItem" preserve="all" />
     <type fullname="AuctionHouse.Filters" preserve="all" />
@@ -667,6 +668,7 @@
     <type fullname="Wof.WofEquipmentStatsDisplay" preserve="all" />
     <type fullname="Wof.WofFlyingText" preserve="all" />
     <type fullname="Wof.WofFlyingTextIndividualMember" preserve="all" />
+    <type fullname="Wof.WofGamepadActionsHandler" preserve="all" />
     <type fullname="Wof.WofGlobalVolumeFader" preserve="all" />
     <type fullname="Wof.WofHangingBoardSettings" preserve="all" />
     <type fullname="Wof.WofHealingSpringMenu" preserve="all" />
@@ -743,6 +745,7 @@
     <type fullname="WofPlaythroughResultsProgressionPopUp" preserve="all" />
     <type fullname="WofPlaythroughResultsWindow" preserve="all" />
     <type fullname="WofReturnToCellStateSettings" preserve="all" />
+    <type fullname="WofVirtualMouse" preserve="all" />
     <type fullname="Wof.ButtonAppearanceSettings" preserve="nothing" serialized="true" />
     <type fullname="Wof.RecruitFrontAppearanceParts" preserve="nothing" serialized="true" />
     <type fullname="Wof.RevealCardRaritySettings" preserve="nothing" serialized="true" />
