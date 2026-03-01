@@ -317,6 +317,9 @@
     <type fullname="AuctionHouse.SortItem" preserve="all" />
     <type fullname="AuctionHouse.Sorts" preserve="all" />
     <type fullname="AuctionHouse.WofAuctionHouseMainWindow" preserve="all" />
+    <type fullname="WofCashierConfirmMenu" preserve="all" />
+    <type fullname="WofCashierListItem" preserve="all" />
+    <type fullname="WofCashierMainMenu" preserve="all" />
   </assembly>
   <assembly fullname="WOF.Unity.Hunters.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="Mopsicus.InfiniteScroll.InfiniteScroll" preserve="all" />
@@ -463,6 +466,7 @@
     <type fullname="Battle.BattleEffects.CameraShakeManager" preserve="all" />
     <type fullname="Battle.BattleEffects.ColorFilterEffectManager" preserve="all" />
     <type fullname="Battle.BattleEffects.ColorFilterPresetScriptableObject" preserve="all" />
+    <type fullname="HurtEndStateMachineEvent" preserve="all" />
     <type fullname="Wof.AccessorySelection" preserve="all" />
     <type fullname="Wof.AnimationNotificationSender" preserve="all" />
     <type fullname="Wof.AudioSettingsSection" preserve="all" />
