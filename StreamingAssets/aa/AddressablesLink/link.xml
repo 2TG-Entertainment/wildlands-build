@@ -450,6 +450,10 @@
     <type fullname="Wof.WofWelcomeChestScreen" preserve="all" />
     <type fullname="Wof.WofWelcomeChestWidget" preserve="all" />
     <type fullname="Wof.WofWelcomeChestWindow" preserve="all" />
+    <type fullname="WofBarracksArmoryCatalogWindow" preserve="all" />
+    <type fullname="WofBarracksArmoryConfirmDelete" preserve="all" />
+    <type fullname="WofBarracksArmoryInfoPrompt" preserve="all" />
+    <type fullname="WofBarracksArmoryWindow" preserve="all" />
     <type fullname="WofBarracksSwapConfirmWindow" preserve="all" />
     <type fullname="WofFinancierCharacterSelectionMenu" preserve="all" />
     <type fullname="WofHuntersClassProgressionScreen" preserve="all" />
