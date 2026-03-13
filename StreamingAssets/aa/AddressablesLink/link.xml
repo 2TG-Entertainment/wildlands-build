@@ -103,7 +103,7 @@
     <type fullname="UnityEngine.AddressableAssets.AssetReference" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.AddressableAssets.AssetReferenceT`1" preserve="nothing" serialized="true" />
   </assembly>
-  <assembly fullname="Unity.InputSystem, Version=1.14.2.0, Culture=neutral, PublicKeyToken=null">
+  <assembly fullname="Unity.InputSystem, Version=1.18.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.InputSystem.InputActionAsset" preserve="all" />
     <type fullname="UnityEngine.InputSystem.InputActionReference" preserve="all" />
     <type fullname="UnityEngine.InputSystem.PlayerInput" preserve="all" />
@@ -151,6 +151,7 @@
     <type fullname="UnityEngine.Rendering.Universal.UniversalAdditionalLightData" preserve="all" />
     <type fullname="UnityEngine.Rendering.Universal.Vignette" preserve="all" />
     <type fullname="UnityEngine.Rendering.Universal.WhiteBalance" preserve="all" />
+    <type fullname="UnityEngine.Rendering.Universal.BloomFilterModeParameter" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.Rendering.Universal.DepthOfFieldModeParameter" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.Rendering.Universal.DownscaleParameter" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.Rendering.Universal.FilmGrainLookupParameter" preserve="nothing" serialized="true" />
@@ -298,7 +299,6 @@
     <type fullname="AuctionHouse.AuctionItem" preserve="all" />
     <type fullname="AuctionHouse.AuctionsPanel" preserve="all" />
     <type fullname="AuctionHouse.ConfirmListingOrBidPopup" preserve="all" />
-    <type fullname="AuctionHouse.DetailsSection" preserve="all" />
     <type fullname="AuctionHouse.DurationToggle" preserve="all" />
     <type fullname="AuctionHouse.FilterItem" preserve="all" />
     <type fullname="AuctionHouse.Filters" preserve="all" />
@@ -317,9 +317,6 @@
     <type fullname="AuctionHouse.SortItem" preserve="all" />
     <type fullname="AuctionHouse.Sorts" preserve="all" />
     <type fullname="AuctionHouse.WofAuctionHouseMainWindow" preserve="all" />
-    <type fullname="WofCashierConfirmMenu" preserve="all" />
-    <type fullname="WofCashierListItem" preserve="all" />
-    <type fullname="WofCashierMainMenu" preserve="all" />
   </assembly>
   <assembly fullname="WOF.Unity.Hunters.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="Mopsicus.InfiniteScroll.InfiniteScroll" preserve="all" />
@@ -450,10 +447,6 @@
     <type fullname="Wof.WofWelcomeChestScreen" preserve="all" />
     <type fullname="Wof.WofWelcomeChestWidget" preserve="all" />
     <type fullname="Wof.WofWelcomeChestWindow" preserve="all" />
-    <type fullname="WofBarracksArmoryCatalogWindow" preserve="all" />
-    <type fullname="WofBarracksArmoryConfirmDelete" preserve="all" />
-    <type fullname="WofBarracksArmoryInfoPrompt" preserve="all" />
-    <type fullname="WofBarracksArmoryWindow" preserve="all" />
     <type fullname="WofBarracksSwapConfirmWindow" preserve="all" />
     <type fullname="WofFinancierCharacterSelectionMenu" preserve="all" />
     <type fullname="WofHuntersClassProgressionScreen" preserve="all" />
@@ -750,6 +743,7 @@
     <type fullname="WofHealingSpringConfirmWindow" preserve="all" />
     <type fullname="WofMoveToEnemyStateSettings" preserve="all" />
     <type fullname="WofMoveToFormationCenterStateSettings" preserve="all" />
+    <type fullname="WofPassiveSkillInformationWindow" preserve="all" />
     <type fullname="WofPlaythroughResultsProgressionPopUp" preserve="all" />
     <type fullname="WofPlaythroughResultsWindow" preserve="all" />
     <type fullname="WofReturnToCellStateSettings" preserve="all" />
