@@ -1362,29 +1362,29 @@ function dbg(text) {
 // === Body ===
 
 var ASM_CONSTS = {
-  8825464: () => { var AudioContext = window.AudioContext || window.webkitAudioContext; var infocontext = new AudioContext(); if (!infocontext) { return 0; } var inforate = infocontext.sampleRate; infocontext.close(); return inforate; },  
- 8825684: () => { Module.mInputRegistered = false; },  
- 8825721: () => { var AudioContext = window.AudioContext || window.webkitAudioContext; Module.context = new AudioContext(); if (!Module.context) { return 0; } Module.FMOD_JS_MixFunction = Module["cwrap"]('FMOD_JS_MixFunction', 'void', ['number']); return Module.context.sampleRate; },  
- 8825989: ($0, $1) => { Module._as_script_node = Module.context.createScriptProcessor($1, 0, $0); Module["OutputWebAudio_resumeAudio"] = function() { if (Module.context && Module.mInputRegistered) { console.log('Resetting audio driver based on user input.'); Module._as_script_node.connect(Module.context.destination); Module._as_script_node.onaudioprocess = function(audioProcessingEvent) { Module._as_output_buffer = audioProcessingEvent.outputBuffer; Module.FMOD_JS_MixFunction(Module._as_output_buffer.getChannelData(0).length); }; Module.context.resume(); window.removeEventListener('click', Module.OutputWebAudio_resumeAudio, false); window.removeEventListener('touchend', Module.OutputWebAudio_resumeAudio, false); Module.mInputRegistered = false; } }; },  
- 8826729: () => { if (Module.mInputRegistered) { Module.mInputRegistered = false; window.removeEventListener('click', Module["OutputWebAudio_resumeAudio"], false); window.removeEventListener('touchend', Module["OutputWebAudio_resumeAudio"], false); } },  
- 8826966: () => { window.addEventListener('touchend', Module["OutputWebAudio_resumeAudio"], false); window.addEventListener('click', Module["OutputWebAudio_resumeAudio"], false); Module.mInputRegistered = true; },  
- 8827163: () => { Module._as_script_node.disconnect(Module.context.destination); },  
- 8827230: ($0, $1, $2, $3) => { var data = HEAPF32.subarray(($0 / 4), ($0 / 4) + ($2 * $3)); for (var channel = 0; channel < $3; channel++) { var outputData = Module._as_output_buffer.getChannelData(channel); for (var sample = 0; sample < $2; sample++) { outputData[sample+$1] = data[(sample*$3)+channel]; } } },  
- 8827512: () => { Module.context.suspend(); },  
- 8827542: () => { Module.context.resume(); },  
- 8827571: () => { var AudioContext = window.AudioContext || window.webkitAudioContext; var infocontext = new AudioContext(); if (!infocontext) { return 0; } var inforate = infocontext.sampleRate; infocontext.close(); return inforate; },  
- 8827791: () => { Module.mWorkletNode = null; Module.mModulePolling = false; Module.mModuleLoading = false; Module.mStartInterval = null; Module.mStopInterval = null; Module.mSuspendInterval = null; Module.mResumeInterval = null; Module.mWorkletNodeConnected = false; Module.mInputRegistered = false; var AudioContext = window.AudioContext || window.webkitAudioContext; Module.mContext = new AudioContext(); if (!Module.mContext) { return 0; } Module.mContext.destination.channelCount = Module.mContext.destination.maxChannelCount; return Module.mContext.destination.maxChannelCount; },  
- 8828361: ($0) => { const initAddModuleRef = $0; if (!initAddModuleRef) { Module.mAddModuleRef = 0; } if (!self.AudioWorkletNode) { return -1; } if (!Module.mContext.audioWorklet.addModule) { return -2; } Module.FMOD_JS_MixerSlowpathFunction = Module["cwrap"]('FMOD_JS_MixerSlowpathFunction', 'void', []); Module.FMOD_JS_MixerFastpathFunction = Module["cwrap"]('FMOD_JS_MixerFastpathFunction', 'void', ['number']); return Module.mContext.sampleRate; },  
- 8828795: ($0, $1) => { Module.mSpeakerChannelCount = $0; const bufferLength = $1; Module.mUrl = null; Module.mOutputData = null; Module.mSharedArrayBuffers = false; if (self.SharedArrayBuffer) { if (self.crossOriginIsolated) { Module.mSharedArrayBuffers = true; } } if (!Module.mSharedArrayBuffers) { const slowCodePath = new Blob( [ "class AudioProcessor extends AudioWorkletProcessor", "{", "constructor(options)", "{", "super();", "this.payload = [null, null];", "this.bufferFlag = 0;", "this.dataFlag = 0;", "this.bufferIndex = 0;", "this.bufferSize = 0;", "this.channelCount = options.outputChannelCount;", "this.port.onmessage = (event) => {", "const { data } = event;", "if (data)", "{", "this.payload[this.dataFlag] = new Float32Array(data);", "this.bufferSize = data.length / this.channelCount;", "}", "else", "{", "this.payload[this.dataFlag] = null;", "}", "this.dataFlag ^= 1;", "};", "}", "process(inputs, outputs, parameters)", "{", "const output = outputs[0];", "if (output.length === 0) return true;", "if (this.payload[this.bufferFlag]) {", "if (this.bufferIndex === 0) {", "this.port.postMessage(this.bufferSize);", "}", "const bufferSliceEnd = this.bufferSize / output[0].length;", "const sliceOffset = output[0].length * this.bufferIndex;", "for (let channel = 0; channel < output.length; ++channel) {", "const outputChannel = output[channel];", "const indexOffset = this.bufferSize * channel + sliceOffset;", "outputChannel.set(new Float32Array(this.payload[this.bufferFlag].slice(0 + indexOffset, outputChannel.length + indexOffset)));", "}", "this.bufferIndex++;", "if (this.bufferIndex === bufferSliceEnd) {", "this.bufferIndex = 0;", "this.bufferFlag ^= 1;", "}", "}", "return true;", "}", "}", "registerProcessor('audio-processor', AudioProcessor);" ], { type: 'application/javascript' }); Module.mUrl = URL.createObjectURL(slowCodePath); Module.mOutputData = new Float32Array(Module.mSpeakerChannelCount * bufferLength); } else { const fastCodePath = new Blob( [ "class AudioProcessor extends AudioWorkletProcessor", "{", "constructor(options)", "{", "super();", "this.payload = null;", "this.bufferFlag = 0;", "this.bufferIndex = 0;", "this.bufferSize = 0;", "this.bufferOffset = 0;", "this.channelCount = options.outputChannelCount;", "this.port.onmessage = (event) => {", "const { data } = event;", "if (data)", "{", "this.payload = data;", "this.bufferSize = this.payload.length / (this.channelCount * 2);", "this.bufferOffset = this.payload.length / 2;", "}", "else", "{", "this.payload = null;", "}", "};", "}", "process(inputs, outputs, parameters)", "{", "const output = outputs[0];", "if (output.length === 0) return true;", "if (this.payload) {", "if (this.bufferIndex === 0) {", "this.port.postMessage(this.bufferFlag ^ 1);", "}", "const bufferSliceEnd = this.bufferSize / output[0].length;", "const sliceOffset = output[0].length * this.bufferIndex + this.bufferOffset * this.bufferFlag;", "for (let channel = 0; channel < output.length; ++channel) {", "const outputChannel = output[channel];", "const indexOffset = this.bufferSize * channel + sliceOffset;", "outputChannel.set(new Float32Array(this.payload.slice(0 + indexOffset, outputChannel.length + indexOffset)));", "}", "this.bufferIndex++;", "if (this.bufferIndex === bufferSliceEnd) {", "this.bufferIndex = 0;", "this.bufferFlag ^= 1;", "}", "}", "return true;", "}", "}", "registerProcessor('audio-processor', AudioProcessor);" ], { type: 'application/javascript' }); Module.mUrl = URL.createObjectURL(fastCodePath); Module.mOutputData = new Float32Array(new SharedArrayBuffer(Float32Array.BYTES_PER_ELEMENT * Module.mSpeakerChannelCount * bufferLength * 2)); } Module.mModulePolling = true; Module["waitForAudioWorklet"] = function(condition, callback) { var myInterval = null; if (condition()) { myInterval = setInterval(function() { if (!condition()) { callback(); clearInterval(myInterval); } }, 50); } else { callback(); return null; } return myInterval; }; Module["OutputAudioWorklet_resumeAudio"] = function() { if (Module.mContext && Module.mInputRegistered) { console.log('Resetting audio driver based on user input.'); Module.mContext.resume(); window.removeEventListener('click', Module.OutputAudioWorklet_resumeAudio, false); window.removeEventListener('touchend', Module.OutputAudioWorklet_resumeAudio, false); Module.mInputRegistered = false; if (!Module.mModuleLoading) { Module.mModuleLoading = true; Module.mAddModuleRef++; Module.mContext.resume().then(function() { Module.mContext.audioWorklet.addModule(Module.mUrl).then(function() { if (Module.mAddModuleRef === 1) { Module.mWorkletNode = new AudioWorkletNode(Module.mContext, 'audio-processor', { 'outputChannelCount' : [Module.mSpeakerChannelCount] }); Module.mModulePolling = false; URL.revokeObjectURL(Module.mUrl); if (Module.mWorkletNode) { Module.mWorkletNode.port.postMessage(Module.mOutputData); if (Module.mSharedArrayBuffers) { Module.mWorkletNode.port.onmessage = function(event) { Module.FMOD_JS_MixerFastpathFunction(event.data); }; } else { Module.mWorkletNode.port.onmessage = function(event) { Module.FMOD_JS_MixerSlowpathFunction(); Module.mWorkletNode.port.postMessage(Module.mOutputData); }; } } else { console.log('Error when creating AudioWorkletNode: Null object'); } } Module.mAddModuleRef--; }).catch (function(err) { Module.mModulePolling = false; Module.mAddModuleRef--; console.log('Error when opening audio processor '); console.log(err) }); }).catch (function(err) { Module.mModulePolling = false; Module.mAddModuleRef--; console.log('Error with mContext.resume()'); console.log(err) }); } } }; return Module.mSharedArrayBuffers; },  
- 8834406: () => { window.addEventListener('touchend', Module["OutputAudioWorklet_resumeAudio"], false); window.addEventListener('click', Module["OutputAudioWorklet_resumeAudio"], false); Module.mInputRegistered = true; },  
- 8834611: () => { if (Module.mStartInterval) { clearInterval(Module.mStartInterval); } if (Module.mStopInterval) { clearInterval(Module.mStopInterval); } if (Module.mSuspendInterval) { clearInterval(Module.mSuspendInterval); } if (Module.mResumeInterval) { clearInterval(Module.mResumeInterval); } if (Module.mWorkletNode) { if (Module.mWorkletNodeConnected) { Module.mWorkletNode.disconnect(); } } if (Module.mContext) { Module.mContext.close(); } if (Module.mInputRegistered) { Module.mInputRegistered = false; window.removeEventListener('click', Module["OutputAudioWorklet_resumeAudio"], false); window.removeEventListener('touchend', Module["OutputAudioWorklet_resumeAudio"], false); } },  
- 8835287: () => { Module.mStartInterval = Module["waitForAudioWorklet"](function(){ return (Module.mWorkletNode === null && Module.mModulePolling); }, function(){ if (Module.mWorkletNode) { Module.mWorkletNode.connect(Module.mContext.destination); Module.mWorkletNodeConnected = true; } }); },  
- 8835564: () => { Module.mStopInterval = Module["waitForAudioWorklet"](function(){ return (Module.mWorkletNode === null && Module.mModulePolling || !Module.mWorkletNodeConnected); }, function(){ if (Module.mWorkletNode) { Module.mWorkletNode.disconnect(); Module.mWorkletNodeConnected = false; } }); },  
- 8835850: ($0, $1, $2) => { const buffer = $0; const bufferLength = $1; const speakerModeChannels = $2; var data = HEAPF32.subarray((buffer / 4), (buffer / 4) + (bufferLength * speakerModeChannels)); for (var channel = 0; channel < speakerModeChannels; channel++) { const offset = channel * bufferLength; for (var sample = 0; sample < bufferLength; sample++) { Module.mOutputData[sample + offset] = data[(sample * speakerModeChannels) + channel]; } } },  
- 8836277: ($0, $1, $2, $3) => { const buffer = $0; const bufferLength = $1; const speakerModeChannels = $2; const frameFlag = $3; var data = HEAPF32.subarray((buffer / 4), (buffer / 4) + (bufferLength * speakerModeChannels)); const arrayOffset = speakerModeChannels * frameFlag * bufferLength; for (var channel = 0; channel < speakerModeChannels; channel++) { const offset = channel * bufferLength + arrayOffset; for (var sample = 0; sample < bufferLength; sample++) { Module.mOutputData[sample + offset] = data[(sample * speakerModeChannels) + channel]; } } },  
- 8836808: () => { if (Module.mContext) { Module.mContext.suspend(); } },  
- 8836864: () => { if (Module.mContext) { Module.mContext.resume(); } },  
- 8836919: () => { var AudioContext = window.AudioContext || window.webkitAudioContext; var contextForCheck = new AudioContext(); if (!contextForCheck) { return 0; } var retValue = 0; if (self.AudioWorkletNode) { if (contextForCheck.audioWorklet.addModule) { retValue = 1; } } contextForCheck.close(); return retValue; }
+  8723008: () => { var AudioContext = window.AudioContext || window.webkitAudioContext; var infocontext = new AudioContext(); if (!infocontext) { return 0; } var inforate = infocontext.sampleRate; infocontext.close(); return inforate; },  
+ 8723228: () => { Module.mInputRegistered = false; },  
+ 8723265: () => { var AudioContext = window.AudioContext || window.webkitAudioContext; Module.context = new AudioContext(); if (!Module.context) { return 0; } Module.FMOD_JS_MixFunction = Module["cwrap"]('FMOD_JS_MixFunction', 'void', ['number']); return Module.context.sampleRate; },  
+ 8723533: ($0, $1) => { Module._as_script_node = Module.context.createScriptProcessor($1, 0, $0); Module["OutputWebAudio_resumeAudio"] = function() { if (Module.context && Module.mInputRegistered) { console.log('Resetting audio driver based on user input.'); Module._as_script_node.connect(Module.context.destination); Module._as_script_node.onaudioprocess = function(audioProcessingEvent) { Module._as_output_buffer = audioProcessingEvent.outputBuffer; Module.FMOD_JS_MixFunction(Module._as_output_buffer.getChannelData(0).length); }; Module.context.resume(); window.removeEventListener('click', Module.OutputWebAudio_resumeAudio, false); window.removeEventListener('touchend', Module.OutputWebAudio_resumeAudio, false); Module.mInputRegistered = false; } }; },  
+ 8724273: () => { if (Module.mInputRegistered) { Module.mInputRegistered = false; window.removeEventListener('click', Module["OutputWebAudio_resumeAudio"], false); window.removeEventListener('touchend', Module["OutputWebAudio_resumeAudio"], false); } },  
+ 8724510: () => { window.addEventListener('touchend', Module["OutputWebAudio_resumeAudio"], false); window.addEventListener('click', Module["OutputWebAudio_resumeAudio"], false); Module.mInputRegistered = true; },  
+ 8724707: () => { Module._as_script_node.disconnect(Module.context.destination); },  
+ 8724774: ($0, $1, $2, $3) => { var data = HEAPF32.subarray(($0 / 4), ($0 / 4) + ($2 * $3)); for (var channel = 0; channel < $3; channel++) { var outputData = Module._as_output_buffer.getChannelData(channel); for (var sample = 0; sample < $2; sample++) { outputData[sample+$1] = data[(sample*$3)+channel]; } } },  
+ 8725056: () => { Module.context.suspend(); },  
+ 8725086: () => { Module.context.resume(); },  
+ 8725115: () => { var AudioContext = window.AudioContext || window.webkitAudioContext; var infocontext = new AudioContext(); if (!infocontext) { return 0; } var inforate = infocontext.sampleRate; infocontext.close(); return inforate; },  
+ 8725335: () => { Module.mWorkletNode = null; Module.mModulePolling = false; Module.mModuleLoading = false; Module.mStartInterval = null; Module.mStopInterval = null; Module.mSuspendInterval = null; Module.mResumeInterval = null; Module.mWorkletNodeConnected = false; Module.mInputRegistered = false; var AudioContext = window.AudioContext || window.webkitAudioContext; Module.mContext = new AudioContext(); if (!Module.mContext) { return 0; } Module.mContext.destination.channelCount = Module.mContext.destination.maxChannelCount; return Module.mContext.destination.maxChannelCount; },  
+ 8725905: ($0) => { const initAddModuleRef = $0; if (!initAddModuleRef) { Module.mAddModuleRef = 0; } if (!self.AudioWorkletNode) { return -1; } if (!Module.mContext.audioWorklet.addModule) { return -2; } Module.FMOD_JS_MixerSlowpathFunction = Module["cwrap"]('FMOD_JS_MixerSlowpathFunction', 'void', []); Module.FMOD_JS_MixerFastpathFunction = Module["cwrap"]('FMOD_JS_MixerFastpathFunction', 'void', ['number']); return Module.mContext.sampleRate; },  
+ 8726339: ($0, $1) => { Module.mSpeakerChannelCount = $0; const bufferLength = $1; Module.mUrl = null; Module.mOutputData = null; Module.mSharedArrayBuffers = false; if (self.SharedArrayBuffer) { if (self.crossOriginIsolated) { Module.mSharedArrayBuffers = true; } } if (!Module.mSharedArrayBuffers) { const slowCodePath = new Blob( [ "class AudioProcessor extends AudioWorkletProcessor", "{", "constructor(options)", "{", "super();", "this.payload = [null, null];", "this.bufferFlag = 0;", "this.dataFlag = 0;", "this.bufferIndex = 0;", "this.bufferSize = 0;", "this.channelCount = options.outputChannelCount;", "this.port.onmessage = (event) => {", "const { data } = event;", "if (data)", "{", "this.payload[this.dataFlag] = new Float32Array(data);", "this.bufferSize = data.length / this.channelCount;", "}", "else", "{", "this.payload[this.dataFlag] = null;", "}", "this.dataFlag ^= 1;", "};", "}", "process(inputs, outputs, parameters)", "{", "const output = outputs[0];", "if (output.length === 0) return true;", "if (this.payload[this.bufferFlag]) {", "if (this.bufferIndex === 0) {", "this.port.postMessage(this.bufferSize);", "}", "const bufferSliceEnd = this.bufferSize / output[0].length;", "const sliceOffset = output[0].length * this.bufferIndex;", "for (let channel = 0; channel < output.length; ++channel) {", "const outputChannel = output[channel];", "const indexOffset = this.bufferSize * channel + sliceOffset;", "outputChannel.set(new Float32Array(this.payload[this.bufferFlag].slice(0 + indexOffset, outputChannel.length + indexOffset)));", "}", "this.bufferIndex++;", "if (this.bufferIndex === bufferSliceEnd) {", "this.bufferIndex = 0;", "this.bufferFlag ^= 1;", "}", "}", "return true;", "}", "}", "registerProcessor('audio-processor', AudioProcessor);" ], { type: 'application/javascript' }); Module.mUrl = URL.createObjectURL(slowCodePath); Module.mOutputData = new Float32Array(Module.mSpeakerChannelCount * bufferLength); } else { const fastCodePath = new Blob( [ "class AudioProcessor extends AudioWorkletProcessor", "{", "constructor(options)", "{", "super();", "this.payload = null;", "this.bufferFlag = 0;", "this.bufferIndex = 0;", "this.bufferSize = 0;", "this.bufferOffset = 0;", "this.channelCount = options.outputChannelCount;", "this.port.onmessage = (event) => {", "const { data } = event;", "if (data)", "{", "this.payload = data;", "this.bufferSize = this.payload.length / (this.channelCount * 2);", "this.bufferOffset = this.payload.length / 2;", "}", "else", "{", "this.payload = null;", "}", "};", "}", "process(inputs, outputs, parameters)", "{", "const output = outputs[0];", "if (output.length === 0) return true;", "if (this.payload) {", "if (this.bufferIndex === 0) {", "this.port.postMessage(this.bufferFlag ^ 1);", "}", "const bufferSliceEnd = this.bufferSize / output[0].length;", "const sliceOffset = output[0].length * this.bufferIndex + this.bufferOffset * this.bufferFlag;", "for (let channel = 0; channel < output.length; ++channel) {", "const outputChannel = output[channel];", "const indexOffset = this.bufferSize * channel + sliceOffset;", "outputChannel.set(new Float32Array(this.payload.slice(0 + indexOffset, outputChannel.length + indexOffset)));", "}", "this.bufferIndex++;", "if (this.bufferIndex === bufferSliceEnd) {", "this.bufferIndex = 0;", "this.bufferFlag ^= 1;", "}", "}", "return true;", "}", "}", "registerProcessor('audio-processor', AudioProcessor);" ], { type: 'application/javascript' }); Module.mUrl = URL.createObjectURL(fastCodePath); Module.mOutputData = new Float32Array(new SharedArrayBuffer(Float32Array.BYTES_PER_ELEMENT * Module.mSpeakerChannelCount * bufferLength * 2)); } Module.mModulePolling = true; Module["waitForAudioWorklet"] = function(condition, callback) { var myInterval = null; if (condition()) { myInterval = setInterval(function() { if (!condition()) { callback(); clearInterval(myInterval); } }, 50); } else { callback(); return null; } return myInterval; }; Module["OutputAudioWorklet_resumeAudio"] = function() { if (Module.mContext && Module.mInputRegistered) { console.log('Resetting audio driver based on user input.'); Module.mContext.resume(); window.removeEventListener('click', Module.OutputAudioWorklet_resumeAudio, false); window.removeEventListener('touchend', Module.OutputAudioWorklet_resumeAudio, false); Module.mInputRegistered = false; if (!Module.mModuleLoading) { Module.mModuleLoading = true; Module.mAddModuleRef++; Module.mContext.resume().then(function() { Module.mContext.audioWorklet.addModule(Module.mUrl).then(function() { if (Module.mAddModuleRef === 1) { Module.mWorkletNode = new AudioWorkletNode(Module.mContext, 'audio-processor', { 'outputChannelCount' : [Module.mSpeakerChannelCount] }); Module.mModulePolling = false; URL.revokeObjectURL(Module.mUrl); if (Module.mWorkletNode) { Module.mWorkletNode.port.postMessage(Module.mOutputData); if (Module.mSharedArrayBuffers) { Module.mWorkletNode.port.onmessage = function(event) { Module.FMOD_JS_MixerFastpathFunction(event.data); }; } else { Module.mWorkletNode.port.onmessage = function(event) { Module.FMOD_JS_MixerSlowpathFunction(); Module.mWorkletNode.port.postMessage(Module.mOutputData); }; } } else { console.log('Error when creating AudioWorkletNode: Null object'); } } Module.mAddModuleRef--; }).catch (function(err) { Module.mModulePolling = false; Module.mAddModuleRef--; console.log('Error when opening audio processor '); console.log(err) }); }).catch (function(err) { Module.mModulePolling = false; Module.mAddModuleRef--; console.log('Error with mContext.resume()'); console.log(err) }); } } }; return Module.mSharedArrayBuffers; },  
+ 8731950: () => { window.addEventListener('touchend', Module["OutputAudioWorklet_resumeAudio"], false); window.addEventListener('click', Module["OutputAudioWorklet_resumeAudio"], false); Module.mInputRegistered = true; },  
+ 8732155: () => { if (Module.mStartInterval) { clearInterval(Module.mStartInterval); } if (Module.mStopInterval) { clearInterval(Module.mStopInterval); } if (Module.mSuspendInterval) { clearInterval(Module.mSuspendInterval); } if (Module.mResumeInterval) { clearInterval(Module.mResumeInterval); } if (Module.mWorkletNode) { if (Module.mWorkletNodeConnected) { Module.mWorkletNode.disconnect(); } } if (Module.mContext) { Module.mContext.close(); } if (Module.mInputRegistered) { Module.mInputRegistered = false; window.removeEventListener('click', Module["OutputAudioWorklet_resumeAudio"], false); window.removeEventListener('touchend', Module["OutputAudioWorklet_resumeAudio"], false); } },  
+ 8732831: () => { Module.mStartInterval = Module["waitForAudioWorklet"](function(){ return (Module.mWorkletNode === null && Module.mModulePolling); }, function(){ if (Module.mWorkletNode) { Module.mWorkletNode.connect(Module.mContext.destination); Module.mWorkletNodeConnected = true; } }); },  
+ 8733108: () => { Module.mStopInterval = Module["waitForAudioWorklet"](function(){ return (Module.mWorkletNode === null && Module.mModulePolling || !Module.mWorkletNodeConnected); }, function(){ if (Module.mWorkletNode) { Module.mWorkletNode.disconnect(); Module.mWorkletNodeConnected = false; } }); },  
+ 8733394: ($0, $1, $2) => { const buffer = $0; const bufferLength = $1; const speakerModeChannels = $2; var data = HEAPF32.subarray((buffer / 4), (buffer / 4) + (bufferLength * speakerModeChannels)); for (var channel = 0; channel < speakerModeChannels; channel++) { const offset = channel * bufferLength; for (var sample = 0; sample < bufferLength; sample++) { Module.mOutputData[sample + offset] = data[(sample * speakerModeChannels) + channel]; } } },  
+ 8733821: ($0, $1, $2, $3) => { const buffer = $0; const bufferLength = $1; const speakerModeChannels = $2; const frameFlag = $3; var data = HEAPF32.subarray((buffer / 4), (buffer / 4) + (bufferLength * speakerModeChannels)); const arrayOffset = speakerModeChannels * frameFlag * bufferLength; for (var channel = 0; channel < speakerModeChannels; channel++) { const offset = channel * bufferLength + arrayOffset; for (var sample = 0; sample < bufferLength; sample++) { Module.mOutputData[sample + offset] = data[(sample * speakerModeChannels) + channel]; } } },  
+ 8734352: () => { if (Module.mContext) { Module.mContext.suspend(); } },  
+ 8734408: () => { if (Module.mContext) { Module.mContext.resume(); } },  
+ 8734463: () => { var AudioContext = window.AudioContext || window.webkitAudioContext; var contextForCheck = new AudioContext(); if (!contextForCheck) { return 0; } var retValue = 0; if (self.AudioWorkletNode) { if (contextForCheck.audioWorklet.addModule) { retValue = 1; } } contextForCheck.close(); return retValue; }
 };
 
 
@@ -8650,49 +8650,12 @@ var ASM_CONSTS = {
   }
 
   var activeWebCams = {};
-  function _JS_WebCamVideo_CanPlay(deviceId) {
-  		var webcam = activeWebCams[deviceId];
-  		return webcam && webcam.video.videoWidth > 0 && webcam.video.videoHeight > 0;
-  	}
-
-  
-  function _JS_WebCamVideo_GetDeviceName(deviceId, buffer, bufferSize) {
-  		var webcam = videoInputDevices[deviceId];
-  		var name = webcam ? webcam.name : '(disconnected input #' + (deviceId + 1) + ')';
-  		if (buffer) stringToUTF8(name, buffer, bufferSize);
-  		return lengthBytesUTF8(name);
-  	}
-
   function _JS_WebCamVideo_GetNativeHeight(deviceId) {
   		return activeWebCams[deviceId] && activeWebCams[deviceId].video.videoHeight;
   	}
 
   function _JS_WebCamVideo_GetNativeWidth(deviceId) {
   		return activeWebCams[deviceId] && activeWebCams[deviceId].video.videoWidth;
-  	}
-
-  function _JS_WebCamVideo_GetNumDevices() {
-  		var numDevices = 0;
-  		if (!videoInputDevicesSuccessfullyEnumerated) {
-  			console.warn(
-  							'WebCam devices were used before being enumerated by the browser. The browser is likely ' +
-  							'pausing WebCam device enumeration due to the page being out of focus while the Unity ' +
-  							'application is being loaded in the background.\n' +
-  							'If you are a developer, you can ensure WebCam devices are enumerated by first requiring ' +
-  							'user interaction.\n' +
-  							'See https://github.com/w3c/mediacapture-main/issues/905 for details.'
-  						);
-  			return numDevices;
-  		}
-  
-  		// If a WebCam is disconnected in the middle of the list,
-  		// we keep reporting that index as (disconnected), so
-  		// find the max ID of devices as the device count.
-  		Object.keys(videoInputDevices).forEach(function(i) {
-  			numDevices = Math.max(numDevices, videoInputDevices[i].id+1);
-  		});
-  
-  		return numDevices;
   	}
 
   function _JS_WebCamVideo_GrabFrame(deviceId, buffer, destWidth, destHeight) {
@@ -8723,128 +8686,6 @@ var ASM_CONSTS = {
   		context.drawImage(webcam.video, 0, 0, webcam.video.videoWidth, webcam.video.videoHeight, 0, 0, destWidth, destHeight);
   		HEAPU8.set(context.getImageData(0, 0, destWidth, destHeight).data, buffer);
   		return 1; // Managed to capture a frame
-  	}
-
-  function _JS_WebCamVideo_IsFrontFacing(deviceId) {
-  		return videoInputDevices[deviceId].isFrontFacing;
-  	}
-
-  function _JS_WebCamVideo_Start(deviceId, requestedWidth, requestedHeight) {
-  		// Is the given WebCam device already enabled?
-  		if (activeWebCams[deviceId]) {
-  			++activeWebCams[deviceId].refCount;
-  			return;
-  		}
-  
-  		// No webcam exists with given ID?
-  		if (!videoInputDevices[deviceId]) {
-  			console.error('Cannot start video input with ID ' + deviceId + '. No such ID exists! Existing video inputs are:');
-  			console.dir(videoInputDevices);
-  			return;
-  		}
-  
-  		const videoConstraints = (
-  			!videoInputDevices[deviceId].deviceId
-  			? true
-  			: (
-  				requestedWidth <= 0 || requestedHeight <= 0
-  				? {
-  					deviceId: { exact: videoInputDevices[deviceId].deviceId }
-  					// use default camera resolution
-  				}
-  				: {
-  					deviceId: { exact: videoInputDevices[deviceId].deviceId },
-  					width: requestedWidth,
-  					height: requestedHeight,
-  					aspectRatio: requestedWidth / requestedHeight,
-  				}
-  			)
-  		);
-  
-  		navigator.mediaDevices.getUserMedia({
-  			audio: false,
-  			video: videoConstraints,
-  		}).then(function(stream) {
-  			var video = document.createElement('video');
-  			video.srcObject = stream;
-  
-  			if (/(iPhone|iPad|iPod)/.test(navigator.userAgent)) {
-  				warnOnce('Applying iOS Safari specific workaround to video playback: https://bugs.webkit.org/show_bug.cgi?id=217578');
-  				video.setAttribute('playsinline', '');
-  			}
-  
-  			video.play();
-  			activeWebCams[deviceId] = {
-  				video: video,
-  				canvas: document.createElement('canvas'),
-  				stream: stream,
-  				// Webcams will likely operate on a lower framerate than 60fps, i.e. 30/25/24/15 or something like that. We will be polling
-  				// every frame to grab a new video frame, so obtain the actual frame rate of the video device so that we can avoid capturing
-  				// the same video frame multiple times, when we know that a new video frame cannot yet have been produced.
-  				frameLengthInMsecs: 1000 / stream.getVideoTracks()[0].getSettings().frameRate,
-  				nextFrameAvailableTime: 0,
-  				refCount: 1
-  			};
-  		}).catch(function(e) {
-  			console.error('Unable to start video input! ' + e);
-  		});
-  	}
-
-  function _JS_WebCamVideo_Stop(deviceId) {
-  		var webcam = activeWebCams[deviceId];
-  		if (!webcam) return;
-  
-  		if (--webcam.refCount <= 0) {
-  			webcam.video.pause();
-  			webcam.video.srcObject = null;
-  			webcam.stream.getVideoTracks().forEach(function(track) {
-  				track.stop();
-  			});
-  			delete activeWebCams[deviceId];
-  		}
-  	}
-
-  function _JS_WebCamVideo_Update(deviceId, textureId, destWidth, destHeight) {
-  		var webcam = activeWebCams[deviceId];
-  		if (!webcam) return;
-  
-  		//HTML images have the opposite Y direction as GL, so we're telling WebGL to flip the Y of the texture image
-  		GLctx.pixelStorei(GLctx.UNPACK_FLIP_Y_WEBGL, true);
-  
-  		var webCamTexture = webcam.video;
-  
-  		// If we need to do texture resizing, we'll use the canvas to accomplish that, otherwise, we'll upload the video directly,
-  		// if this becomes a performance problem at some point, we can do it using a framebuffer instead
-  		if (webcam.video.videoWidth != destWidth || webcam.video.videoHeight != destHeight)
-  		{
-  			if (!webcam.canvas)
-  			{
-  				webcam.canvas = document.createElement('canvas');
-  			}
-  			var canvas = webcam.canvas;
-  			if (canvas.width != destWidth || canvas.height != destHeight || !webcam.context2d)
-  			{
-  				canvas.width = destWidth;
-  				canvas.height = destHeight;
-  				// Chrome and Firefox bug? After resizing the canvas, the 2D context
-  				// needs to be reacquired or the resize does not apply.
-  				webcam.context2d = canvas.getContext('2d');
-  			}
-  			var context = webcam.context2d;
-              context.drawImage(webcam.video, 0, 0, webcam.video.videoWidth, webcam.video.videoHeight, 0, 0, destWidth, destHeight);
-              webCamTexture = canvas;
-  		}
-  		GLctx.bindTexture(GLctx.TEXTURE_2D, GL.textures[textureId]);
-  
-  		// In Chrome, using a non-standard resolution (e.g. 1000x500) causes the following line to show a warning in the JavaScript console:
-  		// GL_INVALID_VALUE: Offset overflows texture dimensions.
-  		// See: https://issues.chromium.org/issues/382703192
-  		GLctx.texSubImage2D(GLctx.TEXTURE_2D, 0/*mipLevel*/, 0, 0, GLctx.RGBA, GLctx.UNSIGNED_BYTE, webCamTexture);
-  		GLctx.pixelStorei(GLctx.UNPACK_FLIP_Y_WEBGL, false);
-  	}
-
-  function _JS_WebCam_IsSupported() {
-  		return !!navigator.mediaDevices;
   	}
 
   function utf8(ptr) {
@@ -8888,19 +8729,6 @@ var ASM_CONSTS = {
           let videoSource = videoInstances[video];
           // WebGPU only allows video to be used if it's loaded and playing.
           if (videoSource.readyState != 4 || !videoSource.isLoaded)
-              return 0;
-          device = wgpu[device];
-          let externalTexture = device.importExternalTexture({source: videoSource});
-          return wgpuStore(externalTexture);
-      }
-
-  
-  function _JS_WebGPU_ImportWebCamTexture(device, webcamId)
-      {
-          let webcam = activeWebCams[webcamId];
-          let videoSource = webcam ?  webcam.video : null;
-          // WebGPU only allows video to be used if it's loaded and playing.
-          if (!videoSource || videoSource.readyState != 4)
               return 0;
           device = wgpu[device];
           let externalTexture = device.importExternalTexture({source: videoSource});
@@ -19355,19 +19183,10 @@ var wasmImports = {
   "JS_Video_Time": _JS_Video_Time,
   "JS_Video_UpdateToTexture": _JS_Video_UpdateToTexture,
   "JS_Video_Width": _JS_Video_Width,
-  "JS_WebCamVideo_CanPlay": _JS_WebCamVideo_CanPlay,
-  "JS_WebCamVideo_GetDeviceName": _JS_WebCamVideo_GetDeviceName,
   "JS_WebCamVideo_GetNativeHeight": _JS_WebCamVideo_GetNativeHeight,
   "JS_WebCamVideo_GetNativeWidth": _JS_WebCamVideo_GetNativeWidth,
-  "JS_WebCamVideo_GetNumDevices": _JS_WebCamVideo_GetNumDevices,
   "JS_WebCamVideo_GrabFrame": _JS_WebCamVideo_GrabFrame,
-  "JS_WebCamVideo_IsFrontFacing": _JS_WebCamVideo_IsFrontFacing,
-  "JS_WebCamVideo_Start": _JS_WebCamVideo_Start,
-  "JS_WebCamVideo_Stop": _JS_WebCamVideo_Stop,
-  "JS_WebCamVideo_Update": _JS_WebCamVideo_Update,
-  "JS_WebCam_IsSupported": _JS_WebCam_IsSupported,
   "JS_WebGPU_ImportVideoTexture": _JS_WebGPU_ImportVideoTexture,
-  "JS_WebGPU_ImportWebCamTexture": _JS_WebGPU_ImportWebCamTexture,
   "JS_WebGPU_SetCommandEncoder": _JS_WebGPU_SetCommandEncoder,
   "JS_WebGPU_Setup": _JS_WebGPU_Setup,
   "JS_WebPlayer_FinishInitialization": _JS_WebPlayer_FinishInitialization,
@@ -20991,14 +20810,6 @@ var dynCall_vijiiiiii = Module["dynCall_vijiiiiii"] = createExportWrapper("dynCa
 /** @type {function(...*):?} */
 var dynCall_ijiiiii = Module["dynCall_ijiiiii"] = createExportWrapper("dynCall_ijiiiii");
 /** @type {function(...*):?} */
-var dynCall_iffii = Module["dynCall_iffii"] = createExportWrapper("dynCall_iffii");
-/** @type {function(...*):?} */
-var dynCall_iiffffi = Module["dynCall_iiffffi"] = createExportWrapper("dynCall_iiffffi");
-/** @type {function(...*):?} */
-var dynCall_ifffi = Module["dynCall_ifffi"] = createExportWrapper("dynCall_ifffi");
-/** @type {function(...*):?} */
-var dynCall_viffifi = Module["dynCall_viffifi"] = createExportWrapper("dynCall_viffifi");
-/** @type {function(...*):?} */
 var dynCall_viifffi = Module["dynCall_viifffi"] = createExportWrapper("dynCall_viifffi");
 /** @type {function(...*):?} */
 var dynCall_viffffi = Module["dynCall_viffffi"] = createExportWrapper("dynCall_viffffi");
@@ -21020,6 +20831,8 @@ var dynCall_ijjiii = Module["dynCall_ijjiii"] = createExportWrapper("dynCall_ijj
 var dynCall_iiiifiiiiii = Module["dynCall_iiiifiiiiii"] = createExportWrapper("dynCall_iiiifiiiiii");
 /** @type {function(...*):?} */
 var dynCall_iiiifiiiii = Module["dynCall_iiiifiiiii"] = createExportWrapper("dynCall_iiiifiiiii");
+/** @type {function(...*):?} */
+var dynCall_ifffi = Module["dynCall_ifffi"] = createExportWrapper("dynCall_ifffi");
 /** @type {function(...*):?} */
 var dynCall_iffffi = Module["dynCall_iffffi"] = createExportWrapper("dynCall_iffffi");
 /** @type {function(...*):?} */
@@ -21117,6 +20930,8 @@ var dynCall_fiifiii = Module["dynCall_fiifiii"] = createExportWrapper("dynCall_f
 /** @type {function(...*):?} */
 var dynCall_fffffffi = Module["dynCall_fffffffi"] = createExportWrapper("dynCall_fffffffi");
 /** @type {function(...*):?} */
+var dynCall_viffifi = Module["dynCall_viffifi"] = createExportWrapper("dynCall_viffifi");
+/** @type {function(...*):?} */
 var dynCall_viiffifi = Module["dynCall_viiffifi"] = createExportWrapper("dynCall_viiffifi");
 /** @type {function(...*):?} */
 var dynCall_viifiiiiii = Module["dynCall_viifiiiiii"] = createExportWrapper("dynCall_viifiiiiii");
@@ -21140,8 +20955,6 @@ var dynCall_viiifififi = Module["dynCall_viiifififi"] = createExportWrapper("dyn
 var dynCall_viiiiiifiiiii = Module["dynCall_viiiiiifiiiii"] = createExportWrapper("dynCall_viiiiiifiiiii");
 /** @type {function(...*):?} */
 var dynCall_iijjjiii = Module["dynCall_iijjjiii"] = createExportWrapper("dynCall_iijjjiii");
-/** @type {function(...*):?} */
-var dynCall_viijjii = Module["dynCall_viijjii"] = createExportWrapper("dynCall_viijjii");
 /** @type {function(...*):?} */
 var dynCall_iiffiiiiiiiiii = Module["dynCall_iiffiiiiiiiiii"] = createExportWrapper("dynCall_iiffiiiiiiiiii");
 /** @type {function(...*):?} */
@@ -21383,6 +21196,8 @@ var dynCall_viiffffiiiii = Module["dynCall_viiffffiiiii"] = createExportWrapper(
 /** @type {function(...*):?} */
 var dynCall_vifiifiifi = Module["dynCall_vifiifiifi"] = createExportWrapper("dynCall_vifiifiifi");
 /** @type {function(...*):?} */
+var dynCall_iffii = Module["dynCall_iffii"] = createExportWrapper("dynCall_iffii");
+/** @type {function(...*):?} */
 var dynCall_ififi = Module["dynCall_ififi"] = createExportWrapper("dynCall_ififi");
 /** @type {function(...*):?} */
 var dynCall_iiiiiifiiii = Module["dynCall_iiiiiifiiii"] = createExportWrapper("dynCall_iiiiiifiiii");
@@ -21483,6 +21298,8 @@ var dynCall_viiiijiiii = Module["dynCall_viiiijiiii"] = createExportWrapper("dyn
 /** @type {function(...*):?} */
 var dynCall_jiiiiiiiiii = Module["dynCall_jiiiiiiiiii"] = createExportWrapper("dynCall_jiiiiiiiiii");
 /** @type {function(...*):?} */
+var dynCall_viijjii = Module["dynCall_viijjii"] = createExportWrapper("dynCall_viijjii");
+/** @type {function(...*):?} */
 var dynCall_vffiiiiii = Module["dynCall_vffiiiiii"] = createExportWrapper("dynCall_vffiiiiii");
 /** @type {function(...*):?} */
 var dynCall_fiff = Module["dynCall_fiff"] = createExportWrapper("dynCall_fiff");
@@ -21551,12 +21368,6 @@ var dynCall_ij = Module["dynCall_ij"] = createExportWrapper("dynCall_ij");
 /** @type {function(...*):?} */
 var dynCall_viiiif = Module["dynCall_viiiif"] = createExportWrapper("dynCall_viiiif");
 /** @type {function(...*):?} */
-var dynCall_viiiij = Module["dynCall_viiiij"] = createExportWrapper("dynCall_viiiij");
-/** @type {function(...*):?} */
-var dynCall_iiijji = Module["dynCall_iiijji"] = createExportWrapper("dynCall_iiijji");
-/** @type {function(...*):?} */
-var dynCall_ijjiiiii = Module["dynCall_ijjiiiii"] = createExportWrapper("dynCall_ijjiiiii");
-/** @type {function(...*):?} */
 var dynCall_iiiiiifffiiifiii = Module["dynCall_iiiiiifffiiifiii"] = createExportWrapper("dynCall_iiiiiifffiiifiii");
 /** @type {function(...*):?} */
 var dynCall_vidd = Module["dynCall_vidd"] = createExportWrapper("dynCall_vidd");
@@ -21607,11 +21418,13 @@ var dynCall_viijijj = Module["dynCall_viijijj"] = createExportWrapper("dynCall_v
 /** @type {function(...*):?} */
 var dynCall_viijj = Module["dynCall_viijj"] = createExportWrapper("dynCall_viijj");
 /** @type {function(...*):?} */
+var dynCall_viiiij = Module["dynCall_viiiij"] = createExportWrapper("dynCall_viiiij");
+/** @type {function(...*):?} */
 var dynCall_viffffffffffffiiii = Module["dynCall_viffffffffffffiiii"] = createExportWrapper("dynCall_viffffffffffffiiii");
 /** @type {function(...*):?} */
-var dynCall_viiij = Module["dynCall_viiij"] = createExportWrapper("dynCall_viiij");
+var dynCall_iiijji = Module["dynCall_iiijji"] = createExportWrapper("dynCall_iiijji");
 /** @type {function(...*):?} */
-var dynCall_vijd = Module["dynCall_vijd"] = createExportWrapper("dynCall_vijd");
+var dynCall_ijjiiiii = Module["dynCall_ijjiiiii"] = createExportWrapper("dynCall_ijjiiiii");
 /** @type {function(...*):?} */
 var dynCall_vifiiifi = Module["dynCall_vifiiifi"] = createExportWrapper("dynCall_vifiiifi");
 /** @type {function(...*):?} */
