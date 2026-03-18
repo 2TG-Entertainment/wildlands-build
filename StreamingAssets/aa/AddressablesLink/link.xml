@@ -103,7 +103,7 @@
     <type fullname="UnityEngine.AddressableAssets.AssetReference" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.AddressableAssets.AssetReferenceT`1" preserve="nothing" serialized="true" />
   </assembly>
-  <assembly fullname="Unity.InputSystem, Version=1.14.2.0, Culture=neutral, PublicKeyToken=null">
+  <assembly fullname="Unity.InputSystem, Version=1.18.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.InputSystem.InputActionAsset" preserve="all" />
     <type fullname="UnityEngine.InputSystem.InputActionReference" preserve="all" />
     <type fullname="UnityEngine.InputSystem.PlayerInput" preserve="all" />
@@ -151,6 +151,7 @@
     <type fullname="UnityEngine.Rendering.Universal.UniversalAdditionalLightData" preserve="all" />
     <type fullname="UnityEngine.Rendering.Universal.Vignette" preserve="all" />
     <type fullname="UnityEngine.Rendering.Universal.WhiteBalance" preserve="all" />
+    <type fullname="UnityEngine.Rendering.Universal.BloomFilterModeParameter" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.Rendering.Universal.DepthOfFieldModeParameter" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.Rendering.Universal.DownscaleParameter" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.Rendering.Universal.FilmGrainLookupParameter" preserve="nothing" serialized="true" />
@@ -462,6 +463,7 @@
     <type fullname="Battle.BattleEffects.CameraShakeManager" preserve="all" />
     <type fullname="Battle.BattleEffects.ColorFilterEffectManager" preserve="all" />
     <type fullname="Battle.BattleEffects.ColorFilterPresetScriptableObject" preserve="all" />
+    <type fullname="HurtEndStateMachineEvent" preserve="all" />
     <type fullname="Wof.AccessorySelection" preserve="all" />
     <type fullname="Wof.AnimationNotificationSender" preserve="all" />
     <type fullname="Wof.AudioSettingsSection" preserve="all" />
@@ -667,6 +669,7 @@
     <type fullname="Wof.WofEquipmentStatsDisplay" preserve="all" />
     <type fullname="Wof.WofFlyingText" preserve="all" />
     <type fullname="Wof.WofFlyingTextIndividualMember" preserve="all" />
+    <type fullname="Wof.WofGamepadActionsHandler" preserve="all" />
     <type fullname="Wof.WofGlobalVolumeFader" preserve="all" />
     <type fullname="Wof.WofHangingBoardSettings" preserve="all" />
     <type fullname="Wof.WofHealingSpringMenu" preserve="all" />
@@ -736,13 +739,16 @@
     <type fullname="Wof.WofUnlockedUnitOverviewInformationWindow" preserve="all" />
     <type fullname="Wof.WorldParticleManager" preserve="all" />
     <type fullname="WofBattleResultsXpDisplay" preserve="all" />
+    <type fullname="WofDevTestSkillNames" preserve="all" />
     <type fullname="WofEscapePortalConfirmWindow" preserve="all" />
     <type fullname="WofHealingSpringConfirmWindow" preserve="all" />
     <type fullname="WofMoveToEnemyStateSettings" preserve="all" />
     <type fullname="WofMoveToFormationCenterStateSettings" preserve="all" />
+    <type fullname="WofPassiveSkillInformationWindow" preserve="all" />
     <type fullname="WofPlaythroughResultsProgressionPopUp" preserve="all" />
     <type fullname="WofPlaythroughResultsWindow" preserve="all" />
     <type fullname="WofReturnToCellStateSettings" preserve="all" />
+    <type fullname="WofVirtualMouse" preserve="all" />
     <type fullname="Wof.ButtonAppearanceSettings" preserve="nothing" serialized="true" />
     <type fullname="Wof.RecruitFrontAppearanceParts" preserve="nothing" serialized="true" />
     <type fullname="Wof.RevealCardRaritySettings" preserve="nothing" serialized="true" />
