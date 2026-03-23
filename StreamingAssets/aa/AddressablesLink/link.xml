@@ -299,6 +299,7 @@
     <type fullname="AuctionHouse.AuctionItem" preserve="all" />
     <type fullname="AuctionHouse.AuctionsPanel" preserve="all" />
     <type fullname="AuctionHouse.ConfirmListingOrBidPopup" preserve="all" />
+    <type fullname="AuctionHouse.DetailsSection" preserve="all" />
     <type fullname="AuctionHouse.DurationToggle" preserve="all" />
     <type fullname="AuctionHouse.FilterItem" preserve="all" />
     <type fullname="AuctionHouse.Filters" preserve="all" />
@@ -317,6 +318,9 @@
     <type fullname="AuctionHouse.SortItem" preserve="all" />
     <type fullname="AuctionHouse.Sorts" preserve="all" />
     <type fullname="AuctionHouse.WofAuctionHouseMainWindow" preserve="all" />
+    <type fullname="WofCashierConfirmMenu" preserve="all" />
+    <type fullname="WofCashierListItem" preserve="all" />
+    <type fullname="WofCashierMainMenu" preserve="all" />
   </assembly>
   <assembly fullname="WOF.Unity.Hunters.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="Mopsicus.InfiniteScroll.InfiniteScroll" preserve="all" />
@@ -447,6 +451,10 @@
     <type fullname="Wof.WofWelcomeChestScreen" preserve="all" />
     <type fullname="Wof.WofWelcomeChestWidget" preserve="all" />
     <type fullname="Wof.WofWelcomeChestWindow" preserve="all" />
+    <type fullname="WofBarracksArmoryCatalogWindow" preserve="all" />
+    <type fullname="WofBarracksArmoryConfirmDelete" preserve="all" />
+    <type fullname="WofBarracksArmoryInfoPrompt" preserve="all" />
+    <type fullname="WofBarracksArmoryWindow" preserve="all" />
     <type fullname="WofBarracksSwapConfirmWindow" preserve="all" />
     <type fullname="WofFinancierCharacterSelectionMenu" preserve="all" />
     <type fullname="WofHuntersClassProgressionScreen" preserve="all" />
