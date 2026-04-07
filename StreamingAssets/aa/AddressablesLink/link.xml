@@ -460,6 +460,7 @@
     <type fullname="WofHuntersClassProgressionScreen" preserve="all" />
     <type fullname="WofInnConfirmPrompt" preserve="all" />
     <type fullname="WofRecruitSelectHorizontalDisplayWidget" preserve="all" />
+    <type fullname="WofTutorialTrigger" preserve="all" />
     <type fullname="Wof.Hunters.DonegalSubMenu" preserve="nothing" serialized="true" />
     <type fullname="Wof.Hunters.HuntModeDonegalButtonElement" preserve="nothing" serialized="true" />
     <type fullname="Wof.Hunters.RarityBackground" preserve="nothing" serialized="true" />
@@ -472,6 +473,8 @@
     <type fullname="Battle.BattleEffects.ColorFilterEffectManager" preserve="all" />
     <type fullname="Battle.BattleEffects.ColorFilterPresetScriptableObject" preserve="all" />
     <type fullname="HurtEndStateMachineEvent" preserve="all" />
+    <type fullname="LoadingScreenTipsScriptableObject" preserve="all" />
+    <type fullname="LoadingScreenVisuals" preserve="all" />
     <type fullname="Wof.AccessorySelection" preserve="all" />
     <type fullname="Wof.AnimationNotificationSender" preserve="all" />
     <type fullname="Wof.AudioSettingsSection" preserve="all" />
@@ -543,6 +546,7 @@
     <type fullname="Wof.ConfigurationData.XpConfigurationScriptableObject" preserve="all" />
     <type fullname="Wof.ConfirmationError" preserve="all" />
     <type fullname="Wof.ConfirmationPrompt" preserve="all" />
+    <type fullname="Wof.ControlsSettingsSection" preserve="all" />
     <type fullname="Wof.Core.Audio.AudioBootstrap" preserve="all" />
     <type fullname="Wof.Core.Audio.AudioMixerGroupRouter" preserve="all" />
     <type fullname="Wof.Core.Audio.ButtonSounds" preserve="all" />
@@ -628,6 +632,7 @@
     <type fullname="Wof.WofBattleSkillBanner" preserve="all" />
     <type fullname="Wof.WofBattleStatusCellIndicator" preserve="all" />
     <type fullname="Wof.WofBattleTargetInfoStatLabel" preserve="all" />
+    <type fullname="Wof.WofBattleTutorialLargeWindow" preserve="all" />
     <type fullname="Wof.WofCatalogThumbnailItemDisplay" preserve="all" />
     <type fullname="Wof.WofChangeClassPrompt" preserve="all" />
     <type fullname="Wof.WofCharacterRevealCard" preserve="all" />
@@ -742,11 +747,14 @@
     <type fullname="Wof.WofTreeCenterClassElement" preserve="all" />
     <type fullname="Wof.WofTreeClassElement" preserve="all" />
     <type fullname="Wof.WofTurnOrderPortrait" preserve="all" />
+    <type fullname="Wof.WofTutorialConfigScriptableObject" preserve="all" />
+    <type fullname="Wof.WofTutorialPopUpSettings" preserve="all" />
     <type fullname="Wof.WofUniversalItemDisplay" preserve="all" />
     <type fullname="Wof.WofUnlockedClassOverviewInformationWindow" preserve="all" />
     <type fullname="Wof.WofUnlockedUnitOverviewInformationWindow" preserve="all" />
     <type fullname="Wof.WorldParticleManager" preserve="all" />
     <type fullname="WofBattleResultsXpDisplay" preserve="all" />
+    <type fullname="WofBattleTutorialFocusOnButton" preserve="all" />
     <type fullname="WofDevTestSkillNames" preserve="all" />
     <type fullname="WofEscapePortalConfirmWindow" preserve="all" />
     <type fullname="WofHealingSpringConfirmWindow" preserve="all" />
@@ -756,14 +764,19 @@
     <type fullname="WofPlaythroughResultsProgressionPopUp" preserve="all" />
     <type fullname="WofPlaythroughResultsWindow" preserve="all" />
     <type fullname="WofReturnToCellStateSettings" preserve="all" />
+    <type fullname="WofTutorialEndScreen" preserve="all" />
+    <type fullname="WofTutorialEventReceiver" preserve="all" />
+    <type fullname="WofTutorialHandler" preserve="all" />
     <type fullname="WofVirtualMouse" preserve="all" />
     <type fullname="Wof.ButtonAppearanceSettings" preserve="nothing" serialized="true" />
     <type fullname="Wof.RecruitFrontAppearanceParts" preserve="nothing" serialized="true" />
     <type fullname="Wof.RevealCardRaritySettings" preserve="nothing" serialized="true" />
     <type fullname="Wof.SettingsSectionProperties" preserve="nothing" serialized="true" />
+    <type fullname="Wof.UIBiomeBackground" preserve="nothing" serialized="true" />
     <type fullname="Wof.WofLootboxAnimationSequenceManager/RevealSfxItem" preserve="nothing" serialized="true" />
     <type fullname="Battle.BattleEffects.ColorFilterSettingsData" preserve="nothing" serialized="true" />
     <type fullname="Battle.BattleEffects.ShakeSettingsData" preserve="nothing" serialized="true" />
+    <type fullname="LoadingScreenTipEntry" preserve="nothing" serialized="true" />
     <type fullname="Wof.AccessoryWeightsBySection" preserve="nothing" serialized="true" />
     <type fullname="Wof.AnimationStateEffectProperties" preserve="nothing" serialized="true" />
     <type fullname="Wof.Battle.BattleAnimationStateProperties" preserve="nothing" serialized="true" />
@@ -814,6 +827,8 @@
     <type fullname="Wof.WeaponElementIconEntry" preserve="nothing" serialized="true" />
     <type fullname="Wof.WeaponWeightsBySection" preserve="nothing" serialized="true" />
     <type fullname="Wof.MenuStep" preserve="nothing" serialized="true" />
+    <type fullname="Wof.TutorialPopUpSection" preserve="nothing" serialized="true" />
+    <type fullname="Wof.WofTutorialSquadMemberData" preserve="nothing" serialized="true" />
     <type fullname="Wof.Battle.IsometricGridCell" preserve="nothing" serialized="true" />
     <type fullname="Wof.Battle.WofBattleAnimationState" preserve="nothing" serialized="true" />
     <type fullname="Wof.DevBattlePreset" preserve="nothing" serialized="true" />
