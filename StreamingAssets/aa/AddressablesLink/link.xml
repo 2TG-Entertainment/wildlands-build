@@ -321,6 +321,7 @@
     <type fullname="WofCashierConfirmMenu" preserve="all" />
     <type fullname="WofCashierListItem" preserve="all" />
     <type fullname="WofCashierMainMenu" preserve="all" />
+    <type fullname="WofClaimSectionMenu" preserve="all" />
   </assembly>
   <assembly fullname="WOF.Unity.Hunters.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="Mopsicus.InfiniteScroll.InfiniteScroll" preserve="all" />
@@ -703,6 +704,7 @@
     <type fullname="Wof.WofListItemDisplay" preserve="all" />
     <type fullname="Wof.WofListItemDisplayUniversal" preserve="all" />
     <type fullname="Wof.WofListItemDisplayWithPercentageChance" preserve="all" />
+    <type fullname="Wof.WofListItemDisplayWithSelectionBox" preserve="all" />
     <type fullname="Wof.WofListWithPriceItemDisplay" preserve="all" />
     <type fullname="Wof.WofLoadingScreen" preserve="all" />
     <type fullname="Wof.WofLockedClassOverviewInformationWindow" preserve="all" />
