@@ -313,7 +313,6 @@
     <type fullname="AuctionHouse.ListViewItemPool" preserve="all" />
     <type fullname="AuctionHouse.MyBidItem" preserve="all" />
     <type fullname="AuctionHouse.MyBidsPanel" preserve="all" />
-    <type fullname="AuctionHouse.NotificationPopup" preserve="all" />
     <type fullname="AuctionHouse.PooledListView" preserve="all" />
     <type fullname="AuctionHouse.SortItem" preserve="all" />
     <type fullname="AuctionHouse.Sorts" preserve="all" />
@@ -375,6 +374,7 @@
     <type fullname="Wof.HuntModePathMapNode" preserve="all" />
     <type fullname="Wof.HuntModeRerollDiamondNotify" preserve="all" />
     <type fullname="Wof.HuntSettingsWindow" preserve="all" />
+    <type fullname="Wof.NotificationPopup" preserve="all" />
     <type fullname="wof.Recruitment.WofHubRecruitmentMenu" preserve="all" />
     <type fullname="Wof.WofBackToDonegalWarningWindow" preserve="all" />
     <type fullname="Wof.WofBarracksCrystalWalletWindow" preserve="all" />
@@ -458,9 +458,12 @@
     <type fullname="WofBarracksArmoryWindow" preserve="all" />
     <type fullname="WofBarracksSwapConfirmWindow" preserve="all" />
     <type fullname="WofFinancierCharacterSelectionMenu" preserve="all" />
+    <type fullname="WofGuildJoinListItem" preserve="all" />
     <type fullname="WofHuntersClassProgressionScreen" preserve="all" />
     <type fullname="WofInnConfirmPrompt" preserve="all" />
     <type fullname="WofRecruitSelectHorizontalDisplayWidget" preserve="all" />
+    <type fullname="WofSettingsGuildsPrivateJoinPrompt" preserve="all" />
+    <type fullname="WofSettingsGuildsWindow" preserve="all" />
     <type fullname="WofTutorialTrigger" preserve="all" />
     <type fullname="Wof.Hunters.DonegalSubMenu" preserve="nothing" serialized="true" />
     <type fullname="Wof.Hunters.HuntModeDonegalButtonElement" preserve="nothing" serialized="true" />
