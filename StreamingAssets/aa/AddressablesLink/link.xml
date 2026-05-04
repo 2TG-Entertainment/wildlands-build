@@ -110,6 +110,7 @@
     <type fullname="UnityEngine.InputSystem.UI.InputSystemUIInputModule" preserve="all" />
     <type fullname="UnityEngine.InputSystem.InputAction" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.InputSystem.InputActionMap" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.InputSystem.InputActionProperty" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.InputSystem.InputBinding" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.InputSystem.InputControlScheme" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.InputSystem.InputControlScheme/DeviceRequirement" preserve="nothing" serialized="true" />
@@ -762,6 +763,7 @@
     <type fullname="WofBattleTutorialFocusOnButton" preserve="all" />
     <type fullname="WofDevTestSkillNames" preserve="all" />
     <type fullname="WofEscapePortalConfirmWindow" preserve="all" />
+    <type fullname="WofGamepadScroll" preserve="all" />
     <type fullname="WofHealingSpringConfirmWindow" preserve="all" />
     <type fullname="WofMoveToEnemyStateSettings" preserve="all" />
     <type fullname="WofMoveToFormationCenterStateSettings" preserve="all" />
