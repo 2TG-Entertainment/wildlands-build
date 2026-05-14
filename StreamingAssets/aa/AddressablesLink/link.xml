@@ -225,6 +225,7 @@
     <type fullname="UnityEngine.SpriteRenderer" preserve="all" />
     <type fullname="UnityEngine.TextAsset" preserve="all" />
     <type fullname="UnityEngine.Texture2D" preserve="all" />
+    <type fullname="UnityEngine.TrailRenderer" preserve="all" />
     <type fullname="UnityEngine.Transform" preserve="all" />
     <type fullname="UnityEngine.U2D.SpriteAtlas" preserve="all" />
     <type fullname="UnityEngine.Events.ArgumentCache" preserve="nothing" serialized="true" />
@@ -466,6 +467,9 @@
     <type fullname="WofSettingsGuildsPrivateJoinPrompt" preserve="all" />
     <type fullname="WofSettingsGuildsWindow" preserve="all" />
     <type fullname="WofTutorialTrigger" preserve="all" />
+    <type fullname="WofWelcomeChestAnimationManager" preserve="all" />
+    <type fullname="WofWelcomeChestIndividualItemAnimationHandler" preserve="all" />
+    <type fullname="ItemRevealElement" preserve="nothing" serialized="true" />
     <type fullname="Wof.Hunters.DonegalSubMenu" preserve="nothing" serialized="true" />
     <type fullname="Wof.Hunters.HuntModeDonegalButtonElement" preserve="nothing" serialized="true" />
     <type fullname="Wof.Hunters.RarityBackground" preserve="nothing" serialized="true" />
@@ -763,6 +767,7 @@
     <type fullname="WofBattleTutorialFocusOnButton" preserve="all" />
     <type fullname="WofDevTestSkillNames" preserve="all" />
     <type fullname="WofEscapePortalConfirmWindow" preserve="all" />
+    <type fullname="WofFollowBezierCurve" preserve="all" />
     <type fullname="WofGamepadScroll" preserve="all" />
     <type fullname="WofHealingSpringConfirmWindow" preserve="all" />
     <type fullname="WofMoveToEnemyStateSettings" preserve="all" />
