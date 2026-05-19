@@ -19839,10 +19839,10 @@ var wasmImports = {
   "invoke_viifiii": invoke_viifiii,
   "invoke_viii": invoke_viii,
   "invoke_viiidi": invoke_viiidi,
+  "invoke_viiidiiiiiii": invoke_viiidiiiiiii,
   "invoke_viiifi": invoke_viiifi,
   "invoke_viiififiii": invoke_viiififiii,
   "invoke_viiifii": invoke_viiifii,
-  "invoke_viiifiiiiiii": invoke_viiifiiiiiii,
   "invoke_viiii": invoke_viiii,
   "invoke_viiiidi": invoke_viiiidi,
   "invoke_viiiiffi": invoke_viiiiffi,
@@ -20399,7 +20399,7 @@ var dynCall_vifiiii = Module["dynCall_vifiiii"] = createExportWrapper("dynCall_v
 /** @type {function(...*):?} */
 var dynCall_viiiiiiiiiiiiiii = Module["dynCall_viiiiiiiiiiiiiii"] = createExportWrapper("dynCall_viiiiiiiiiiiiiii");
 /** @type {function(...*):?} */
-var dynCall_viiifiiiiiii = Module["dynCall_viiifiiiiiii"] = createExportWrapper("dynCall_viiifiiiiiii");
+var dynCall_viiidiiiiiii = Module["dynCall_viiidiiiiiii"] = createExportWrapper("dynCall_viiidiiiiiii");
 /** @type {function(...*):?} */
 var dynCall_viidi = Module["dynCall_viidi"] = createExportWrapper("dynCall_viidi");
 /** @type {function(...*):?} */
@@ -22631,10 +22631,10 @@ function invoke_viiiiiiiiiiiiiii(index,a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a1
   }
 }
 
-function invoke_viiifiiiiiii(index,a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11) {
+function invoke_viiidiiiiiii(index,a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11) {
   var sp = stackSave();
   try {
-    dynCall_viiifiiiiiii(index,a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11);
+    dynCall_viiidiiiiiii(index,a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11);
   } catch(e) {
     stackRestore(sp);
     if (!(e instanceof EmscriptenEH)) throw e;
