@@ -383,6 +383,7 @@
     <type fullname="Wof.WofBarracksSwapWarningWindow" preserve="all" />
     <type fullname="Wof.WofCategoriesLayout" preserve="all" />
     <type fullname="Wof.WofChestStyleData" preserve="all" />
+    <type fullname="Wof.WofConfirmPerkWindow" preserve="all" />
     <type fullname="Wof.WofCostWithArrowsWidget" preserve="all" />
     <type fullname="Wof.WofDebugPathSelection" preserve="all" />
     <type fullname="Wof.WofEmbarkHuntWithoutHuntersWindow" preserve="all" />
