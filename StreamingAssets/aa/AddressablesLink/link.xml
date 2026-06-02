@@ -69,9 +69,6 @@
     <type fullname="IngameDebugConsole.EventSystemHandler" preserve="all" />
     <type fullname="IngameDebugConsole.InputFieldWarningsFixer" preserve="all" />
   </assembly>
-  <assembly fullname="PlayFab, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-    <type fullname="PlayFab.Internal.PlayFabHttp" preserve="all" />
-  </assembly>
   <assembly fullname="TheraBytes.BetterUi.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="TheraBytes.BetterUi.BetterContentSizeFitter" preserve="all" />
     <type fullname="TheraBytes.BetterUi.BetterImage" preserve="all" />
@@ -278,16 +275,16 @@
     <type fullname="UnityEngine.UI.AnimationTriggers" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.UI.Button/ButtonClickedEvent" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.UI.ColorBlock" preserve="nothing" serialized="true" />
-    <type fullname="UnityEngine.UI.FontData" preserve="nothing" serialized="true" />
-    <type fullname="UnityEngine.UI.InputField/EndEditEvent" preserve="nothing" serialized="true" />
-    <type fullname="UnityEngine.UI.InputField/OnChangeEvent" preserve="nothing" serialized="true" />
-    <type fullname="UnityEngine.UI.InputField/SubmitEvent" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.UI.MaskableGraphic/CullStateChangedEvent" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.UI.Navigation" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.UI.ScrollRect/ScrollRectEvent" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.UI.Scrollbar/ScrollEvent" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.UI.SpriteState" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.UI.Toggle/ToggleEvent" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.UI.FontData" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.UI.InputField/EndEditEvent" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.UI.InputField/OnChangeEvent" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.UI.InputField/SubmitEvent" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.UI.Slider/SliderEvent" preserve="nothing" serialized="true" />
   </assembly>
   <assembly fullname="UnityEngine.UIModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
@@ -386,8 +383,6 @@
     <type fullname="Wof.WofBarracksSwapWarningWindow" preserve="all" />
     <type fullname="Wof.WofCategoriesLayout" preserve="all" />
     <type fullname="Wof.WofChestStyleData" preserve="all" />
-    <type fullname="Wof.WofClassOverviewSkillLabel" preserve="all" />
-    <type fullname="Wof.WofConfirmPerkWindow" preserve="all" />
     <type fullname="Wof.WofCostWithArrowsWidget" preserve="all" />
     <type fullname="Wof.WofDebugPathSelection" preserve="all" />
     <type fullname="Wof.WofEmbarkHuntWithoutHuntersWindow" preserve="all" />
@@ -432,7 +427,6 @@
     <type fullname="Wof.WofNobilityPromoteEntryDisplay" preserve="all" />
     <type fullname="Wof.WofNobilityRomanNumberDisplay" preserve="all" />
     <type fullname="Wof.WofPerkElement" preserve="all" />
-    <type fullname="Wof.WofRecruitClassOverviewWindow" preserve="all" />
     <type fullname="Wof.WofRecruitSelectionWindow" preserve="all" />
     <type fullname="Wof.WofSelectableCardDisplay" preserve="all" />
     <type fullname="Wof.WofStaminaFullWarning" preserve="all" />
@@ -451,7 +445,6 @@
     <type fullname="Wof.WofWagonTransition" preserve="all" />
     <type fullname="Wof.WofWalletWarningWindow" preserve="all" />
     <type fullname="Wof.WofWallMarketHubElement" preserve="all" />
-    <type fullname="Wof.WofWelcomeChestScreen" preserve="all" />
     <type fullname="Wof.WofWelcomeChestWidget" preserve="all" />
     <type fullname="Wof.WofWelcomeChestWindow" preserve="all" />
     <type fullname="WofBarracksArmoryCatalogWindow" preserve="all" />
@@ -477,6 +470,7 @@
     <type fullname="Wof.NobilityInfoEntry" preserve="nothing" serialized="true" />
   </assembly>
   <assembly fullname="WOF.Unity.Shared.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="AnimatedPortraitComponent" preserve="all" />
     <type fullname="Battle.BattleEffects.AttackObjectSpawnerManager" preserve="all" />
     <type fullname="Battle.BattleEffects.CameraShakeManager" preserve="all" />
     <type fullname="Battle.BattleEffects.ColorFilterEffectManager" preserve="all" />
@@ -545,6 +539,7 @@
     <type fullname="Wof.CombatantViewSettingsScriptableObject" preserve="all" />
     <type fullname="Wof.ConfigurationData.BattleAIConfigurationScriptableObject" preserve="all" />
     <type fullname="Wof.ConfigurationData.DevelopmentConfigurationScriptableObject" preserve="all" />
+    <type fullname="Wof.ConfigurationData.InGameConfigurationScriptableObject" preserve="all" />
     <type fullname="Wof.ConfigurationData.ItemsDataScriptableObject" preserve="all" />
     <type fullname="Wof.ConfigurationData.NewCombatantConfigurationScriptableObject" preserve="all" />
     <type fullname="Wof.ConfigurationData.NftConfigurationScriptableObject" preserve="all" />
@@ -570,14 +565,7 @@
     <type fullname="Wof.Core.WofPathSelectElement" preserve="all" />
     <type fullname="Wof.Core.WofPathSelectMenu" preserve="all" />
     <type fullname="Wof.CreditsSettingsSection" preserve="all" />
-    <type fullname="Wof.CreditsWindow" preserve="all" />
     <type fullname="Wof.CurrencyBoxUI" preserve="all" />
-    <type fullname="Wof.Dev.DevEnemyEntry" preserve="all" />
-    <type fullname="Wof.Dev.DevSquadEntry" preserve="all" />
-    <type fullname="Wof.Dev.WofDevBattleBagSetup" preserve="all" />
-    <type fullname="Wof.Dev.WofDevBattlePathSetup" preserve="all" />
-    <type fullname="Wof.Dev.WofDevServerBattleResult" preserve="all" />
-    <type fullname="Wof.Dev.WofDevServerBattleSetup" preserve="all" />
     <type fullname="Wof.DojoTeamPlacementGridSlot" preserve="all" />
     <type fullname="Wof.DragAndDropIconElement" preserve="all" />
     <type fullname="Wof.EarlyAccessScreen" preserve="all" />
@@ -637,7 +625,6 @@
     <type fullname="Wof.WofBattleEndBanner" preserve="all" />
     <type fullname="Wof.WofBattleIntroBanner" preserve="all" />
     <type fullname="Wof.WofBattleResultsCombatantElement" preserve="all" />
-    <type fullname="Wof.WofBattleResultsWindow" preserve="all" />
     <type fullname="Wof.WofBattleSkillBanner" preserve="all" />
     <type fullname="Wof.WofBattleStatusCellIndicator" preserve="all" />
     <type fullname="Wof.WofBattleTargetInfoStatLabel" preserve="all" />
@@ -664,7 +651,6 @@
     <type fullname="Wof.WofCombatantStatsWindow" preserve="all" />
     <type fullname="Wof.WofCompareEquipmentsWindow" preserve="all" />
     <type fullname="Wof.WofConsumableItemWindow" preserve="all" />
-    <type fullname="Wof.WofCreditsWindow" preserve="all" />
     <type fullname="Wof.WofCrystalRevealAnimation" preserve="all" />
     <type fullname="Wof.WofDamageHitAnimationSettingsScriptableObject" preserve="all" />
     <type fullname="Wof.WofDebug.DebugOpenSquadFormation" preserve="all" />
@@ -710,7 +696,6 @@
     <type fullname="Wof.WofItemRevealAnimationNotifier" preserve="all" />
     <type fullname="Wof.WofItemStatsDisplay" preserve="all" />
     <type fullname="Wof.WofListItemDisplay" preserve="all" />
-    <type fullname="Wof.WofListItemDisplayUniversal" preserve="all" />
     <type fullname="Wof.WofListItemDisplayWithPercentageChance" preserve="all" />
     <type fullname="Wof.WofListItemDisplayWithSelectionBox" preserve="all" />
     <type fullname="Wof.WofListWithPriceItemDisplay" preserve="all" />
@@ -722,7 +707,6 @@
     <type fullname="Wof.WofMerchantCatalogWindow" preserve="all" />
     <type fullname="Wof.WofMerchantIntroWindow" preserve="all" />
     <type fullname="Wof.WofMerchantMenu" preserve="all" />
-    <type fullname="Wof.WofMessagePrompt" preserve="all" />
     <type fullname="Wof.WofMoochkinCommentScreen" preserve="all" />
     <type fullname="Wof.WofMoochkinPodScreen" preserve="all" />
     <type fullname="Wof.WofMoochkinPriceItemDisplay" preserve="all" />
@@ -742,7 +726,6 @@
     <type fullname="Wof.WofSimpleCastSpellStateSettings" preserve="all" />
     <type fullname="Wof.WofSimpleProjectileShootStateSettings" preserve="all" />
     <type fullname="Wof.WofSimplifiedItemDisplay" preserve="all" />
-    <type fullname="Wof.WofSkillLockedWarning" preserve="all" />
     <type fullname="Wof.WofSquadFormationGridPanel" preserve="all" />
     <type fullname="Wof.WofSquadFormationScreen" preserve="all" />
     <type fullname="Wof.WofSquadFormationSelectionGridPanel" preserve="all" />
@@ -774,18 +757,17 @@
     <type fullname="WofMoveToFormationCenterStateSettings" preserve="all" />
     <type fullname="WofPassiveSkillInformationWindow" preserve="all" />
     <type fullname="WofPlaythroughResultsProgressionPopUp" preserve="all" />
-    <type fullname="WofPlaythroughResultsWindow" preserve="all" />
     <type fullname="WofReturnToCellStateSettings" preserve="all" />
     <type fullname="WofTutorialEndScreen" preserve="all" />
     <type fullname="WofTutorialEventReceiver" preserve="all" />
     <type fullname="WofTutorialHandler" preserve="all" />
     <type fullname="WofVirtualMouse" preserve="all" />
+    <type fullname="AnimatedPortraitCosmeticElement" preserve="nothing" serialized="true" />
     <type fullname="Wof.ButtonAppearanceSettings" preserve="nothing" serialized="true" />
     <type fullname="Wof.RecruitFrontAppearanceParts" preserve="nothing" serialized="true" />
     <type fullname="Wof.RevealCardRaritySettings" preserve="nothing" serialized="true" />
     <type fullname="Wof.SettingsSectionProperties" preserve="nothing" serialized="true" />
     <type fullname="Wof.UIBiomeBackground" preserve="nothing" serialized="true" />
-    <type fullname="Wof.WofLootboxAnimationSequenceManager/RevealSfxItem" preserve="nothing" serialized="true" />
     <type fullname="Battle.BattleEffects.ColorFilterSettingsData" preserve="nothing" serialized="true" />
     <type fullname="Battle.BattleEffects.ShakeSettingsData" preserve="nothing" serialized="true" />
     <type fullname="LoadingScreenTipEntry" preserve="nothing" serialized="true" />
@@ -857,6 +839,7 @@
     <type fullname="FVLib.SharedModels.SharedDefinitions.Combatants.LifeTimeStatsTracker" preserve="nothing" serialized="true" />
     <type fullname="FVLib.SharedModels.SharedDefinitions.Combatants.NobilityRankStatus" preserve="nothing" serialized="true" />
     <type fullname="FVLib.SharedModels.SharedDefinitions.Combatants.StaminaStatusValue" preserve="nothing" serialized="true" />
+    <type fullname="FVLib.SharedModels.SharedDefinitions.Combatants.StatIds" preserve="nothing" serialized="true" />
     <type fullname="FVLib.SharedModels.SharedDefinitions.Combatants.StatusValue" preserve="nothing" serialized="true" />
     <type fullname="FVLib.SharedModels.SharedDefinitions.Configuration.ActionBehaviour" preserve="nothing" serialized="true" />
     <type fullname="FVLib.SharedModels.SharedDefinitions.Configuration.ActivatedSkill" preserve="nothing" serialized="true" />
@@ -864,6 +847,7 @@
     <type fullname="FVLib.SharedModels.SharedDefinitions.Configuration.AICondition" preserve="nothing" serialized="true" />
     <type fullname="FVLib.SharedModels.SharedDefinitions.Configuration.BaseClassStats" preserve="nothing" serialized="true" />
     <type fullname="FVLib.SharedModels.SharedDefinitions.Configuration.BattleAIConfiguration" preserve="nothing" serialized="true" />
+    <type fullname="FVLib.SharedModels.SharedDefinitions.Configuration.BattleSystemType" preserve="nothing" serialized="true" />
     <type fullname="FVLib.SharedModels.SharedDefinitions.Configuration.ChestStore" preserve="nothing" serialized="true" />
     <type fullname="FVLib.SharedModels.SharedDefinitions.Configuration.ClassDevelopment" preserve="nothing" serialized="true" />
     <type fullname="FVLib.SharedModels.SharedDefinitions.Configuration.ClassDevelopmentProgressionSetting" preserve="nothing" serialized="true" />
@@ -876,10 +860,12 @@
     <type fullname="FVLib.SharedModels.SharedDefinitions.Configuration.EquipmentClassSetting" preserve="nothing" serialized="true" />
     <type fullname="FVLib.SharedModels.SharedDefinitions.Configuration.EquipmentSkillConfig" preserve="nothing" serialized="true" />
     <type fullname="FVLib.SharedModels.SharedDefinitions.Configuration.FoodItem" preserve="nothing" serialized="true" />
+    <type fullname="FVLib.SharedModels.SharedDefinitions.Configuration.InGameConfiguration" preserve="nothing" serialized="true" />
     <type fullname="FVLib.SharedModels.SharedDefinitions.Configuration.InnateSkill" preserve="nothing" serialized="true" />
     <type fullname="FVLib.SharedModels.SharedDefinitions.Configuration.ItemMetaConfig" preserve="nothing" serialized="true" />
     <type fullname="FVLib.SharedModels.SharedDefinitions.Configuration.ItemsConfiguration" preserve="nothing" serialized="true" />
     <type fullname="FVLib.SharedModels.SharedDefinitions.Configuration.ItemsStatChange" preserve="nothing" serialized="true" />
+    <type fullname="FVLib.SharedModels.SharedDefinitions.Configuration.KeyValue`2" preserve="nothing" serialized="true" />
     <type fullname="FVLib.SharedModels.SharedDefinitions.Configuration.LootBoxItem" preserve="nothing" serialized="true" />
     <type fullname="FVLib.SharedModels.SharedDefinitions.Configuration.NewCombatantCreationConfiguration" preserve="nothing" serialized="true" />
     <type fullname="FVLib.SharedModels.SharedDefinitions.Configuration.NftConfig" preserve="nothing" serialized="true" />
